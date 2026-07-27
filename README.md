@@ -37,10 +37,18 @@ The map is driven by the single file **`data/schools.csv`**. To update it,
 replace that file with a fresh export and push — there is no build step and no
 fallback file, so if it is missing the map comes up empty.
 
-Minimum viable columns:
+The full header the app understands is kept as an empty template file at
+[`data/schools.template.csv`](data/schools.template.csv) — hand it to whoever
+produces the export:
 
 ```csv
-school_id,school_name,education_level,latitude,longitude
+school_id,school_name,education_level,municipality,administrative_post,suco,latitude,longitude,ownership,students,teachers
+```
+
+Only three columns are actually required:
+
+```csv
+school_name,latitude,longitude
 ```
 
 Add `municipality` and `administrative_post` columns and the two area filters
@@ -102,6 +110,7 @@ assets/data.js                CSV parsing, normalisation, point-in-polygon
 assets/app.js                 map, filters, search, results
 assets/app.css                theme tokens and layout
 data/schools.csv              the dataset
+data/schools.template.csv     empty file with the header the app expects
 data/boundaries/              optional municipality / post GeoJSON
 vendor/                       Leaflet 1.9.4, MarkerCluster 1.5.3, PapaParse 5.4.1
 ```

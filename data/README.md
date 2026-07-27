@@ -5,26 +5,60 @@
 The dataset lives here as **`data/schools.csv`**. It is the only file the app
 loads; if it is absent the map comes up empty.
 
-Minimum columns:
+## The header to ask for
+
+`schools.template.csv` in this folder is an empty file carrying exactly the
+header the app understands. Hand it to whoever produces the export:
+
+```csv
+school_id,school_name,education_level,municipality,administrative_post,suco,latitude,longitude,ownership,students,teachers
+```
+
+A filled row looks like this:
+
+```csv
+1689,EB 1.2.3 Cafe Aileu,Basic,Aileu,Aileu Vila,Seloi Kraik,-8.730585,125.567018,Public,412,18
+```
+
+Column by column:
 
 | Column | Required | Notes |
 | --- | --- | --- |
-| `latitude` | yes | Decimal degrees, or `8° 33' 12" S` style — both parse. |
-| `longitude` | yes | |
-| `school_name` | yes | |
-| `school_id` | no | Falls back to the row number. |
-| `education_level` | no | Drives the level filter, the marker colour and the legend. |
-| `municipality` | no | Drives the municipality filter. |
+| `latitude` | **yes** | Decimal degrees, or `8° 33' 12" S` style — both parse. Rows without usable coordinates are skipped. |
+| `longitude` | **yes** | Negative is west. Timor-Leste is all positive (≈ 124–127). |
+| `school_name` | **yes** | Quote it if the name contains a comma. |
+| `school_id` | no | Falls back to the row number if absent. |
+| `education_level` | no | Drives the level filter, marker colour and legend. Free text — `Basic`, `Pre-School`, `Ensino Secundário` all work. |
+| `municipality` | no | Drives the municipality filter. One of the 13 municipalities or RAEOA. |
 | `administrative_post` | no | Drives the administrative post filter. |
 | `suco` | no | Searchable, shown in the popup. |
-| `ownership`, `students`, `teachers` | no | Shown in the popup when present. |
+| `ownership` | no | Shown in the popup, e.g. `Public` / `Private` / `Catholic`. |
+| `students` | no | Shown in the popup. Whole number. |
+| `teachers` | no | Shown in the popup. Whole number. |
 
-Header names are matched loosely — case, spaces, underscores and hyphens are
-ignored, and Portuguese/Tetum names are recognised too (`nome_escola`,
-`municipio`, `posto_administrativo`, `nivel_ensino`, …). See
+Only the first three are required. Everything else degrades gracefully — a
+missing column just means the matching filter or popup line is absent.
+
+### Formatting rules
+
+- **UTF-8**, with or without a BOM — both are handled.
+- **Comma or semicolon** delimited. Comma decimals (`-8,9912`) parse too.
+- **Quote any field containing a comma**: `132,"EB 1º,2º Ciclo Belulic",Basic,…`
+- Blank rows are ignored, so trailing empty lines are harmless.
+- `NA`, `N/A`, `null`, `none`, `-` and `.` are all read as empty.
+
+Header names are matched loosely — case, spaces, underscores, hyphens and
+accents are ignored, and Portuguese/Tetum names are recognised too
+(`nome_escola`, `municipio`, `posto_administrativo`, `nivel_ensino`, …), so
+you do not have to rename columns to match the template exactly. See
 `COLUMN_ALIASES` in `assets/config.js` to add your own.
 
-Rows without usable coordinates are skipped and counted in the header line.
+### What the current export is missing
+
+The dataset in `schools.csv` today carries only `school_id`, `school_name`,
+`education_level`, `latitude` and `longitude`. Adding **`municipality`** and
+**`administrative_post`** is the single highest-value change — it switches the
+two area filters from the approximate nearest-centre estimate to exact values.
 
 ## If your file has no municipality / administrative post column
 
