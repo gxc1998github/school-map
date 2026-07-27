@@ -127,8 +127,8 @@
     }
   ];
 
-  /* Where the app looks for data, in order. The first file that loads wins. */
-  var DATA_SOURCES = ['data/schools.csv', 'data/schools.sample.csv'];
+  /* The dataset. Single source — there is no sample fallback. */
+  var DATA_SOURCES = ['data/schools.csv'];
   /* Optional boundary files. Present -> exact point-in-polygon assignment. */
   var BOUNDARY_SOURCES = {
     municipality: 'data/boundaries/municipalities.geojson',

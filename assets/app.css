@@ -282,8 +282,7 @@ a { color: var(--accent); }
 }
 
 input[type="search"],
-select,
-input[type="file"] {
+select {
   font: inherit;
   width: 100%;
   padding: 8px 10px;
@@ -292,8 +291,6 @@ input[type="file"] {
   background: var(--surface-2);
   color: var(--text-primary);
 }
-
-input[type="file"] { padding: 6px; font-size: 12px; }
 
 select:disabled {
   color: var(--text-muted);

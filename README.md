@@ -31,12 +31,11 @@ Prefer no Actions at all? Set **Source: Deploy from a branch → main → / (roo
 instead; the repo is already static, and `.nojekyll` stops Jekyll from
 swallowing files.
 
-## Using your own data
+## The dataset
 
-Replace **`data/schools.csv`** with your export and push. Until that file
-exists the app falls back to `data/schools.sample.csv`, which holds synthetic
-placeholder rows so the map is not empty — the header line always names the
-file in use.
+The map is driven by the single file **`data/schools.csv`**. To update it,
+replace that file with a fresh export and push — there is no build step and no
+fallback file, so if it is missing the map comes up empty.
 
 Minimum viable columns:
 
@@ -54,9 +53,6 @@ See [`data/README.md`](data/README.md) for the full column list, and for how to
 handle a file that has no municipality / administrative post column — either
 drop in a boundary GeoJSON for exact point-in-polygon assignment, or use the
 approximate nearest-centre estimate.
-
-There is also a **Load a CSV file** picker in the sidebar for trying a file out
-without committing it; that file never leaves the browser.
 
 ## Features
 
@@ -105,9 +101,8 @@ assets/config.js              column aliases, level groups, palette, geography
 assets/data.js                CSV parsing, normalisation, point-in-polygon
 assets/app.js                 map, filters, search, results
 assets/app.css                theme tokens and layout
-data/schools.sample.csv       synthetic placeholder rows
+data/schools.csv              the dataset
 data/boundaries/              optional municipality / post GeoJSON
-scripts/make-sample-data.mjs  regenerates the sample CSV
 vendor/                       Leaflet 1.9.4, MarkerCluster 1.5.3, PapaParse 5.4.1
 ```
 

@@ -2,9 +2,8 @@
 
 ## Your school list
 
-Put your export here as **`data/schools.csv`**. The app loads that file first
-and only falls back to `schools.sample.csv` (synthetic placeholder rows) if it
-is absent.
+The dataset lives here as **`data/schools.csv`**. It is the only file the app
+loads; if it is absent the map comes up empty.
 
 Minimum columns:
 
@@ -54,9 +53,3 @@ Two options, in order of accuracy:
    assigns each school to the nearest municipality centre. It is a stopgap —
    assignments near municipal borders will be wrong — so it is off by default
    and every estimated value is labelled in the popup.
-
-## Regenerating the sample
-
-```
-node scripts/make-sample-data.mjs
-```

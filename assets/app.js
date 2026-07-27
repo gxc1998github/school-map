@@ -539,8 +539,8 @@
       })
       .catch(function (err) {
         el.sourceNote.textContent = 'Could not load school data';
-        el.results.innerHTML = '<li class="empty">No data file found. Add <code>data/schools.csv</code>, ' +
-          'or load a CSV with the file picker below.</li>';
+        el.results.innerHTML = '<li class="empty">No data file found. ' +
+          'Add <code>data/schools.csv</code>.</li>';
         status('Could not load ' + CONFIG.DATA_SOURCES.join(' or ') + ' — ' + err.message, 0);
       });
   }
@@ -638,35 +638,6 @@
       status('Exported ' + fmt(state.filtered.length) + ' schools');
     });
 
-    el.fileInput.addEventListener('change', function () {
-      var file = this.files && this.files[0];
-      if (!file) return;
-      var reader = new FileReader();
-      reader.onload = function () {
-        try {
-          var parsed = Data.parseCsvText(String(reader.result));
-          if (!parsed.schools.length) {
-            status('No mappable rows in ' + file.name + ' — check the latitude / longitude columns', 6000);
-            return;
-          }
-          state.boundariesUsed = false;
-          state.estimateOn = false;
-          el.estimateToggle.checked = false;
-          adoptDataset(parsed, file.name);
-          state.municipality = '';
-          state.post = '';
-          state.levels = null;
-          state.query = '';
-          el.search.value = '';
-          apply();
-          status('Loaded ' + fmt(parsed.schools.length) + ' schools from ' + file.name);
-        } catch (err) {
-          status('Could not read ' + file.name + ': ' + err.message, 6000);
-        }
-      };
-      reader.readAsText(file);
-    });
-
     el.estimateToggle.addEventListener('change', function () {
       applyEstimate(this.checked);
       apply();
@@ -707,7 +678,6 @@
       results: $('results'),
       resultsMore: $('results-more'),
       exportCsv: $('export-csv'),
-      fileInput: $('file-input'),
       geoNote: $('geo-note'),
       estimateRow: $('estimate-row'),
       estimateToggle: $('estimate-toggle'),
