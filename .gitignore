@@ -1,2 +1,5 @@
 .DS_Store
 .claude/
+
+# Local scratch copy of the export; the published dataset is data/schools.csv.
+data/test.csv
