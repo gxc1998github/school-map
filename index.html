@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Timor-Leste School Map</title>
+  <meta name="description" content="Interactive map of schools in Timor-Leste, filterable by municipality, administrative post and education level.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>🏫</text></svg>">
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="vendor/markercluster/MarkerCluster.css">
+  <link rel="stylesheet" href="vendor/markercluster/MarkerCluster.Default.css">
+  <link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+  <a class="skip-link" href="#results">Skip to results</a>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">🏫</span>
+      <div>
+        <h1>Timor-Leste School Map</h1>
+        <p class="brand-sub" id="source-note">Loading data…</p>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <button type="button" id="panel-toggle" class="btn btn-ghost" aria-expanded="false" aria-controls="sidebar">Filters</button>
+      <button type="button" id="theme-toggle" class="btn btn-ghost" title="Switch light / dark">
+        <span id="theme-label">Auto</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar" id="sidebar" aria-label="Filters and results">
+      <div class="sidebar-scroll">
+
+        <section class="block">
+          <label class="field">
+            <span class="field-label">Search school</span>
+            <input type="search" id="search" placeholder="Name, ID, suco…" autocomplete="off" spellcheck="false">
+          </label>
+        </section>
+
+        <section class="block">
+          <div class="stat-row" id="stats">
+            <div class="stat">
+              <span class="stat-value" id="stat-shown">—</span>
+              <span class="stat-label">Shown</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value" id="stat-total">—</span>
+              <span class="stat-label">Total</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value" id="stat-munis">—</span>
+              <span class="stat-label">Municipalities</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value" id="stat-posts">—</span>
+              <span class="stat-label">Admin. posts</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="block">
+          <div class="block-head">
+            <h2>Filters</h2>
+            <button type="button" id="clear-filters" class="btn btn-link">Clear all</button>
+          </div>
+
+          <label class="field">
+            <span class="field-label">Municipality</span>
+            <select id="filter-municipality"><option value="">All municipalities</option></select>
+          </label>
+
+          <label class="field">
+            <span class="field-label">Administrative post</span>
+            <select id="filter-post"><option value="">All administrative posts</option></select>
+          </label>
+
+          <fieldset class="field">
+            <legend class="field-label">Education level</legend>
+            <div id="filter-levels" class="checklist"></div>
+          </fieldset>
+
+          <p class="note" id="geo-note" hidden></p>
+          <label class="switch" id="estimate-row" hidden>
+            <input type="checkbox" id="estimate-toggle">
+            <span>Estimate municipality from coordinates <em>(approximate)</em></span>
+          </label>
+        </section>
+
+        <section class="block">
+          <div class="block-head">
+            <h2>Legend</h2>
+          </div>
+          <ul class="legend" id="legend"></ul>
+        </section>
+
+        <section class="block">
+          <div class="block-head">
+            <h2>Results</h2>
+            <button type="button" id="export-csv" class="btn btn-link">Export CSV</button>
+          </div>
+          <ol class="results" id="results" tabindex="-1"></ol>
+          <p class="note" id="results-more" hidden></p>
+        </section>
+
+        <section class="block">
+          <div class="block-head"><h2>Your own data</h2></div>
+          <label class="field">
+            <span class="field-label">Load a CSV file</span>
+            <input type="file" id="file-input" accept=".csv,text/csv">
+          </label>
+          <p class="note">
+            Needs <code>latitude</code> and <code>longitude</code> columns. Column
+            names are detected automatically — <code>school_id</code>,
+            <code>school_name</code>, <code>education_level</code>,
+            <code>municipality</code> and <code>administrative_post</code> are all
+            recognised, in English or Portuguese. Files stay in your browser.
+          </p>
+        </section>
+
+      </div>
+    </aside>
+
+    <div class="map-wrap">
+      <div id="map" role="application" aria-label="Map of schools"></div>
+      <div class="map-status" id="map-status" role="status" aria-live="polite"></div>
+    </div>
+  </main>
+
+  <script src="vendor/leaflet/leaflet.js"></script>
+  <script src="vendor/markercluster/leaflet.markercluster.js"></script>
+  <script src="vendor/papaparse/papaparse.min.js"></script>
+  <script src="assets/config.js"></script>
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
