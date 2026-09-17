@@ -4,6 +4,8 @@ An interactive map of schools, driven by a CSV. Filter by **municipality**,
 **administrative post** and **education level**, and search by school name, ID
 or suco. Built as plain static files so it can be hosted free on GitHub Pages.
 
+https://gxc1998github.github.io/school-map/
+
 ## Why OpenStreetMap and not Google Maps
 
 Leaflet + OpenStreetMap tiles need **no API key, no billing account and no
