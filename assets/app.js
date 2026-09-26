@@ -50,7 +50,16 @@
     }
   }
 
-  /* Marker colours live in CSS custom properties, one per level group. */
+  /* ------------------------------------------------------------- theming */
+  function applyTheme(pref) {
+    if (pref === 'auto') document.documentElement.setAttribute('data-theme', 'auto');
+    else document.documentElement.setAttribute('data-theme', pref);
+    el.themeLabel.textContent = pref.charAt(0).toUpperCase() + pref.slice(1);
+    try { localStorage.setItem('tl-school-map-theme', pref); } catch (e) { /* private mode */ }
+  }
+
+  /* Marker colours live in CSS custom properties so a theme change repaints
+     every marker without rebuilding a single one. */
   function writeRampVars() {
     var keys = state.groupsPresent;
     var ramp = CONFIG.RAMP.steps;
@@ -125,7 +134,7 @@
       watchBasemap(baseLayers[b.name]);
       overlays[b.name] = baseLayers[b.name].layer;
     });
-    setBasemap('Carto Dark');
+    setBasemap('OpenStreetMap');
 
     L.control.layers(overlays, null, { position: 'topright', collapsed: true }).addTo(map);
     L.control.scale({ imperial: false, position: 'bottomleft' }).addTo(map);
