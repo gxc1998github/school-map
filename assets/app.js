@@ -102,11 +102,11 @@
 
   function syncBasemapToTheme() {
     if (!map) return;
-    // Only auto-swap between the two Carto styles; a deliberate choice of
+    // Only auto-swap between the Light and Dark styles; a deliberate choice of
     // OpenStreetMap or Satellite is left alone.
     var name = currentBase && currentBase.name;
-    if (name !== 'Carto Light' && name !== 'Carto Dark') return;
-    var want = effectiveTheme() === 'dark' ? 'Carto Dark' : 'Carto Light';
+    if (name !== 'Light' && name !== 'Dark') return;
+    var want = effectiveTheme() === 'dark' ? 'Dark' : 'Light';
     if (want !== name && !baseLayers[want].failed) setBasemap(want);
   }
 
@@ -160,7 +160,7 @@
       watchBasemap(baseLayers[b.name]);
       overlays[b.name] = baseLayers[b.name].layer;
     });
-    setBasemap(effectiveTheme() === 'dark' ? 'Carto Dark' : 'Carto Light');
+    setBasemap(effectiveTheme() === 'dark' ? 'Dark' : 'Light');
 
     L.control.layers(overlays, null, { position: 'topright', collapsed: true }).addTo(map);
     L.control.scale({ imperial: false, position: 'bottomleft' }).addTo(map);
