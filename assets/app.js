@@ -20,7 +20,7 @@
     sourceUrl: '',
     hasMunicipalityData: false,
     hasPostData: false,
-    estimateOn: false,
+    estimated: false,
     boundariesUsed: false,
     hydrating: false
   };
@@ -50,43 +50,18 @@
     }
   }
 
-  /* ------------------------------------------------------------- theming */
-  function effectiveTheme() {
-    var pref = document.documentElement.getAttribute('data-theme');
-    if (pref === 'light' || pref === 'dark') return pref;
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  }
-
-  function applyTheme(pref) {
-    if (pref === 'auto') document.documentElement.setAttribute('data-theme', 'auto');
-    else document.documentElement.setAttribute('data-theme', pref);
-    el.themeLabel.textContent = pref.charAt(0).toUpperCase() + pref.slice(1);
-    try { localStorage.setItem('tl-school-map-theme', pref); } catch (e) { /* private mode */ }
-    syncBasemapToTheme();
-  }
-
-  /* Marker colours live in CSS custom properties so a theme change repaints
-     every marker without rebuilding a single one. */
+  /* Marker colours live in CSS custom properties, one per level group. */
   function writeRampVars() {
     var keys = state.groupsPresent;
-    var css = [];
-    ['light', 'dark'].forEach(function (mode) {
-      var ramp = CONFIG.RAMP[mode];
-      var ink = CONFIG.RAMP_INK[mode];
-      var decls = [];
-      keys.forEach(function (key, i) {
-        var step = Math.min(i, ramp.length - 1);
-        decls.push('--lv-' + key + ':' + ramp[step] + ';--lvi-' + key + ':' + ink[step] + ';');
-      });
-      decls.push('--lv-other:' + CONFIG.RAMP.other + ';--lvi-other:' + CONFIG.RAMP_INK.other + ';');
-      var body = decls.join('');
-      if (mode === 'light') {
-        css.push(':root{' + body + '}');
-      } else {
-        css.push('@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){' + body + '}}');
-        css.push(':root[data-theme="dark"]{' + body + '}');
-      }
+    var ramp = CONFIG.RAMP.steps;
+    var ink = CONFIG.RAMP_INK.steps;
+    var decls = [];
+    keys.forEach(function (key, i) {
+      var step = Math.min(i, ramp.length - 1);
+      decls.push('--lv-' + key + ':' + ramp[step] + ';--lvi-' + key + ':' + ink[step] + ';');
     });
+    decls.push('--lv-other:' + CONFIG.RAMP.other + ';--lvi-other:' + CONFIG.RAMP_INK.other + ';');
+    var css = [':root{' + decls.join('') + '}'];
     var tag = $('ramp-vars');
     if (!tag) {
       tag = document.createElement('style');
@@ -99,16 +74,6 @@
   /* --------------------------------------------------------------- basemap */
   var baseLayers = {};
   var currentBase = null;
-
-  function syncBasemapToTheme() {
-    if (!map) return;
-    // Only auto-swap between the two Carto styles; a deliberate choice of
-    // OpenStreetMap or Satellite is left alone.
-    var name = currentBase && currentBase.name;
-    if (name !== 'Carto Light' && name !== 'Carto Dark') return;
-    var want = effectiveTheme() === 'dark' ? 'Carto Dark' : 'Carto Light';
-    if (want !== name && !baseLayers[want].failed) setBasemap(want);
-  }
 
   function setBasemap(name) {
     var next = baseLayers[name];
@@ -160,7 +125,7 @@
       watchBasemap(baseLayers[b.name]);
       overlays[b.name] = baseLayers[b.name].layer;
     });
-    setBasemap(effectiveTheme() === 'dark' ? 'Carto Dark' : 'Carto Light');
+    setBasemap('Carto Dark');
 
     L.control.layers(overlays, null, { position: 'topright', collapsed: true }).addTo(map);
     L.control.scale({ imperial: false, position: 'bottomleft' }).addTo(map);
@@ -480,7 +445,6 @@
     if (state.post) p.set('p', state.post);
     if (state.query) p.set('q', state.query);
     if (state.levels) p.set('l', Array.from(state.levels).join('|'));
-    if (state.estimateOn) p.set('est', '1');
     var hash = p.toString();
     var url = location.pathname + location.search + (hash ? '#' + hash : '');
     history.replaceState(null, '', url);
@@ -494,8 +458,7 @@
       municipality: p.get('m') || '',
       post: p.get('p') || '',
       query: p.get('q') || '',
-      levels: p.get('l') ? new Set(p.get('l').split('|')) : null,
-      estimate: p.get('est') === '1'
+      levels: p.get('l') ? new Set(p.get('l').split('|')) : null
     };
   }
 
@@ -535,19 +498,15 @@
     if (result.missing.length) {
       msgs.push('Missing expected column(s): ' + result.missing.join(', ') + '.');
     }
-    if (!state.hasMunicipalityData && !state.hasPostData) {
-      msgs.push('This file has no municipality or administrative post column. ' +
-        'Add one, drop boundary GeoJSON files into data/boundaries/, or switch on the estimate below.');
-    } else if (state.boundariesUsed) {
+    if (state.boundariesUsed) {
       msgs.push('Areas filled in from the boundary files in data/boundaries/.');
     }
-    if (state.estimateOn) {
-      msgs.push('Municipalities are estimated by nearest centre — approximate near municipal borders.');
+    if (state.estimated) {
+      msgs.push('Municipalities are estimated from coordinates — approximate near municipal borders.');
     }
     el.geoNote.textContent = msgs.join(' ');
     el.geoNote.hidden = !msgs.length;
-    el.geoNote.className = 'note warn';
-    el.estimateRow.hidden = state.hasMunicipalityData;
+    el.geoNote.className = result.missing.length ? 'note warn' : 'note';
   }
 
   function loadInitial() {
@@ -559,6 +518,11 @@
         if (Object.keys(boundaries).length) {
           var filled = Data.applyBoundaries(parsed.schools, boundaries);
           state.boundariesUsed = filled > 0;
+        }
+        // Built-in fallback: with no municipality column and no boundary
+        // file, assign each school to the nearest municipal centre.
+        if (!parsed.schools.some(function (s) { return s.municipality; })) {
+          state.estimated = Data.estimateMunicipalities(parsed.schools) > 0;
         }
         adoptDataset(parsed, res.url);
         hydrateFromHash();
@@ -574,10 +538,6 @@
   function hydrateFromHash() {
     var h = readHash();
     state.hydrating = true;
-    if (h.estimate && !state.hasMunicipalityData) {
-      el.estimateToggle.checked = true;
-      applyEstimate(true);
-    }
     state.municipality = h.municipality || '';
     state.post = h.post || '';
     state.query = (h.query || '').toLowerCase();
@@ -585,21 +545,6 @@
     el.search.value = h.query || '';
     state.hydrating = false;
     apply();
-  }
-
-  function applyEstimate(on) {
-    state.estimateOn = on;
-    if (on) {
-      Data.estimateMunicipalities(state.schools);
-      state.hasMunicipalityData = state.schools.some(function (s) { return s.municipality; });
-    } else {
-      state.schools.forEach(function (s) {
-        if (s.estimated) { s.municipality = ''; s.estimated = false; }
-      });
-      state.hasMunicipalityData = state.schools.some(function (s) { return s.municipality; });
-      state.municipality = '';
-    }
-    updateGeoNote({ missing: [], dropped: [], schools: state.schools });
   }
 
   /* --------------------------------------------------------------- events */
@@ -664,23 +609,10 @@
       status('Exported ' + fmt(state.filtered.length) + ' schools');
     });
 
-    el.estimateToggle.addEventListener('change', function () {
-      applyEstimate(this.checked);
-      apply();
-    });
-
-    el.themeToggle.addEventListener('click', function () {
-      var order = ['auto', 'light', 'dark'];
-      var current = localStorage.getItem('tl-school-map-theme') || 'auto';
-      applyTheme(order[(order.indexOf(current) + 1) % order.length]);
-    });
-
     el.panelToggle.addEventListener('click', function () {
       var open = el.sidebar.classList.toggle('open');
       this.setAttribute('aria-expanded', String(open));
     });
-
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', syncBasemapToTheme);
 
     window.addEventListener('hashchange', function () {
       if (state.schools.length) hydrateFromHash();
@@ -693,8 +625,6 @@
       sourceNote: $('source-note'),
       sidebar: $('sidebar'),
       panelToggle: $('panel-toggle'),
-      themeToggle: $('theme-toggle'),
-      themeLabel: $('theme-label'),
       search: $('search'),
       filterMunicipality: $('filter-municipality'),
       filterPost: $('filter-post'),
@@ -705,19 +635,12 @@
       resultsMore: $('results-more'),
       exportCsv: $('export-csv'),
       geoNote: $('geo-note'),
-      estimateRow: $('estimate-row'),
-      estimateToggle: $('estimate-toggle'),
       statShown: $('stat-shown'),
       statTotal: $('stat-total'),
       statMunis: $('stat-munis'),
       statPosts: $('stat-posts'),
       mapStatus: $('map-status')
     };
-
-    var saved = 'auto';
-    try { saved = localStorage.getItem('tl-school-map-theme') || 'auto'; } catch (e) { /* private mode */ }
-    document.documentElement.setAttribute('data-theme', saved);
-    el.themeLabel.textContent = saved.charAt(0).toUpperCase() + saved.slice(1);
 
     initMap();
     bind();
