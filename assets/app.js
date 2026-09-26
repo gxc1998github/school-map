@@ -342,24 +342,7 @@
     state.levels = (picked.size === 0 || picked.size === total) ? null : picked;
   }
 
-  /* --------------------------------------------------------------- legend */
-  function renderLegend() {
-    var counts = Object.create(null);
-    state.filtered.forEach(function (s) { counts[s.group] = (counts[s.group] || 0) + 1; });
-    var groups = CONFIG.LEVEL_GROUPS.concat([CONFIG.LEVEL_OTHER]).filter(function (g) {
-      return state.groupsPresent.indexOf(g.key) !== -1 || g.key === CONFIG.LEVEL_OTHER.key;
-    }).filter(function (g) {
-      return state.schools.some(function (s) { return s.group === g.key; });
-    });
-
-    el.legend.innerHTML = groups.map(function (g) {
-      return '<li><span class="swatch" style="background:var(--lv-' + g.key +
-        ');color:var(--lvi-' + g.key + ')" aria-hidden="true">' + esc(g.glyph) + '</span>' +
-        '<span class="legend-name">' + esc(g.label) + '</span>' +
-        '<span class="legend-count">' + fmt(counts[g.key] || 0) + '</span></li>';
-    }).join('');
-  }
-
+  /* ---------------------------------------------------------------- stats */
   function renderStats() {
     el.statShown.textContent = fmt(state.filtered.length);
     el.statTotal.textContent = fmt(state.schools.length);
@@ -382,7 +365,6 @@
     state.filtered = state.schools.filter(function (s) { return passing(s, null); });
     renderFilterControls();
     renderMarkers();
-    renderLegend();
     renderStats();
     if (!state.hydrating) writeHash();
     if (options.fit !== false) fitToResults();
@@ -582,7 +564,6 @@
       filterPost: $('filter-post'),
       filterLevels: $('filter-levels'),
       clearFilters: $('clear-filters'),
-      legend: $('legend'),
       exportCsv: $('export-csv'),
       geoNote: $('geo-note'),
       statShown: $('stat-shown'),
