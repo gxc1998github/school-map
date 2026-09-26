@@ -51,18 +51,11 @@
   }
 
   /* ------------------------------------------------------------- theming */
-  function effectiveTheme() {
-    var pref = document.documentElement.getAttribute('data-theme');
-    if (pref === 'light' || pref === 'dark') return pref;
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  }
-
   function applyTheme(pref) {
     if (pref === 'auto') document.documentElement.setAttribute('data-theme', 'auto');
     else document.documentElement.setAttribute('data-theme', pref);
     el.themeLabel.textContent = pref.charAt(0).toUpperCase() + pref.slice(1);
     try { localStorage.setItem('tl-school-map-theme', pref); } catch (e) { /* private mode */ }
-    syncBasemapToTheme();
   }
 
   /* Marker colours live in CSS custom properties so a theme change repaints
@@ -99,16 +92,6 @@
   /* --------------------------------------------------------------- basemap */
   var baseLayers = {};
   var currentBase = null;
-
-  function syncBasemapToTheme() {
-    if (!map) return;
-    // Only auto-swap between the Light and Dark styles; a deliberate choice of
-    // OpenStreetMap or Satellite is left alone.
-    var name = currentBase && currentBase.name;
-    if (name !== 'Light' && name !== 'Dark') return;
-    var want = effectiveTheme() === 'dark' ? 'Dark' : 'Light';
-    if (want !== name && !baseLayers[want].failed) setBasemap(want);
-  }
 
   function setBasemap(name) {
     var next = baseLayers[name];
@@ -160,7 +143,7 @@
       watchBasemap(baseLayers[b.name]);
       overlays[b.name] = baseLayers[b.name].layer;
     });
-    setBasemap(effectiveTheme() === 'dark' ? 'Dark' : 'Light');
+    setBasemap('OpenStreetMap');
 
     L.control.layers(overlays, null, { position: 'topright', collapsed: true }).addTo(map);
     L.control.scale({ imperial: false, position: 'bottomleft' }).addTo(map);
@@ -679,8 +662,6 @@
       var open = el.sidebar.classList.toggle('open');
       this.setAttribute('aria-expanded', String(open));
     });
-
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', syncBasemapToTheme);
 
     window.addEventListener('hashchange', function () {
       if (state.schools.length) hydrateFromHash();

@@ -14,8 +14,8 @@ affair. Google's Maps JavaScript API needs a key tied to a billing account, and
 a key shipped in a static page is public — you would have to restrict it by
 HTTP referrer and watch the quota.
 
-The basemap picker (top-right of the map) offers OpenStreetMap, Esri Light Gray,
-Esri Dark Gray and Esri satellite imagery, all free and key-free. If a tile
+The basemap picker (top-right of the map) offers OpenStreetMap (the default) and
+Esri satellite imagery, all free and key-free. If a tile
 provider refuses requests (rate limit, referrer rule, or an "API key required"
 tile), the map notices and switches to the next basemap on its own, with a short
 notice in the corner. Each popup also
