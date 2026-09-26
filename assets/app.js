@@ -342,14 +342,6 @@
     state.levels = (picked.size === 0 || picked.size === total) ? null : picked;
   }
 
-  /* ---------------------------------------------------------------- stats */
-  function renderStats() {
-    el.statShown.textContent = fmt(state.filtered.length);
-    el.statTotal.textContent = fmt(state.schools.length);
-    el.statMunis.textContent = fmt(distinct(state.filtered.map(function (s) { return s.municipality; })).length);
-    el.statPosts.textContent = fmt(distinct(state.filtered.map(function (s) { return s.post; })).length);
-  }
-
   function renderMarkers() {
     cluster.clearLayers();
     var layers = [];
@@ -365,7 +357,6 @@
     state.filtered = state.schools.filter(function (s) { return passing(s, null); });
     renderFilterControls();
     renderMarkers();
-    renderStats();
     if (!state.hydrating) writeHash();
     if (options.fit !== false) fitToResults();
   }
@@ -566,10 +557,6 @@
       clearFilters: $('clear-filters'),
       exportCsv: $('export-csv'),
       geoNote: $('geo-note'),
-      statShown: $('stat-shown'),
-      statTotal: $('stat-total'),
-      statMunis: $('stat-munis'),
-      statPosts: $('stat-posts'),
       mapStatus: $('map-status')
     };
 
