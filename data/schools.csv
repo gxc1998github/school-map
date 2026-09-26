@@ -1,1 +1,1410 @@
-school_id,school_name,education_level,municipality,administrative_post,suco,latitude,longitude,ownership,students,teachers
+school_name,education_level,latitude,longitude
+Nucleo Pré-Escolar M,Pre-Escolar,-8.75551527,125.5686223
+Pré-Escolar Antonio,Pre-Escolar,-8.61545719,125.6431175
+Pré-Escolar Daisoli,Pre-Escolar,-8.79900034,125.5557466
+Pré-Escolar Fahisoi,Pre-Escolar,-8.69089625,125.5686223
+Pré-Escolar Fahisoi,Pre-Escolar,-8.66694697,125.6449434
+Pré-Escolar Fatukhum,Pre-Escolar,-8.6363138,125.6124197
+Pré-Escolar Fuan Dom,Pre-Escolar,-8.72544536,125.5664697
+Pré-Escolar Ismaic,Pre-Escolar,-8.72047531,125.5750551
+Pré-Escolar Malere,Pre-Escolar,-8.7308273,125.5659839
+Pré-Escolar Namuleso,Pre-Escolar,-8.71320577,125.6431175
+Pré-Escolar Padre Si,Pre-Escolar,-8.70294473,125.5273957
+Pré-Escolar Remehei,Pre-Escolar,-8.66138759,125.75851
+Pré-Escolar Saboria,Pre-Escolar,-8.71659609,125.5884158
+Pré-Escolar Tulataque,Pre-Escolar,-8.61915244,125.7099828
+EB 1º Ciclo Aicoa Rencoa,Escola Básica Filial (EBF),-8.6725,125.59457
+EB 1º Ciclo Betulau Lebutun,Escola Básica Filial (EBF),-8.73177,125.66406
+EB 1º Ciclo Casamantuto,Escola Básica Filial (EBF),-8.59990967742115,125.616598334799
+EB 1º Ciclo Concin,Escola Básica Filial (EBF),-8.615,125.53171
+EB 1º Ciclo Coulau,Escola Básica Filial (EBF),-8.71899,125.5559
+EB 1º Ciclo Erbuti,Escola Básica Filial (EBF),-8.75971,125.57454
+EB 1º Ciclo Erheto,Escola Básica Filial (EBF),-8.8092,125.52863
+EB 1º Ciclo Fadabloco,Escola Básica Filial (EBF),-8.66952,125.68747
+EB 1º Ciclo Fatubessi,Escola Básica Filial (EBF),-8.80921,125.52862
+EB 1º Ciclo Fatubutik,Escola Básica Filial (EBF),-8.6267,125.77316
+EB 1º Ciclo Fatumane,Escola Básica Filial (EBF),-8.68167,125.52661
+EB 1º Ciclo Halalmeta,Escola Básica Filial (EBF),-8.72921,125.49004
+EB 1º Ciclo Hatulai,Escola Básica Filial (EBF),-8.75687,125.49475
+EB 1º Ciclo Lacló,Escola Básica Filial (EBF),-8.79629,125.51378
+EB 1º Ciclo Lerrolisa,Escola Básica Filial (EBF),-8.61826,125.64254
+EB 1º Ciclo Licimori,Escola Básica Filial (EBF),-8.63518748429065,125.567702599514
+EB 1º Ciclo Mambata,Escola Básica Filial (EBF),-8.75919,125.48659
+EB 1º Ciclo Quirlelo,Escola Básica Filial (EBF),-8.79697,125.51405
+EB 1º Ciclo Raifusar,Escola Básica Filial (EBF),-8.7104,125.73812
+EB 1º Ciclo Sicate,Escola Básica Filial (EBF),-8.79924,125.55599
+EB 1º Ciclo Tablasi,Escola Básica Filial (EBF),-8.72603,125.49587
+EB 1º Ciclo Talito,Escola Básica Filial (EBF),-8.61317,125.60853
+EB 1º Ciclo Teblor,Escola Básica Filial (EBF),-8.8021,125.58769
+EB 1º Ciclo Urbadan,Escola Básica Filial (EBF),-8.71023,125.66985
+"EB 1º,2º Ciclo Acumau",Escola Básica Filial (EBF),-8.61559,125.666230555556
+"EB 1º,2º Ciclo Aicuros",Escola Básica Filial (EBF),-8.61752,125.758338888889
+"EB 1º,2º Ciclo Aileu Villa",Escola Básica Filial (EBF),-8.73061,125.567
+"EB 1º,2º Ciclo Bereleu",Escola Básica Filial (EBF),-8.72296,125.67907
+"EB 1º,2º Ciclo Bereleu Leubuto",Escola Básica Filial (EBF),-8.71104,125.96484
+"EB 1º,2º Ciclo Bermanleu",Escola Básica Filial (EBF),-8.65578,125.63549
+"EB 1º,2º Ciclo Betulau Naumata",Escola Básica Filial (EBF),-8.74642,125.650880555556
+"EB 1º,2º Ciclo Biloco",Escola Básica Filial (EBF),-8.74169,125.6458
+"EB 1º,2º Ciclo Bocolelo",Escola Básica Filial (EBF),-8.63283,125.52651
+"EB 1º,2º Ciclo Cotobauro",Escola Básica Filial (EBF),-8.70796,125.538130555556
+"EB 1º,2º Ciclo Cotolau Laulara",Escola Básica Filial (EBF),-8.60053,125.59877
+"EB 1º,2º Ciclo Daisoli",Escola Básica Filial (EBF),-8.79923,125.55598
+"EB 1º,2º Ciclo Fahisoi",Escola Básica Filial (EBF),-8.69061,125.6349
+"EB 1º,2º Ciclo Fatuk Hun",Escola Básica Filial (EBF),-8.63634,125.61258
+"EB 1º,2º Ciclo Faturasa",Escola Básica Filial (EBF),-8.66282,125.73036
+"EB 1º,2º Ciclo Faturilau",Escola Básica Filial (EBF),-8.7099,125.73823
+"EB 1º,2º Ciclo Hautoho",Escola Básica Filial (EBF),-8.67331,125.67459
+"EB 1º,2º Ciclo Hoholau",Escola Básica Filial (EBF),-8.7534,125.49573
+"EB 1º,2º Ciclo Hoholete",Escola Básica Filial (EBF),-8.79927,125.55598
+"EB 1º,2º Ciclo Liquitura",Escola Básica Filial (EBF),-8.80211,125.5877
+"EB 1º,2º Ciclo Madabeno",Escola Básica Filial (EBF),-8.63421770130996,125.579921125587
+"EB 1º,2º Ciclo Malere",Escola Básica Filial (EBF),-8.71049,125.56435
+"EB 1º,2º Ciclo Mantane",Escola Básica Filial (EBF),-8.75548,125.56857
+"EB 1º,2º Ciclo Manucassa",Escola Básica Filial (EBF),-8.70774,125.63715
+"EB 1º,2º Ciclo Maurusa",Escola Básica Filial (EBF),-8.74564,125.51766
+"EB 1º,2º Ciclo Namulesso",Escola Básica Filial (EBF),-8.71974,125.65003
+"EB 1º,2º Ciclo Rairema",Escola Básica Filial (EBF),-8.79234,125.53373
+"EB 1º,2º Ciclo Saboria",Escola Básica Filial (EBF),-8.71726,125.58917
+"EB 1º,2º Ciclo Sarlala",Escola Básica Filial (EBF),-8.67338,125.5491
+"EB 1º,2º Ciclo Slaurlala",Escola Básica Filial (EBF),-8.64705,125.65876
+"EB 1º,2º Ciclo Sucoliurai",Escola Básica Filial (EBF),-8.57556,125.71574
+"EB 1º,2º Ciclo Tohu Meta",Escola Básica Filial (EBF),-8.63395,125.54368
+"EB 1º,2º Ciclo Tulataque",Escola Básica Filial (EBF),-8.62152,125.72289
+EP C Asu Mau Remexio,Escola Básica Filial (EBF),-8.61699,125.66748
+EP C Nº02 Seloi Kraik,Escola Básica Filial (EBF),-8.70977,125.52229
+EP C São Paulo Aileu,Escola Básica Filial (EBF),-8.73377,125.56438
+EPC No 02 Besilau,Escola Básica Filial (EBF),-8.64448,125.584388888889
+"EBC 1º,2º,3º Ciclo Maumeta",Escola Básica Central (EBC),-8.67239,125.65615
+EBC 3º Ciclo Aileu,Escola Básica Central (EBC),-8.73404,125.5659
+EBC 3º Ciclo Bereleu,Escola Básica Central (EBC),-8.72296,125.67907
+EBC 3º Ciclo Besilau,Escola Básica Central (EBC),-8.64502,125.58466
+EBC 3º Ciclo Daisoli,Escola Básica Central (EBC),-8.79889,125.55589
+EBC 3º Ciclo Fahisoi,Escola Básica Central (EBC),-8.71111,125.69479
+EBC 3º Ciclo Laulara,Escola Básica Central (EBC),-8.60442,125.59544
+EBC 3º Ciclo Remexio,Escola Básica Central (EBC),-8.61334,125.66047
+EBC 3º Ciclo Roluli,Escola Básica Central (EBC),-8.63153,125.73867
+EBC 3º Ciclo Seloi,Escola Básica Central (EBC),-8.69806,125.53836
+EPS C São Paulo (Catolica),Escola Básica Central (EBC),-8.73412,125.5651
+ES C Sao Jose Operario,Escola Secundária Geral (ESG),-8.61699,125.66748
+ES C Sao Paulo - Aileu,Escola Secundária Geral (ESG),-8.73402,125.56472
+ES P Aileu Vila,Escola Secundária Geral (ESG),-8.72058,125.57101
+ES P No I Laulara,Escola Secundária Geral (ESG),-8.60442,125.59544
+Escola Tecnica Comercio Aileu,Escola Secundária Técnica (ESTV),-8.72098922540784,125.570713211043
+Nucleo Pré-Escolar K,Pre-Escolar,-8.9936096,125.5009366
+Pré-Escolar 20 de Maio,Pre-Escolar,-9.13611093,125.543642
+Pré-Escolar 23 de Setembro,Pre-Escolar,-9.01630947,125.4817182
+Pré-Escolar Centro C,Pre-Escolar,-8.99277007,125.5091275
+Pré-Escolar N.S Lur,Pre-Escolar,-9.11054662,125.583799
+Pré-Escolar Nazareth,Pre-Escolar,-8.90739511,125.5866487
+Pré-Escolar Nazareth,Pre-Escolar,-8.83688645,125.5937423
+Pré-Escolar Sta. Mad,Pre-Escolar,-8.98872874,125.5065541
+EB 1º Ciclo Hatumera,Escola Básica Filial (EBF),-8.97767,125.486111111111
+EB 1º Ciclo Sabago,Escola Básica Filial (EBF),-8.98347,125.50618
+EB 1º Ciclo Tukaro,Escola Básica Filial (EBF),-8.94401,125.52182
+"EB 1º,2º Ciclo Ailora",Escola Básica Filial (EBF),-9.1151,125.64248
+"EB 1º,2º Ciclo Beicala",Escola Básica Filial (EBF),-9.10879,125.66005
+"EB 1º,2º Ciclo Betulala",Escola Básica Filial (EBF),-8.93076,125.605080555556
+"EB 1º,2º Ciclo Bismata",Escola Básica Filial (EBF),-9.13213,125.6055
+"EB 1º,2º Ciclo Bobe",Escola Básica Filial (EBF),-9.15759,125.658511111111
+"EB 1º,2º Ciclo Bonuc",Escola Básica Filial (EBF),-9.19106,125.5632
+"EB 1º,2º Ciclo Builico",Escola Básica Filial (EBF),-9.0429,125.508561111111
+"EB 1º,2º Ciclo Caessero",Escola Básica Filial (EBF),-9.09785,125.68403
+"EB 1º,2º Ciclo Ceulau",Escola Básica Filial (EBF),-9.00645,125.501238888889
+"EB 1º,2º Ciclo Dare/Boetua",Escola Básica Filial (EBF),-8.92868,125.56244
+"EB 1º,2º Ciclo Demitete",Escola Básica Filial (EBF),-8.84502,125.66606
+"EB 1º,2º Ciclo Edi",Escola Básica Filial (EBF),-8.84512,125.631019444444
+"EB 1º,2º Ciclo Fatubessi",Escola Básica Filial (EBF),-8.81157,125.617388888889
+"EB 1º,2º Ciclo Faulata",Escola Básica Filial (EBF),-9.08259,125.530480555556
+"EB 1º,2º Ciclo Goulau",Escola Básica Filial (EBF),-8.99338,125.58224
+"EB 1º,2º Ciclo Goulora",Escola Básica Filial (EBF),-8.94972,125.573519444445
+"EB 1º,2º Ciclo Hato-Udo",Escola Básica Filial (EBF),-9.12258,125.59103
+"EB 1º,2º Ciclo Hatometa-Udo",Escola Básica Filial (EBF),-8.9649,125.50984
+"EB 1º,2º Ciclo Hatubuilico",Escola Básica Filial (EBF),-8.89713,125.52054
+"EB 1º,2º Ciclo Hautilo",Escola Básica Filial (EBF),-8.83038,125.67217
+"EB 1º,2º Ciclo Horaiquic",Escola Básica Filial (EBF),-8.86373,125.58509
+"EB 1º,2º Ciclo Hutseo",Escola Básica Filial (EBF),-9.15209,125.58191
+"EB 1º,2º Ciclo Lait",Escola Básica Filial (EBF),-9.04783,125.4636
+"EB 1º,2º Ciclo Lebo Lau",Escola Básica Filial (EBF),-8.94531,125.54637
+"EB 1º,2º Ciclo Leotelo",Escola Básica Filial (EBF),-8.96482,125.53595
+"EB 1º,2º Ciclo Lesso",Escola Básica Filial (EBF),-9.10905,125.6212
+"EB 1º,2º Ciclo Liquibau Ulo",Escola Básica Filial (EBF),-8.9017,125.61934
+"EB 1º,2º Ciclo Liurai",Escola Básica Filial (EBF),-8.85857,125.65247
+"EB 1º,2º Ciclo Luan Cadoi",Escola Básica Filial (EBF),-9.1502,125.53599
+"EB 1º,2º Ciclo Lumoluli",Escola Básica Filial (EBF),-8.787,125.673638888889
+"EB 1º,2º Ciclo Luro",Escola Básica Filial (EBF),-9.12795,125.582680555556
+"EB 1º,2º Ciclo Manelobas",Escola Básica Filial (EBF),-8.84503,125.67607
+"EB 1º,2º Ciclo Manetu",Escola Básica Filial (EBF),-8.84506,125.6761
+"EB 1º,2º Ciclo Manumera",Escola Básica Filial (EBF),-8.89019,125.56644
+"EB 1º,2º Ciclo Manutasi",Escola Básica Filial (EBF),-8.98817,125.516730555556
+"EB 1º,2º Ciclo Mau-Ulo",Escola Básica Filial (EBF),-8.99244,125.46559
+"EB 1º,2º Ciclo Mauciga",Escola Básica Filial (EBF),-8.92918,125.577511111111
+"EB 1º,2º Ciclo Maununo",Escola Básica Filial (EBF),-9.01598,125.479811111111
+"EB 1º,2º Ciclo Nunomogue",Escola Básica Filial (EBF),-8.9594,125.5247
+"EB 1º,2º Ciclo Pader",Escola Básica Filial (EBF),-8.99219,125.48678
+"EB 1º,2º Ciclo Queorema",Escola Básica Filial (EBF),-8.88333,125.53681
+"EB 1º,2º Ciclo Rileco",Escola Básica Filial (EBF),-8.83407,125.58421
+"EB 1º,2º Ciclo Russolau",Escola Básica Filial (EBF),-8.84707,125.678488888889
+"EB 1º,2º Ciclo Samoro",Escola Básica Filial (EBF),-8.8681,125.5974
+"EB 1º,2º Ciclo Soro-Lau",Escola Básica Filial (EBF),-9.0183,125.52678
+"EB 1º,2º Ciclo Suro Craic",Escola Básica Filial (EBF),-9.05983,125.54301
+"EB 1º,2º Ciclo Telcom",Escola Básica Filial (EBF),-8.99357,125.50081
+"EB 1º,2º Ciclo Uma Forma",Escola Básica Filial (EBF),-8.99646,125.5016
+EP C Nosa Senhora de Lurdes,Escola Básica Filial (EBF),-9.11007,125.58465
+EP C Sao Paulo Ainaro,Escola Básica Filial (EBF),-8.98571,125.50618
+EPC Maulau,Escola Básica Filial (EBF),-8.80126,125.66637
+"EBC 1º,2º,3º Ciclo 4 Montanhas Builico",Escola Básica Central (EBC),-9.00899,125.50298
+"EBC 1º,2º,3º Ciclo Aituto",Escola Básica Central (EBC),-8.91114,125.58483
+"EBC 1º,2º,3º Ciclo Central Cassa",Escola Básica Central (EBC),-9.13613,125.54323
+"EBC 1º,2º,3º Ciclo Flecha",Escola Básica Central (EBC),-8.88436,125.60583
+"EBC 1º,2º,3º Ciclo Riamori",Escola Básica Central (EBC),-8.86134,125.57022
+"EBC 1º,2º,3º Ciclo Rita Maubisse",Escola Básica Central (EBC),-8.82896,125.62216
+"EBC 1º,2º,3º Ciclo Soro",Escola Básica Central (EBC),-8.99783,125.51582
+EBC 3º Ciclo 13 de Nov 4 Unidade,Escola Básica Central (EBC),-9.13207,125.57275
+EBC 3º Ciclo 20 de Augosto “82” Boetua,Escola Básica Central (EBC),-8.9427,125.56108
+EBC 3º Ciclo Agapito da Costa Ailora,Escola Básica Central (EBC),-9.11494,125.6425
+EBC 3º Ciclo Bei-Ubu Nunumoge,Escola Básica Central (EBC),-8.95253,125.53207
+EBC 3º Ciclo Groto,Escola Básica Central (EBC),-8.8681,125.5974
+EBC 3º Ciclo Hato-Udo Villa,Escola Básica Central (EBC),-9.12317,125.59173
+EBC 3º Ciclo Hatubuilico,Escola Básica Central (EBC),-8.89735,125.52144
+EBC 3º Ciclo Maubisse-Vila,Escola Básica Central (EBC),-8.83271,125.60067
+EBC 3º Ciclo V. Feras Ainaro,Escola Básica Central (EBC),-8.9961,125.506688888889
+EPS C Sagrado Coracão de Jesus Aituto,Escola Básica Central (EBC),-8.90612,125.58686
+EPS C St M. Ainaro,Escola Básica Central (EBC),-8.98926,125.505611111111
+EPS C São Paulo Maubisse,Escola Básica Central (EBC),-8.8326,125.60009
+ES C St Inacio de Loila,Escola Secundária Geral (ESG),-8.83249,125.60006
+ES C St Maria Ainaro,Escola Secundária Geral (ESG),-8.98885,125.50484
+ES P Ainaro,Escola Secundária Geral (ESG),-8.99715,125.50519
+ES P Leolima,Escola Secundária Geral (ESG),-9.12317,125.59173
+Pré-Escolar Amizade,Pre-Escolar,-8.64272168,126.3785824
+Pré-Escolar Centro B,Pre-Escolar,-8.62846388888889,126.6536995
+Pré-Escolar Haeconi,Pre-Escolar,-8.64531747,126.6299827
+Pré-Escolar Lari Sula,Pre-Escolar,-8.66156153,126.7371062
+Pré-Escolar Mary Wil,Pre-Escolar,-8.49761174,126.3681455
+Pré-Escolar Nossa Senhora,Pre-Escolar,-8.51225555555556,126.209376
+Pré-Escolar Rafael D,Pre-Escolar,-8.5266464,126.4356236
+Pré-Escolar S.F.C Catolica,Pre-Escolar,-8.47059722222222,126.4575568
+Pré-Escolar Sta. Ursula,Pre-Escolar,-8.48293055555556,126.4543741
+EB 1 Selegua,Escola Básica Filial (EBF),-8.52702,126.68348
+EB 1º Ciclo Bahasahe,Escola Básica Filial (EBF),-8.61336,126.30118
+EB 1º Ciclo Cairabela,Escola Básica Filial (EBF),-8.48209,126.27816
+EB 1º Ciclo Gamana,Escola Básica Filial (EBF),-8.60341,126.59109
+EB 1º Ciclo Laualio,Escola Básica Filial (EBF),-8.59239,126.54885
+EB 1º Ciclo Nauoli,Escola Básica Filial (EBF),-8.53102,126.24007
+EB 1º Ciclo Uadaboru,Escola Básica Filial (EBF),-8.59897,126.648611111111
+EB 1º Ciclo Uaiboru,Escola Básica Filial (EBF),-8.64365,126.61568
+EB 1º Ciclo Uaiculo,Escola Básica Filial (EBF),-8.56986,126.57652
+"EB 1º,2º Ciclo 20 de Agosto Atelari",Escola Básica Filial (EBF),-8.56117,126.71379
+"EB 1º,2º Ciclo Abo-Uaimatale",Escola Básica Filial (EBF),-8.63657,126.52924
+"EB 1º,2º Ciclo Abolir",Escola Básica Filial (EBF),-8.63875,126.56613
+"EB 1º,2º Ciclo Afaguia",Escola Básica Filial (EBF),-8.63027,126.66758
+"EB 1º,2º Ciclo Afalari",Escola Básica Filial (EBF),-8.62767,126.67039
+"EB 1º,2º Ciclo Ague",Escola Básica Filial (EBF),-8.4968,126.53392
+"EB 1º,2º Ciclo Aubaca",Escola Básica Filial (EBF),-8.50053,126.366
+"EB 1º,2º Ciclo Baguluro",Escola Básica Filial (EBF),-8.58975,126.60043
+"EB 1º,2º Ciclo Belavista",Escola Básica Filial (EBF),-8.50765,126.44655
+"EB 1º,2º Ciclo Bercoli",Escola Básica Filial (EBF),-8.5915,126.38353
+"EB 1º,2º Ciclo Betumuto",Escola Básica Filial (EBF),-8.57729,126.70928
+"EB 1º,2º Ciclo Binagua",Escola Básica Filial (EBF),-8.43106,126.6786
+"EB 1º,2º Ciclo Boleha",Escola Básica Filial (EBF),-8.50514,126.62064
+"EB 1º,2º Ciclo Bubuha",Escola Básica Filial (EBF),-8.64255,126.68001
+"EB 1º,2º Ciclo Buibau",Escola Básica Filial (EBF),-8.5047,126.46507
+"EB 1º,2º Ciclo Buruma",Escola Básica Filial (EBF),-8.46325,126.48001
+"EB 1º,2º Ciclo Caibada Macasae",Escola Básica Filial (EBF),-8.46785,126.47279
+"EB 1º,2º Ciclo Caibada Uaimua",Escola Básica Filial (EBF),-8.45212,126.43641
+"EB 1º,2º Ciclo Caicua",Escola Básica Filial (EBF),-8.51575,126.22441
+"EB 1º,2º Ciclo Central",Escola Básica Filial (EBF),-8.46228,126.45196
+"EB 1º,2º Ciclo Daitula",Escola Básica Filial (EBF),-8.56777,126.44334
+"EB 1º,2º Ciclo Daralah",Escola Básica Filial (EBF),-8.65798,126.544
+"EB 1º,2º Ciclo Darasula",Escola Básica Filial (EBF),-8.51711,126.35067
+"EB 1º,2º Ciclo Defadae",Escola Básica Filial (EBF),-8.58517,126.52112
+"EB 1º,2º Ciclo Eubere",Escola Básica Filial (EBF),-8.55686,126.6071
+"EB 1º,2º Ciclo Golgota",Escola Básica Filial (EBF),-8.46172,126.43247
+"EB 1º,2º Ciclo Gulari",Escola Básica Filial (EBF),-8.59881,126.64688
+"EB 1º,2º Ciclo Haudere",Escola Básica Filial (EBF),-8.62121,126.65786
+"EB 1º,2º Ciclo Lacoliu",Escola Básica Filial (EBF),-8.60977,126.56353
+"EB 1º,2º Ciclo Larisula",Escola Básica Filial (EBF),-8.6618,126.73726
+"EB 1º,2º Ciclo Latua",Escola Básica Filial (EBF),-8.49215,126.47006
+"EB 1º,2º Ciclo Lebenei",Escola Básica Filial (EBF),-8.5997,126.6633
+"EB 1º,2º Ciclo Lequeracabu'u",Escola Básica Filial (EBF),-8.50548,126.44508
+"EB 1º,2º Ciclo Letemumo Quelicai",Escola Básica Filial (EBF),-8.60312,126.55701
+"EB 1º,2º Ciclo Macalako",Escola Básica Filial (EBF),-8.58517,126.52112
+"EB 1º,2º Ciclo Maucale",Escola Básica Filial (EBF),-8.5602,126.41576
+"EB 1º,2º Ciclo Mulia",Escola Básica Filial (EBF),-8.48435,126.56324
+"EB 1º,2º Ciclo Osso-Lia",Escola Básica Filial (EBF),-8.63016,126.561280555556
+"EB 1º,2º Ciclo Ossoala/Hoineuai",Escola Básica Filial (EBF),-8.58507,126.33842
+"EB 1º,2º Ciclo Ossogori",Escola Básica Filial (EBF),-8.67516,126.43373
+"EB 1º,2º Ciclo Ostico",Escola Básica Filial (EBF),-8.53531,126.33571
+"EB 1º,2º Ciclo Queliqai Antigo",Escola Básica Filial (EBF),-8.54965,126.6038
+"EB 1º,2º Ciclo Rufaguia",Escola Básica Filial (EBF),-8.62806,126.66102
+"EB 1º,2º Ciclo Samaguia",Escola Básica Filial (EBF),-8.49623,126.59817
+"EB 1º,2º Ciclo Samarogo",Escola Básica Filial (EBF),-8.67845,126.51515
+"EB 1º,2º Ciclo Sarabata",Escola Básica Filial (EBF),-8.62823,126.49657
+"EB 1º,2º Ciclo Saraida",Escola Básica Filial (EBF),-8.62127,126.54354
+"EB 1º,2º Ciclo Seical",Escola Básica Filial (EBF),-8.4761,126.522
+"EB 1º,2º Ciclo Tassi Vemasse Villa",Escola Básica Filial (EBF),-8.51595,126.203030555556
+"EB 1º,2º Ciclo Teulale",Escola Básica Filial (EBF),-8.45875296731383,126.455776057937
+"EB 1º,2º Ciclo Uacala/Baguia",Escola Básica Filial (EBF),-8.56691,126.737788888889
+"EB 1º,2º Ciclo Uaida",Escola Básica Filial (EBF),-8.66649,126.53361
+"EB 1º,2º Ciclo Uaigae",Escola Básica Filial (EBF),-8.58159,126.20895
+"EB 1º,2º Ciclo Uainau Bucoli",Escola Básica Filial (EBF),-8.49178,126.36048
+"EB 1º,2º Ciclo Uaioli",Escola Básica Filial (EBF),-8.66391,126.41466
+"EB 1º,2º Ciclo Uaitame",Escola Básica Filial (EBF),-8.59028,126.57015
+"EB 1º,2º Ciclo Uatuhaco",Escola Básica Filial (EBF),-8.64397,126.37793
+"EB 1º,2º Ciclo Uatumissa",Escola Básica Filial (EBF),-8.67262,126.424211111111
+"EB 1º,2º Ciclo Vila Nova Baucau",Escola Básica Filial (EBF),-8.47883,126.453661111111
+EP C Abafala,Escola Básica Filial (EBF),-8.54644,126.56491
+EP C Abo-Uaimatale,Escola Básica Filial (EBF),-8.63787,126.52845
+EP C Afaloicai,Escola Básica Filial (EBF),-8.66974,126.61544
+EP C Ariana,Escola Básica Filial (EBF),-8.6384,126.41839
+EP C Atelari,Escola Básica Filial (EBF),-8.54894,126.700761111111
+EP C Badomori,Escola Básica Filial (EBF),-8.60547,126.40824
+EP C Bercoli,Escola Básica Filial (EBF),-8.59152,126.38648
+EP C Bualale,Escola Básica Filial (EBF),-8.62903,126.5441
+EP C Bucoli,Escola Básica Filial (EBF),-8.48746,126.33803
+EP C Caisidu,Escola Básica Filial (EBF),-8.44497,126.38625
+EP C Centro Queliqai,Escola Básica Filial (EBF),-8.60411,126.56178
+EP C Culo Guia/Gurusa,Escola Básica Filial (EBF),-8.57789,126.60205
+EP C Dara Lata,Escola Básica Filial (EBF),-8.61002,126.44898
+EP C Defauasse,Escola Básica Filial (EBF),-8.59902,126.69174
+EP C Diuaque,Escola Básica Filial (EBF),-8.44723,126.46306
+EP C F Beliuali,Escola Básica Filial (EBF),-8.52751,126.69648
+EP C F Bui Bela,Escola Básica Filial (EBF),-8.68509,126.59568
+EP C F Buiguira,Escola Básica Filial (EBF),-8.44934,126.64196
+EP C F Cailoibere,Escola Básica Filial (EBF),-8.61002,126.44898
+EP C F Daregata,Escola Básica Filial (EBF),-8.52656,126.43544
+EP C F Darenafa,Escola Básica Filial (EBF),-8.56667,126.61336
+EP C F Desagua,Escola Básica Filial (EBF),-8.4986,126.67682
+EP C F Lalabu'u,Escola Básica Filial (EBF),-8.5423,126.72116
+EP C F Lalulai,Escola Básica Filial (EBF),-8.50876,126.67832
+EP C F Larifanu,Escola Básica Filial (EBF),-8.48157,126.63104
+EP C F Osso Hula,Escola Básica Filial (EBF),-8.58714,126.41083
+EP C F Osso-Uaque,Escola Básica Filial (EBF),-8.67671,126.3209
+EP C F Saelari,Escola Básica Filial (EBF),-8.63719,126.43907
+EP C F Tabere,Escola Básica Filial (EBF),-8.5987,126.54617
+EP C F Uai Cana,Escola Básica Filial (EBF),-8.64736,126.43066
+EP C F Uailacama,Escola Básica Filial (EBF),-8.48686,126.31145
+EP C F Uaisa,Escola Básica Filial (EBF),-8.44698,126.35713
+EP C F Veni Doco,Escola Básica Filial (EBF),-8.60347,126.37006
+EP C Fatulia,Escola Básica Filial (EBF),-8.65527,126.36188
+EP C Fatumaka,Escola Básica Filial (EBF),-8.56859208616424,126.385634847775
+EP C Fillial Lau Mana,Escola Básica Filial (EBF),-8.62192,126.57374
+EP C Hae-Coni/Iarbau,Escola Básica Filial (EBF),-8.64556,126.63016
+EP C Laisurulai,Escola Básica Filial (EBF),-8.65734,126.53565
+EP C Lavateri,Escola Básica Filial (EBF),-8.56851,126.68418
+EP C Lelalai,Escola Básica Filial (EBF),-8.64881,126.50688
+EP C Liaho,Escola Básica Filial (EBF),-8.61882,126.38362
+EP C Loi Lubo,Escola Básica Filial (EBF),-8.57408,126.33609
+EP C Namanei,Escola Básica Filial (EBF),-8.5244,126.63074
+EP C Nobel Bau Oli,Escola Básica Filial (EBF),-8.45861,126.44591
+EP C Nunira,Escola Básica Filial (EBF),-8.48226,126.65468
+EP C Saelari,Escola Básica Filial (EBF),-8.48538,126.698319444445
+EP C Sagadate,Escola Básica Filial (EBF),-8.5241,126.69485
+EP C Samalari,Escola Básica Filial (EBF),-8.59957,126.66315
+EP C Samalari,Escola Básica Filial (EBF),-8.49053,126.6672
+EP C Sao Jose Baguia,Escola Básica Filial (EBF),-8.62832,126.65268
+EP C St.D.Savio Baucau,Escola Básica Filial (EBF),-8.46184,126.451
+EP C Tequnomata,Escola Básica Filial (EBF),-8.47798,126.58704
+EP C Uato-Haco,Escola Básica Filial (EBF),-8.63928,126.38116
+EP C Uato-Ua,Escola Básica Filial (EBF),-8.5677,126.44344
+EP C Vemasse,Escola Básica Filial (EBF),-8.51203,126.20944
+EP C Waimanuboe,Escola Básica Filial (EBF),-8.54754,126.45513
+EP C Walili,Escola Básica Filial (EBF),-8.52651,126.43541
+EP C de Afaca,Escola Básica Filial (EBF),-8.54745,126.59996
+EP F Al-Amal,Escola Básica Filial (EBF),-8.47451,126.456769444445
+EB 3º Ciclo 20 de Agosto Ossaluga,Escola Básica Central (EBC),-8.56774,126.44334
+EB 3º Ciclo Baguia,Escola Básica Central (EBC),-8.62808,126.65382
+EB 3º Ciclo Daitula Maucale,Escola Básica Central (EBC),-8.5602,126.41576
+EB 3º Ciclo Letemumo,Escola Básica Central (EBC),-8.60283,126.5577
+EB 3º Ciclo Sagadate,Escola Básica Central (EBC),-8.5241,126.69485
+EB 3º Ciclo Soba Laga,Escola Básica Central (EBC),-8.47295,126.5969
+EB 3º Ciclo Uailaco,Escola Básica Central (EBC),-8.63071,126.4419
+EB 3º Ciclo Vemase,Escola Básica Central (EBC),-8.51029,126.21503
+"EBC 1º,2º Ciclo Baguia",Escola Básica Central (EBC),-8.62844,126.6543
+"EBC 1º,2º Ciclo Binagari Vemasse",Escola Básica Central (EBC),-8.50424,126.2353
+"EBC 1º,2º Ciclo Gari-Uai",Escola Básica Central (EBC),-8.54524,126.41341
+"EBC 1º,2º Ciclo Soba Laga",Escola Básica Central (EBC),-8.47303,126.59696
+"EBC 1º,2º,3º Ciclo Ossohuna Baguia",Escola Básica Central (EBC),-8.6554,126.62541
+"EBC 1º,3º Ciclo Aubaca Baucau",Escola Básica Central (EBC),-8.4998,126.36663
+"EBC 1º,3º Ciclo Buaua/Lavateri Baguia",Escola Básica Central (EBC),-8.5725,126.68224
+EBC 3º Ciclo Afaça/Quelicai,Escola Básica Central (EBC),-8.54745,126.59996
+EBC 3º Ciclo Berecoli Venilale,Escola Básica Central (EBC),-8.58482,126.38682
+EBC 3º Ciclo Borodua Atelari Laga,Escola Básica Central (EBC),-8.56133,126.71375
+EBC 3º Ciclo Laisorulai Queliqai,Escola Básica Central (EBC),-8.65634,126.53572
+EBC 3º Ciclo Seiçal Baucau,Escola Básica Central (EBC),-8.48427,126.55004
+EBC 3º Ciclo Tirilolo Baucau,Escola Básica Central (EBC),-8.4659,126.4604
+EBC 3º Ciclo Uaibua Venilale,Escola Básica Central (EBC),-8.63999,126.3902
+EBC 3º Ciclo Uailili Baucau,Escola Básica Central (EBC),-8.51183,126.43241
+EBC 3º Ciclo Villa Nova Baucau,Escola Básica Central (EBC),-8.47858,126.45386
+EPS C Baguia,Escola Básica Central (EBC),-8.62786,126.65348
+EPS C D. Bosco Fatumaca,Escola Básica Central (EBC),-8.56786726720882,126.385226309274
+EPS C D. Bosco Laga,Escola Básica Central (EBC),-8.46952,126.60428
+EPS C Ossoqueli,Escola Básica Central (EBC),-8.57365,126.33622
+EPS C S. Cristovão Venilale,Escola Básica Central (EBC),-8.64002,126.38076
+EPS C St. Antonio Baucau ESSA Junior,Escola Básica Central (EBC),-8.4538,126.45628
+EPS C St. Teresinha de Quelicai,Escola Básica Central (EBC),-8.6045,126.56198
+EPS Osso-Huna Baguia,Escola Básica Central (EBC),-8.66168,126.62093
+ES C St. Antonio Baucau (ESSA),Escola Secundária Geral (ESG),-8.45875388611301,126.455774353173
+ES Filial Vemasse,Escola Secundária Geral (ESG),-8.51029,126.21503
+ES P F Baguia,Escola Secundária Geral (ESG),-8.62845,126.65446
+ES P F Kilik Uaigae,Escola Secundária Geral (ESG),-8.46785,126.47219
+ES P F Laga,Escola Secundária Geral (ESG),-8.47798,126.58704
+ES P F Quelicai,Escola Secundária Geral (ESG),-8.60312,126.55701
+ES P F Venilale,Escola Secundária Geral (ESG),-8.64246,126.37637
+ES P No 1 Baucau,Escola Secundária Geral (ESG),-8.47196,126.45899
+ES P No 2 Vila Nova,Escola Secundária Geral (ESG),-8.48605931249008,126.456788360456
+Escola Tecnica Comercio Baucau,Escola Secundária Técnica (ESTV),-8.48701708548697,126.456183782867
+Escola Tecnica Dom Bosco Fatumaca,Escola Secundária Técnica (ESTV),-8.5663201504146,126.385961049811
+Escola Tecnica Hotearia Venilale,Escola Secundária Técnica (ESTV),-8.64022456163474,126.381088609793
+Pré-Escolar Arnoldus,Pre-Escolar,-8.78274841,125.1060954
+Pré-Escolar Atuaben,Pre-Escolar,-9.0014072,125.3273248
+Pré-Escolar Batugade,Pre-Escolar,-8.94852075,124.9750541
+Pré-Escolar CC. Balibo,Pre-Escolar,-8.9697993,125.041219
+Pré-Escolar CC. Maumela,Pre-Escolar,-8.85100426,125.2184643
+Pré-Escolar Congrega,Pre-Escolar,-8.75202069,125.0981948
+Pré-Escolar Coração,Pre-Escolar,-9.03475352,125.3240373
+Pré-Escolar Deudet,Pre-Escolar,-9.16577923,125.2680999
+Pré-Escolar Florinda,Pre-Escolar,-8.99596148,125.2244483
+Pré-Escolar Hauba,Pre-Escolar,-8.99962982,125.3747786
+Pré-Escolar Holsa,Pre-Escolar,-8.99184915,125.2134608
+Pré-Escolar Ilhathau,Pre-Escolar,-8.97793846,125.3272072
+Pré-Escolar Lourba,Pre-Escolar,-9.01598694,125.3552197
+Pré-Escolar Marco,Pre-Escolar,-8.87978068,125.2116851
+Pré-Escolar Memo,Pre-Escolar,-9.01952125,125.1848647
+Pré-Escolar Opa,Pre-Escolar,-9.17692777777778,125.2624153
+Pré-Escolar Palaka,Pre-Escolar,-8.90126023,124.9985225
+Pré-Escolar Raifun,Pre-Escolar,-8.98302812,125.2205264
+Pré-Escolar Rairobo,Pre-Escolar,-8.82415283,125.1437088
+Pré-Escolar Samutuaben,Pre-Escolar,-8.92348719,125.215244
+Pré-Escolar St. Antonio,Pre-Escolar,-8.9657531,125.0385882
+Pré-Escolar Tebabui,Pre-Escolar,-9.01144529,125.3759298
+Pré-Escolar Tutubaba,Pre-Escolar,-8.79272447,125.1012832
+EB 1º Ciclo 30 de Agosto Anahun,Escola Básica Filial (EBF),-9.00917,125.27064
+EB 1º Ciclo Aibou,Escola Básica Filial (EBF),-8.98797,125.334415
+EB 1º Ciclo Ailok Laran,Escola Básica Filial (EBF),-8.75454,125.09858
+EB 1º Ciclo Anom,Escola Básica Filial (EBF),-9.17932,125.34222
+EB 1º Ciclo Atudara,Escola Básica Filial (EBF),-8.94711,125.28938
+EB 1º Ciclo Babulo,Escola Básica Filial (EBF),-9.01292,125.19039
+EB 1º Ciclo Biamoas,Escola Básica Filial (EBF),-9.00099,125.3903
+EB 1º Ciclo Budin/Lotan,Escola Básica Filial (EBF),-8.97252,125.99757
+EB 1º Ciclo Caboque,Escola Básica Filial (EBF),-8.86263,125.13573
+EB 1º Ciclo Coitapo,Escola Básica Filial (EBF),-8.88292,125.11933
+EB 1º Ciclo Cruz Aibuti Lori,Escola Básica Filial (EBF),-8.91478,125.22178
+EB 1º Ciclo Daudo,Escola Básica Filial (EBF),-8.87959,125.26297
+EB 1º Ciclo Derokben,Escola Básica Filial (EBF),-9.01042,125.03633
+EB 1º Ciclo Deudet,Escola Básica Filial (EBF),-9.1569,125.25944
+EB 1º Ciclo Ferik Katuas,Escola Básica Filial (EBF),-8.98983,125.07736
+EB 1º Ciclo Galitaz,Escola Básica Filial (EBF),-9.06431,125.357311111111
+EB 1º Ciclo Goubin,Escola Básica Filial (EBF),-8.86572,125.7207
+EB 1º Ciclo Goulolo,Escola Básica Filial (EBF),-8.91008,125.2933
+EB 1º Ciclo Guenolai,Escola Básica Filial (EBF),-8.89235,125.28862
+EB 1º Ciclo Haerema/Daulelo,Escola Básica Filial (EBF),-8.87416,125.22485
+EB 1º Ciclo Holmesel,Escola Básica Filial (EBF),-9.08962,125.34177
+EB 1º Ciclo Holsa taz,Escola Básica Filial (EBF),-9.07527,125.25653
+EB 1º Ciclo Lalis,Escola Básica Filial (EBF),-9.01059,125.02489
+EB 1º Ciclo Leber Taz,Escola Básica Filial (EBF),-9.08469,125.2826
+EB 1º Ciclo Lebos,Escola Básica Filial (EBF),-9.13545,125.2096
+EB 1º Ciclo Limanaro,Escola Básica Filial (EBF),-8.79373,125.14492
+EB 1º Ciclo Madebau,Escola Básica Filial (EBF),-8.76947,125.201069444444
+EB 1º Ciclo Manuaman,Escola Básica Filial (EBF),-8.96262,125.11723
+EB 1º Ciclo Oho Ana,Escola Básica Filial (EBF),-8.96888,125.30918
+EB 1º Ciclo Omelai,Escola Básica Filial (EBF),-9.10674,125.33351
+EB 1º Ciclo Piron Lontas,Escola Básica Filial (EBF),-9.14367,125.22534
+EB 1º Ciclo Poerema,Escola Básica Filial (EBF),-8.91503,125.221830555556
+EB 1º Ciclo Polo,Escola Básica Filial (EBF),-9.00457,125.3872
+EB 1º Ciclo Raifun Foho,Escola Básica Filial (EBF),-8.99362,125.286988888889
+EB 1º Ciclo Raiklaran/Purogua,Escola Básica Filial (EBF),-8.97698,125.32665
+EB 1º Ciclo Silagolo,Escola Básica Filial (EBF),-9.17057,125.30484
+EB 1º Ciclo Tasibalu,Escola Básica Filial (EBF),-9.03075,125.37689
+EB 1º Ciclo Tepa,Escola Básica Filial (EBF),-9.13673,125.28686
+EB 1º Ciclo Turema,Escola Básica Filial (EBF),-8.80406,125.22349
+EB 1º Ciclo Uduai,Escola Básica Filial (EBF),-9.0218,125.37262
+EB 1º Ciclo Zoilpo,Escola Básica Filial (EBF),-9.12707,125.30778
+"EB 1º,2º Ciclo 12 de Abril/Marco",Escola Básica Filial (EBF),-8.88022,125.21087
+"EB 1º,2º Ciclo 25 de Abril Saburai",Escola Básica Filial (EBF),-9.04185,125.21149
+"EB 1º,2º Ciclo 7 de Setembro Balibo",Escola Básica Filial (EBF),-8.96264,125.04385
+"EB 1º,2º Ciclo Ai Assa",Escola Básica Filial (EBF),-8.9985,125.06252
+"EB 1º,2º Ciclo Aiaras",Escola Básica Filial (EBF),-9.00355,125.35163
+"EB 1º,2º Ciclo Aidabaleten",Escola Básica Filial (EBF),-8.8608,125.13674
+"EB 1º,2º Ciclo Aidabasalala",Escola Básica Filial (EBF),-8.8693,125.17964
+"EB 1º,2º Ciclo Ames",Escola Básica Filial (EBF),-9.1602,125.28054
+"EB 1º,2º Ciclo Anapal",Escola Básica Filial (EBF),-9.10233,125.37077
+"EB 1º,2º Ciclo Assalau",Escola Básica Filial (EBF),-8.92824,125.22599
+"EB 1º,2º Ciclo Atos",Escola Básica Filial (EBF),-9.1116,125.23703
+"EB 1º,2º Ciclo Batugade",Escola Básica Filial (EBF),-8.94965,125.97563
+"EB 1º,2º Ciclo Beabanas/Ilatlaun",Escola Básica Filial (EBF),-8.9771,125.32668
+"EB 1º,2º Ciclo Biacou",Escola Básica Filial (EBF),-8.83198,125.05489
+"EB 1º,2º Ciclo Biamarae",Escola Básica Filial (EBF),-8.90904,125.137438888889
+"EB 1º,2º Ciclo Bilimau/Maucruma",Escola Básica Filial (EBF),-8.79235,125.24899
+"EB 1º,2º Ciclo Builecun",Escola Básica Filial (EBF),-8.95728,125.07021
+"EB 1º,2º Ciclo C.Arnoldus Jansen",Escola Básica Filial (EBF),-8.78229,125.10654
+"EB 1º,2º Ciclo Carabau/Asasuri",Escola Básica Filial (EBF),-9.01732,125.37965
+"EB 1º,2º Ciclo Colegio São Miguel/Holsa",Escola Básica Filial (EBF),-8.99214,125.19866
+"EB 1º,2º Ciclo Colimau",Escola Básica Filial (EBF),-8.9866,125.38767
+"EB 1º,2º Ciclo D. Afonso Leber",Escola Básica Filial (EBF),-9.07867,125.24429
+"EB 1º,2º Ciclo Damlaran",Escola Básica Filial (EBF),-8.85901,125.10109
+"EB 1º,2º Ciclo Dilai",Escola Básica Filial (EBF),-9.11273,125.2371
+"EB 1º,2º Ciclo Diruana",Escola Básica Filial (EBF),-8.94381,125.09968
+"EB 1º,2º Ciclo Dom Armando Ai-Assa",Escola Básica Filial (EBF),-9.0372,125.31429
+"EB 1º,2º Ciclo Guelocaer",Escola Básica Filial (EBF),-8.97396,125.2352
+"EB 1º,2º Ciclo Halecou",Escola Básica Filial (EBF),-8.92268,125.14673
+"EB 1º,2º Ciclo Haubá",Escola Básica Filial (EBF),-9.00041,125.38528
+"EB 1º,2º Ciclo Lahomea",Escola Básica Filial (EBF),-8.99599,125.23172
+"EB 1º,2º Ciclo Lalebol",Escola Básica Filial (EBF),-9.04559,125.366280555556
+"EB 1º,2º Ciclo Lour",Escola Básica Filial (EBF),-9.06879,125.3573
+"EB 1º,2º Ciclo Mabiloa",Escola Básica Filial (EBF),-9.06666,125.21521
+"EB 1º,2º Ciclo Mape",Escola Básica Filial (EBF),-9.17585,125.26237
+"EB 1º,2º Ciclo Mapeop",Escola Básica Filial (EBF),-9.09415,125.32981
+"EB 1º,2º Ciclo Maui",Escola Básica Filial (EBF),-9.08496,125.28443
+"EB 1º,2º Ciclo Maumela",Escola Básica Filial (EBF),-8.85193,125.21929
+"EB 1º,2º Ciclo Mazop",Escola Básica Filial (EBF),-9.05857,125.30682
+"EB 1º,2º Ciclo Miguir",Escola Básica Filial (EBF),-8.87652,125.03926
+"EB 1º,2º Ciclo Moleana",Escola Básica Filial (EBF),-8.91988,125.17986
+"EB 1º,2º Ciclo Nazare Gumer",Escola Básica Filial (EBF),-9.01575,125.35611
+"EB 1º,2º Ciclo Nunudoi",Escola Básica Filial (EBF),-8.80366,125.21096
+"EB 1º,2º Ciclo Oalgomo",Escola Básica Filial (EBF),-9.06659,125.33529
+"EB 1º,2º Ciclo Odelgomo",Escola Básica Filial (EBF),-9.0598,125.3192
+"EB 1º,2º Ciclo Oe Tapo",Escola Básica Filial (EBF),-8.90397,125.06927
+"EB 1º,2º Ciclo Oeleu",Escola Básica Filial (EBF),-9.03037,125.29425
+"EB 1º,2º Ciclo Opa Vila",Escola Básica Filial (EBF),-9.16847,125.26506
+"EB 1º,2º Ciclo Oplegul",Escola Básica Filial (EBF),-8.99717,125.22437
+"EB 1º,2º Ciclo Ozo",Escola Básica Filial (EBF),-9.11656,125.2408
+"EB 1º,2º Ciclo Pipgalag",Escola Básica Filial (EBF),-9.01888,125.18471
+"EB 1º,2º Ciclo Poelaun",Escola Básica Filial (EBF),-8.99873,125.36892
+"EB 1º,2º Ciclo Raiheu",Escola Básica Filial (EBF),-8.97343,125.29658
+"EB 1º,2º Ciclo Rairobo",Escola Básica Filial (EBF),-8.80785,125.1599
+"EB 1º,2º Ciclo Ritabou",Escola Básica Filial (EBF),-8.96703,125.21683
+"EB 1º,2º Ciclo Roetete",Escola Básica Filial (EBF),-8.95798,125.23609
+"EB 1º,2º Ciclo S.José Odomau",Escola Básica Filial (EBF),-8.98797,125.20147
+"EB 1º,2º Ciclo Soilecu",Escola Básica Filial (EBF),-8.98813,125.335830555556
+"EB 1º,2º Ciclo Sulilaco",Escola Básica Filial (EBF),-8.93301,125.02649
+"EB 1º,2º Ciclo Sulilaran",Escola Básica Filial (EBF),-8.8261,125.07308
+"EB 1º,2º Ciclo Taimea",Escola Básica Filial (EBF),-9.01214,125.33403
+"EB 1º,2º Ciclo Tebabui",Escola Básica Filial (EBF),-9.01433,125.37662
+"EB 1º,2º Ciclo Tutubaba",Escola Básica Filial (EBF),-8.79266,125.10133
+"EB 1º,2º Ciclo Weclesse",Escola Básica Filial (EBF),-9.02138,125.99408
+EP C Pe. Manuel Luís,Escola Básica Filial (EBF),-8.99862,125.20988
+EP C Santo Agostinho Bobonaro,Escola Básica Filial (EBF),-9.0332,125.3245
+EP C St. Antonio,Escola Básica Filial (EBF),-8.96541,125.03829
+"EBC 1º,2º Ciclo 4 de Janeiro/Colima Atabae",Escola Básica Central (EBC),-8.8297,125.20242
+"EBC 1º,2º,3º Ciclo 30 de Agusto Atuaben Bobonaro",Escola Básica Central (EBC),-9.00062,125.32729
+"EBC 1º,2º,3º Ciclo Cristo Liurai Tapo Bobonaro",Escola Básica Central (EBC),-9.05185,125.27423
+"EBC 1º,2º,3º Ciclo D.Bere Mano Memo Maliana",Escola Básica Central (EBC),-9.0187,125.18493
+"EBC 1º,2º,3º Ciclo D.Caileto Bobonaro",Escola Básica Central (EBC),-9.03572,125.32381
+"EBC 1º,2º,3º Ciclo Gildapil Lolotoe",Escola Básica Central (EBC),-9.12195,125.21091
+"EBC 1º,2º,3º Ciclo Guda Lolotoe",Escola Básica Central (EBC),-9.13617,125.29686
+"EBC 1º,2º,3º Ciclo Mohac/Leohito Balibo",Escola Básica Central (EBC),-8.9985,125.06252
+"EBC 1º,2º,3º Ciclo No 6 Tunubibi Maliana",Escola Básica Central (EBC),-8.97106,125.14705
+"EBC 1º,2º,3º Ciclo Palaca Balibo",Escola Básica Central (EBC),-8.90016,125.99841
+"EBC 1º,2º,3º Ciclo Purugoa Cailaco",Escola Básica Central (EBC),-8.83156,125.21957
+"EBC 1º,2º,3º Ciclo Raifun Maliana",Escola Básica Central (EBC),-8.98325,125.22058
+"EBC 1º,2º,3º Ciclo Samutuaben Cailaco",Escola Básica Central (EBC),-8.92351,125.2168
+"EBC 1º,2º,3º Ciclo Sibuni Bobonaro",Escola Básica Central (EBC),-9.08541,125.33427
+"EBC 1º,2º,3º Ciclo Victor Maliana",Escola Básica Central (EBC),-8.99717,125.22437
+EBC 3º Ciclo Balibo,Escola Básica Central (EBC),-8.96863,125.04515
+EBC 3º Ciclo Hauba,Escola Básica Central (EBC),-9.00276,125.38034
+EBC 3º Ciclo Jose Maria Cailaco,Escola Básica Central (EBC),-8.87081,125.21326
+EBC 3º Ciclo Loes Atabae,Escola Básica Central (EBC),-8.77941,125.10095
+EBC 3º Ciclo Lolotoe,Escola Básica Central (EBC),-9.16509,125.2685
+EBC 3º Ciclo Lucinda Gumer Bobonaro,Escola Básica Central (EBC),-9.01468,125.34707
+EBC 3º Ciclo Maliana,Escola Básica Central (EBC),-8.99185,125.21434
+EPS C Bobonaro,Escola Básica Central (EBC),-9.03188,125.32312
+EPS C Colegio de Sagrees Maliana,Escola Básica Central (EBC),-8.97146,125.23066
+ES C Colegio Infante Sagrees Maliana,Escola Secundária Geral (ESG),-8.97146,125.23066
+ES P Dom Martinho Maliana,Escola Secundária Geral (ESG),-8.98978,125.21427
+ES P Malibaca Yamato Maliana,Escola Secundária Geral (ESG),-8.99431,125.19052
+ES P Nº 3 Bobonaro,Escola Secundária Geral (ESG),-9.03572,125.32381
+Nucleu Pre-Escolar S,Pre-Escolar,-9.3945022,125.1644711
+Pre-Escolar Acar Laran,Pre-Escolar,-9.34898763,125.2469959
+Pre-Escolar Asu Meta,Pre-Escolar,-9.31861086,125.2524679
+Pre-Escolar Bucasusu,Pre-Escolar,-9.32737112,125.2331705
+Pre-Escolar Has-Ain,Pre-Escolar,-9.2660891,125.3002327
+Pre-Escolar Holbelis,Pre-Escolar,-9.30106388888889,125.2876351
+Pre-Escolar Laconac,Pre-Escolar,-9.33830908,125.2070351
+Pre-Escolar Lalenok,Pre-Escolar,-9.24844486,125.0039952
+Pre-Escolar Matai,Pre-Escolar,-9.29881758,125.2642992
+Pre-Escolar Mercedes,Pre-Escolar,-9.24528228,125.0705347
+Pre-Escolar Ogues,Pre-Escolar,-9.29212857,125.2341168
+Pre-Escolar Publico Debos,Pre-Escolar,-9.30795033,125.253473
+Pre-Escolar Sucabi Laran,Pre-Escolar,-9.33277091,125.2623859
+Pre-Escolar Sucu Lor,Pre-Escolar,-9.34587157,125.27067
+Pre-Escolar Tafara,Pre-Escolar,-9.35411593,125.1865268
+Pre-Escolar Tali Oan,Pre-Escolar,-9.32494624,125.2430288
+Pre-Escolar Uma Buka,Pre-Escolar,-9.28404045,125.0889361
+Pre-Escolar Wetaba,Pre-Escolar,-9.42023381,125.1138377
+EB 1.2 Harecain,Escola Básica Filial (EBF),-9.18112,125.48324
+EB 1º Ciclo Fatuleto,Escola Básica Filial (EBF),-9.09219,125.39639
+EB 1º Ciclo Laen Tolu,Escola Básica Filial (EBF),-9.36433,125.25411
+EB 1º Ciclo Mape,Escola Básica Filial (EBF),-9.0783,125.40643
+EB 1º Ciclo Mota Ulun,Escola Básica Filial (EBF),-9.22242,125.06679
+EB 1º Ciclo Nalaop,Escola Básica Filial (EBF),-9.14891,125.38652
+EB 1º Ciclo Salele,Escola Básica Filial (EBF),-9.38915,125.16669
+EB 1º Ciclo Soiliga,Escola Básica Filial (EBF),-9.08265,125.37848
+EB 1º Ciclo Uce Cain,Escola Básica Filial (EBF),-9.14938,125.45453
+"EB 1º,2º Ciclo Aidantuic",Escola Básica Filial (EBF),-9.23522,125.36992
+"EB 1º,2º Ciclo Aion",Escola Básica Filial (EBF),-9.40809,125.13947
+"EB 1º,2º Ciclo Aitos",Escola Básica Filial (EBF),-9.27891,125.06225
+"EB 1º,2º Ciclo Aitoun",Escola Básica Filial (EBF),-9.20366,125.11637
+"EB 1º,2º Ciclo Alas Tehen",Escola Básica Filial (EBF),-9.22863,125.03653
+"EB 1º,2º Ciclo Bacun",Escola Básica Filial (EBF),-9.34675,125.24845
+"EB 1º,2º Ciclo Bear",Escola Básica Filial (EBF),-9.30532,125.09079
+"EB 1º,2º Ciclo Beidasi",Escola Básica Filial (EBF),-9.19161,125.13789
+"EB 1º,2º Ciclo Belulic Craic",Escola Básica Filial (EBF),-9.22063,125.02055
+"EB 1º,2º Ciclo Belulic Leten/ B.Fehan",Escola Básica Filial (EBF),-9.2482,125.00159
+"EB 1º,2º Ciclo Busadao",Escola Básica Filial (EBF),-9.23896,125.23274
+"EB 1º,2º Ciclo Camanassa",Escola Básica Filial (EBF),-9.32435,125.28115
+"EB 1º,2º Ciclo Coitau",Escola Básica Filial (EBF),-9.35515,125.1802
+"EB 1º,2º Ciclo Culuan",Escola Básica Filial (EBF),-9.23186,125.4342
+"EB 1º,2º Ciclo Dacolo",Escola Básica Filial (EBF),-9.27151,125.03233
+"EB 1º,2º Ciclo Dato Rua",Escola Básica Filial (EBF),-9.24045,125.0702
+"EB 1º,2º Ciclo Fatucmetan",Escola Básica Filial (EBF),-9.34718,125.08776
+"EB 1º,2º Ciclo Fatuloro",Escola Básica Filial (EBF),-9.22779,125.17836
+"EB 1º,2º Ciclo Foholulic",Escola Básica Filial (EBF),-9.31514,125.06757
+"EB 1º,2º Ciclo Goronto",Escola Básica Filial (EBF),-9.29458,125.22369
+"EB 1º,2º Ciclo Haemano",Escola Básica Filial (EBF),-9.25216,125.35087
+"EB 1º,2º Ciclo Halic",Escola Básica Filial (EBF),-9.23168,125.40391
+"EB 1º,2º Ciclo Has Ain",Escola Básica Filial (EBF),-9.27115,125.30231
+"EB 1º,2º Ciclo Holbelis",Escola Básica Filial (EBF),-9.29194,125.28893
+"EB 1º,2º Ciclo Holpilat",Escola Básica Filial (EBF),-9.20605,125.21116
+"EB 1º,2º Ciclo Ila",Escola Básica Filial (EBF),-9.23698,125.25015
+"EB 1º,2º Ciclo Labarai",Escola Básica Filial (EBF),-9.26403,125.3268
+"EB 1º,2º Ciclo Lacanac",Escola Básica Filial (EBF),-9.33545,125.21063
+"EB 1º,2º Ciclo Lactos",Escola Básica Filial (EBF),-9.253,125.1004
+"EB 1º,2º Ciclo Ladi",Escola Básica Filial (EBF),-9.31917,125.26484
+"EB 1º,2º Ciclo Lawacou",Escola Básica Filial (EBF),-9.24703,125.17262
+"EB 1º,2º Ciclo Lela",Escola Básica Filial (EBF),-9.186,125.20746
+"EB 1º,2º Ciclo Lepo",Escola Básica Filial (EBF),-9.05079,125.38227
+"EB 1º,2º Ciclo Loroquida",Escola Básica Filial (EBF),-9.25224,125.099180555556
+"EB 1º,2º Ciclo Macocon",Escola Básica Filial (EBF),-9.30924,125.04915
+"EB 1º,2º Ciclo Macous",Escola Básica Filial (EBF),-9.20041,125.18103
+"EB 1º,2º Ciclo Matai",Escola Básica Filial (EBF),-9.2986,125.26125
+"EB 1º,2º Ciclo Maucatar",Escola Básica Filial (EBF),-9.23915,125.22155
+"EB 1º,2º Ciclo Maucola",Escola Básica Filial (EBF),-9.20831,125.39549
+"EB 1º,2º Ciclo Mausabi",Escola Básica Filial (EBF),-9.17226,125.36565
+"EB 1º,2º Ciclo Nadac",Escola Básica Filial (EBF),-9.2659,125.21234
+"EB 1º,2º Ciclo Naguidal",Escola Básica Filial (EBF),-9.14251,125.45761
+"EB 1º,2º Ciclo Oebaba",Escola Básica Filial (EBF),-9.18872,125.51699
+"EB 1º,2º Ciclo Pelet",Escola Básica Filial (EBF),-9.18372,125.43488
+"EB 1º,2º Ciclo Salasa",Escola Básica Filial (EBF),-9.12321329836574,125.44051521535
+"EB 1º,2º Ciclo Sanfuk",Escola Básica Filial (EBF),-9.30458,125.296
+"EB 1º,2º Ciclo Talioan",Escola Básica Filial (EBF),-9.32901,125.24496
+"EB 1º,2º Ciclo Taroman",Escola Básica Filial (EBF),-9.18554,125.17152
+"EB 1º,2º Ciclo Tudulpo",Escola Básica Filial (EBF),-9.18218,125.39557
+"EB 1º,2º Ciclo We Matan",Escola Básica Filial (EBF),-9.31903,125.2525
+"EB 1º,2º Ciclo Zulo Taz",Escola Básica Filial (EBF),-9.11626,125.4147
+"EB 1º,2º Ciclo Zumalai",Escola Básica Filial (EBF),-9.15912,125.4486
+"EB 1º,2º CicloHolbolu",Escola Básica Filial (EBF),-9.21996,125.37459
+EP C Ailoc Laran Camanassa,Escola Básica Filial (EBF),-9.31804,125.27681
+EP C Cassabauc,Escola Básica Filial (EBF),-9.37913,125.18654
+EP C Maria de F. Zumalai,Escola Básica Filial (EBF),-9.1575,125.44958
+EP C Nossa Senhora do Rosário,Escola Básica Filial (EBF),-9.28362,125.08937
+EP C Raimea,Escola Básica Filial (EBF),-9.20965,125.45853
+EP C Santa Madalena Quiar,Escola Básica Filial (EBF),-9.30284,125.27883
+EP C Sta. Maria Debos,Escola Básica Filial (EBF),-9.3144,125.25514
+EP C Sucabi Laran,Escola Básica Filial (EBF),-9.33247,125.26216
+EP C São José Beco,Escola Básica Filial (EBF),-9.21927,125.39098
+EP C Wala / Wetaba,Escola Básica Filial (EBF),-9.41974,125.11384
+"EBC 1º 2º,3º Ciclo Beilaco",Escola Básica Central (EBC),-9.20005,125.48322
+"EBC 1º,2º Ciclo Bulo",Escola Básica Central (EBC),-9.07824,125.38627
+"EBC 1º,2º Ciclo Dato Tolu",Escola Básica Central (EBC),-9.23893,125.14007
+"EBC 1º,2º Ciclo Traducama",Escola Básica Central (EBC),-9.27863,125.00378
+"EBC 1º,2º,3º Ciclo Dais",Escola Básica Central (EBC),-9.28335,125.31653
+"EBC 1º,2º,3º Ciclo Fohorem",Escola Básica Central (EBC),-9.28452,125.09634
+"EBC 1º,2º,3º Ciclo Gala",Escola Básica Central (EBC),-9.18222,125.35555
+"EBC 1º,2º,3º Ciclo Lontale",Escola Básica Central (EBC),-9.33378,125.22433
+"EBC 1º,2º,3º Ciclo Ogues",Escola Básica Central (EBC),-9.29463,125.23562
+"EBC 1º,2º,3º Ciclo Salele",Escola Básica Central (EBC),-9.39064,125.16551
+"EBC 1º,2º,3º Ciclo Suai Loro",Escola Básica Central (EBC),-9.3391,125.27345
+"EBC 1º,2º,3º Ciclo Taz Hilin",Escola Básica Central (EBC),-9.19924,125.41645
+"EBC 1º,2º,3º Ciclo Tilomar",Escola Básica Central (EBC),-9.34563,125.11885
+EBC 3º Ciclo 11 de Marco Maucatar,Escola Básica Central (EBC),-9.24054,125.22482
+EBC 3º Ciclo Beco,Escola Básica Central (EBC),-9.22652,125.38155
+EBC 3º Ciclo Fatululic,Escola Básica Central (EBC),-9.18604,125.16683
+EBC 3º Ciclo Fatumea,Escola Básica Central (EBC),-9.24848,125.00357
+EBC 3º Ciclo Ladi,Escola Básica Central (EBC),-9.31837,125.26472
+EBC 3º Ciclo Sandalo,Escola Básica Central (EBC),-9.30932,125.25075
+EBC 3º Ciclo Zumalai,Escola Básica Central (EBC),-9.16327,125.44768
+EPS C Sao Luis Gonzaga,Escola Básica Central (EBC),-9.31642,125.25495
+ES C Ave Maria Suai,Escola Secundária Geral (ESG),-9.31663,125.2544
+ES Filial Fohorem,Escola Secundária Geral (ESG),-9.28196,125.09031
+ES P F Zumalai,Escola Secundária Geral (ESG),-9.15912,125.4486
+ES P No 1 Suai,Escola Secundária Geral (ESG),-9.30932,125.25075
+Escola Tecnica Akar-Laran Suai,Escola Secundária Técnica (ESTV),-9.34775724982925,125.249882267585
+Nucleu Pré-Escolar A,Pre-Escolar,-8.55712702,125.6473721
+Nucleu Pré-Escolar F,Pre-Escolar,-8.5517678,125.5686085
+Pre-Escolar Ebmezer,Pre-Escolar,-8.14411512,125.6118031
+Pre-Escolar Lilahuna,Pre-Escolar,-8.1844666,125.6300387
+Pre-Escolar Piheru/M,Pre-Escolar,-8.28344456,125.5948968
+Pré-Escolar Anjo Kar,Pre-Escolar,-8.54652333,125.5386609
+Pré-Escolar Arca Inf,Pre-Escolar,-8.53808871,125.6857595
+Pré-Escolar Assisi,Pre-Escolar,-8.55957714,125.5692907
+Pré-Escolar Berao/Ma,Pre-Escolar,-8.29586654,125.5543882
+Pré-Escolar Buras Kd,Pre-Escolar,-8.55231372,125.5502202
+Pré-Escolar CCYF/CCF,Pre-Escolar,-8.55308318,125.5456036
+Pré-Escolar Canosiana,Pre-Escolar,-8.57168186,125.5366422
+Pré-Escolar Centro S,Pre-Escolar,-8.55305476,125.5398472
+Pré-Escolar Creche K,Pre-Escolar,-8.55147628,125.5588608
+Pré-Escolar Culau La,Pre-Escolar,-8.56703125,125.6136425
+Pré-Escolar Dotan/Bi,Pre-Escolar,-8.19199766,125.6329759
+Pré-Escolar Esperança,Pre-Escolar,-8.56837914,125.5859251
+Pré-Escolar Fitun Es (Anartuto),Pre-Escolar,-8.25964146,125.5528411
+Pré-Escolar Fitun Es (Eletikarak),Pre-Escolar,-8.25555881,125.6043913
+Pré-Escolar Fitun Es (Maker),Pre-Escolar,-8.24802993,125.5184015
+Pré-Escolar Henrikus Leve,Pre-Escolar,-8.56368352,125.564236
+Pré-Escolar Jerico,Pre-Escolar,-8.15648287,125.640586
+Pré-Escolar Manutasi,Pre-Escolar,-8.25940124,125.6066175
+Pré-Escolar Marcelo,Pre-Escolar,-8.56587404,125.6133978
+Pré-Escolar Marcelo (Golgota),Pre-Escolar,-8.55790562,125.5238229
+Pré-Escolar Maria Auxiliadora,Pre-Escolar,-8.55540689,125.5239996
+Pré-Escolar Moris Foun (Bairo-Pite),Pre-Escolar,-8.56314163,125.5564025
+Pré-Escolar Moris Foun (Komoro),Pre-Escolar,-8.58230517,125.5332539
+Pré-Escolar Naroman,Pre-Escolar,-8.22094733,125.6068011
+Pré-Escolar Neo Rosa,Pre-Escolar,-8.5983302,125.5859202
+Pré-Escolar Paulo IV,Pre-Escolar,-8.55881833,125.5879653
+Pré-Escolar Publico Clac-Fuik,Pre-Escolar,-8.5650128,125.6110315
+Pré-Escolar Publico Coba,Pre-Escolar,-8.56790112,125.5988603
+Pré-Escolar Publico Kai Klaran,Pre-Escolar,-8.56004359,125.5676101
+Pré-Escolar Publico Loke Neon,Pre-Escolar,-8.55967185,125.5813743
+Pré-Escolar Rainha da Paz,Pre-Escolar,-8.56275438,125.5614444
+Pré-Escolar San Cari,Pre-Escolar,-8.55781308,125.5666268
+Pré-Escolar St. Maria,Pre-Escolar,-8.56196531,125.6039904
+Pré-Escolar Sta. Ber,Pre-Escolar,-8.55475947,125.5448464
+Pré-Escolar Sto. Inacio,Pre-Escolar,-8.56674341,125.5850478
+Pré-Escolar Sto. Vin,Pre-Escolar,-8.55118643,125.5391233
+Pré-Escolar São Domingos,Pre-Escolar,-8.54851102,125.5313678
+Pré-Escolar Uma Laba,Pre-Escolar,-8.55709945,125.532829
+EB 1º Ciclo Casnafar,Escola Básica Filial (EBF),-8.60554711628889,125.529133856121
+"EB 1º,2º Ciclo 12 de Outubro",Escola Básica Filial (EBF),-8.55892,125.50885
+"EB 1º,2º Ciclo Acanunu",Escola Básica Filial (EBF),-8.55711,125.64714
+"EB 1º,2º Ciclo Aidac Bihare",Escola Básica Filial (EBF),-8.56614,125.6317
+"EB 1º,2º Ciclo Ailele Hun",Escola Básica Filial (EBF),-8.55582,125.62476
+"EB 1º,2º Ciclo Ailok",Escola Básica Filial (EBF),-8.58628888888889,125.60987
+"EB 1º,2º Ciclo Aimutin",Escola Básica Filial (EBF),-8.55588,125.54455
+"EB 1º,2º Ciclo Aituri Laran",Escola Básica Filial (EBF),-8.56968,125.59365
+"EB 1º,2º Ciclo Atecru",Escola Básica Filial (EBF),-8.22229,125.54697
+"EB 1º,2º Ciclo Bairro Pite",Escola Básica Filial (EBF),-8.55886,125.56423
+"EB 1º,2º Ciclo Balibar",Escola Básica Filial (EBF),-8.59944,125.59238
+"EB 1º,2º Ciclo Baruana",Escola Básica Filial (EBF),-8.15479,125.63796
+"EB 1º,2º Ciclo Bebonuk",Escola Básica Filial (EBF),-8.54605,125.54082
+"EB 1º,2º Ciclo Beducu",Escola Básica Filial (EBF),-8.58452,125.52859
+"EB 1º,2º Ciclo Beloi",Escola Básica Filial (EBF),-8.2192,125.60846
+"EB 1º,2º Ciclo Benunuk",Escola Básica Filial (EBF),-8.52715,125.75816
+"EB 1º,2º Ciclo Berau",Escola Básica Filial (EBF),-8.29718,125.55488
+"EB 1º,2º Ciclo Besahe",Escola Básica Filial (EBF),-8.54722,125.76402
+"EB 1º,2º Ciclo Camea",Escola Básica Filial (EBF),-8.5648,125.61069
+"EB 1º,2º Ciclo Camea Raihun",Escola Básica Filial (EBF),-8.55737,125.6152
+"EB 1º,2º Ciclo Comoro",Escola Básica Filial (EBF),-8.55623,125.52717
+"EB 1º,2º Ciclo Culuhun",Escola Básica Filial (EBF),-8.5582,125.59546
+"EB 1º,2º Ciclo Doque de Caixas",Escola Básica Filial (EBF),-8.56091,125.59014
+"EB 1º,2º Ciclo Especial Taibessi",Escola Básica Filial (EBF),-8.56354,125.59144
+"EB 1º,2º Ciclo Fatu'u",Escola Básica Filial (EBF),-8.14415,125.61242
+"EB 1º,2º Ciclo Fatuhada",Escola Básica Filial (EBF),-8.55195,125.55556
+"EB 1º,2º Ciclo Fatumeta",Escola Básica Filial (EBF),-8.56509,125.55503
+"EB 1º,2º Ciclo Fomento",Escola Básica Filial (EBF),-8.5654,125.53427
+"EB 1º,2º Ciclo Hera",Escola Básica Filial (EBF),-8.55518,125.65389
+"EB 1º,2º Ciclo Hudi Laran",Escola Básica Filial (EBF),-8.55606,125.55938
+"EB 1º,2º Ciclo Lebutun",Escola Básica Filial (EBF),-8.57498,125.78625
+"EB 1º,2º Ciclo Lelaus",Escola Básica Filial (EBF),-8.60613,125.54693
+"EB 1º,2º Ciclo Macadade",Escola Básica Filial (EBF),-8.25925,125.54687
+"EB 1º,2º Ciclo Manuleu",Escola Básica Filial (EBF),-8.49831,125.82113
+"EB 1º,2º Ciclo Maquer",Escola Básica Filial (EBF),-8.24817,125.51931
+"EB 1º,2º Ciclo Maquili",Escola Básica Filial (EBF),-8.2837,125.5946
+"EB 1º,2º Ciclo Marinir",Escola Básica Filial (EBF),-8.54309,125.53306
+"EB 1º,2º Ciclo Massau",Escola Básica Filial (EBF),-8.55308,125.59734
+"EB 1º,2º Ciclo Memorial de Fatunaba",Escola Básica Filial (EBF),-8.59678,125.57648
+"EB 1º,2º Ciclo Metiaut",Escola Básica Filial (EBF),-8.54749,125.60139
+"EB 1º,2º Ciclo Metinaro",Escola Básica Filial (EBF),-8.5311,125.73969
+"EB 1º,2º Ciclo Mota Kiik",Escola Básica Filial (EBF),-8.55818,125.66359
+"EB 1º,2º Ciclo Mota Ulun",Escola Básica Filial (EBF),-8.57361,125.59317
+"EB 1º,2º Ciclo Naroman",Escola Básica Filial (EBF),-8.56195,125.56217
+"EB 1º,2º Ciclo Nularan",Escola Básica Filial (EBF),-8.55405,125.58215
+"EB 1º,2º Ciclo Payol",Escola Básica Filial (EBF),-8.56989,125.58054
+"EB 1º,2º Ciclo Rumbia",Escola Básica Filial (EBF),-8.56116,125.57784
+"EB 1º,2º Ciclo Tuanalaran",Escola Básica Filial (EBF),-8.56433,125.56832
+"EB 1º,2º Ciclo Vila Verde",Escola Básica Filial (EBF),-8.55815,125.57024
+"EB 1º,2º Ciclo do Alto Hospital",Escola Básica Filial (EBF),-8.57676,125.58309
+EP Annur,Escola Básica Filial (EBF),-8.55009,125.55983
+EP C Ailok Laran/Maloa,Escola Básica Filial (EBF),-8.57395,125.56484
+EP C Amigos de Jesus,Escola Básica Filial (EBF),-8.56723,125.58685
+EP C Cristal,Escola Básica Filial (EBF),-8.5671,125.5754
+EP C Ext São Jose,Escola Básica Filial (EBF),-8.5656,125.53947
+EP C Nº7 Sebraka-Laran,Escola Básica Filial (EBF),-8.56886,125.61453
+EP C S. F. X. Dare,Escola Básica Filial (EBF),-8.59216,125.57169
+EP C Sagrada C.de Jesus,Escola Básica Filial (EBF),-8.56277,125.6032
+EP C Santa Madalena de Canossa,Escola Básica Filial (EBF),-8.57105,125.53687
+EP C Sao Domingos Savio,Escola Básica Filial (EBF),-8.54884,125.53784
+EP C São Luís Gonzaga,Escola Básica Filial (EBF),-8.56701,125.58311
+EP C São Miguel,Escola Básica Filial (EBF),-8.55322,125.51949
+EP Centro de Ensino e Treinamento Lorosae,Escola Básica Filial (EBF),-8.55306,125.53979
+EP do Centro de Ensino Alpha,Escola Básica Filial (EBF),-8.53872,125.68363
+EPC St M.Auxiladora,Escola Básica Filial (EBF),-8.55555,125.5245
+"EBC 1º,2º,3º Ciclo Bidau Acadiru-Hun",Escola Básica Central (EBC),-8.55255,125.58987
+"EBC 1º,2º,3º Ciclo Biqueli",Escola Básica Central (EBC),-8.18606,125.62982
+"EBC 1º,2º,3º Ciclo Darlau",Escola Básica Central (EBC),-8.60961,125.62405
+"EBC 1º,2º,3º Ciclo Farol",Escola Básica Central (EBC),-8.55168,125.5686
+"EBC 1º,2º,3º Ciclo Maumeta Vila",Escola Básica Central (EBC),-8.26162,125.605961111111
+"EBC 1º,2º,3º Ciclo Nº 6 Manleuana",Escola Básica Central (EBC),-8.55887,125.54249
+EBC 3º Ciclo 10 de Dezembro Comoro,Escola Básica Central (EBC),-8.55383,125.54644
+EBC 3º Ciclo 30 de Agosto Comoro,Escola Básica Central (EBC),-8.55319,125.52995
+EBC 3º Ciclo Dr Sergio V de Melo,Escola Básica Central (EBC),-8.56577,125.60829
+EBC 3º Ciclo Esperanca Da Patria,Escola Básica Central (EBC),-8.56461,125.6066
+EBC 3º Ciclo Fatumeta,Escola Básica Central (EBC),-8.56234,125.55776
+EBC 3º Ciclo Hera,Escola Básica Central (EBC),-8.55518,125.65389
+EBC 3º Ciclo Metinaro,Escola Básica Central (EBC),-8.52965,125.75686
+EBC 3º Ciclo Perola Atauro,Escola Básica Central (EBC),-8.24187,125.60467
+EPS Annur,Escola Básica Central (EBC),-8.55009,125.559830555556
+EPS C Ext Sao Jose,Escola Básica Central (EBC),-8.5656,125.53947
+EPS C Paulo VI,Escola Básica Central (EBC),-8.55435,125.585111111111
+EPS C Sagrada C.de Jesus,Escola Básica Central (EBC),-8.56253,125.60404
+EPS C Sao F. X. Dare,Escola Básica Central (EBC),-8.59267,125.571388888889
+EPS C St M de Canossa,Escola Básica Central (EBC),-8.57105,125.536869444445
+EPS C São Jose Operario,Escola Básica Central (EBC),-8.56701,125.58319
+EPS C São Miguel,Escola Básica Central (EBC),-8.55322,125.51949
+EPS C São Pedro - Comoro,Escola Básica Central (EBC),-8.55734,125.525069444444
+EPS Centro Shallom,Escola Básica Central (EBC),-8.55306,125.5396
+EPS Cristal,Escola Básica Central (EBC),-8.56782,125.575961111111
+EPS Fundação Rainha Da Paz,Escola Básica Central (EBC),-8.54884,125.53784
+EPS Herois De Patria,Escola Básica Central (EBC),-8.56176,125.6056
+EPS Nicolau Lobato,Escola Básica Central (EBC),-8.55768,125.51196
+ES Annur,Escola Secundária Geral (ESG),-8.55009,125.55983
+ES C Colegio de São Jose,Escola Secundária Geral (ESG),-8.56594,125.58371
+ES C Cristal,Escola Secundária Geral (ESG),-8.56736,125.5757
+ES C Ext São Jose,Escola Secundária Geral (ESG),-8.5656,125.53947
+ES C Paulo VI,Escola Secundária Geral (ESG),-8.55435,125.58511
+ES C Sagrada C. de Jesus,Escola Secundária Geral (ESG),-8.56293,125.60368
+ES C St M de Canossa,Escola Secundária Geral (ESG),-8.57105,125.53687
+ES C São Pedro - Comoro,Escola Secundária Geral (ESG),-8.55734,125.52507
+ES Fundação Rainha da Paz,Escola Secundária Geral (ESG),-8.54884,125.53784
+ES Herois De Patria,Escola Secundária Geral (ESG),-8.56176,125.6056
+ES Nicolau Lobato,Escola Secundária Geral (ESG),-8.55768,125.51196
+ES P 10 de Dezembro,Escola Secundária Geral (ESG),-8.55383,125.54644
+ES P 12 de Novembro / Becora,Escola Secundária Geral (ESG),-8.56535,125.60685
+ES P 28 de Novembro,Escola Secundária Geral (ESG),-8.56487,125.60373
+ES P 4 de Setembro,Escola Secundária Geral (ESG),-8.5659,125.57324
+ES P 5 Becora,Escola Secundária Geral (ESG),-8.56577,125.60829
+ES P 99 Atauro,Escola Secundária Geral (ESG),-8.2462,125.60616
+ES P Finantil,Escola Secundária Geral (ESG),-8.55591,125.54624
+ES P Metinaro,Escola Secundária Geral (ESG),-8.52965,125.75686
+Escola Comercio Becora,Escola Secundária Técnica (ESTV),-8.56531111111111,125.605119444444
+Escola Comercio São Miguel Comoro,Escola Secundária Técnica (ESTV),-8.55346,125.5197
+Escola Tecnica Becora,Escola Secundária Técnica (ESTV),-8.56616,125.60437
+Escola Tecnica Comercio Becora,Escola Secundária Técnica (ESTV),-8.56484,125.60452
+Escola Tecnica Informatica Acadiru-Hun,Escola Secundária Técnica (ESTV),-8.55287,125.58996
+Nucleu Pré-Escolar T,Pre-Escolar,-8.67527707,125.421927
+Pré-Escolar Conis Santana,Pre-Escolar,-8.72806488,125.4346536
+Pré-Escolar Esperança,Pre-Escolar,-8.71963662,125.4379534
+Pré-Escolar Francisco,Pre-Escolar,-8.81016025,125.3203532
+Pré-Escolar Girasol,Pre-Escolar,-8.92381065,125.3983148
+Pré-Escolar Muniçipal,Pre-Escolar,-8.75246929,125.3978918
+Pré-Escolar Nossa Senhora,Pre-Escolar,-8.7493933,125.4009116
+Pré-Escolar Pico Ram,Pre-Escolar,-8.83644213,125.4292017
+Pré-Escolar Virgen P,Pre-Escolar,-8.7535914,125.3257393
+EB 1º Ciclo Assulao,Escola Básica Filial (EBF),-8.74977,125.32356
+EB 1º Ciclo C. S Bubria,Escola Básica Filial (EBF),-8.75332,125.32559
+EB 1º Ciclo Cailiti,Escola Básica Filial (EBF),-8.82471,125.42776
+EB 1º Ciclo Deleço,Escola Básica Filial (EBF),-8.68955,125.50833
+EB 1º Ciclo Lebumeo,Escola Básica Filial (EBF),-8.73361,125.42419
+EB 1º Ciclo Mancoliria,Escola Básica Filial (EBF),-8.85361,125.47805
+EB 1º Ciclo Nunurema,Escola Básica Filial (EBF),-8.97584,125.36142
+"EB 1º,2º Ciclo Aimeta",Escola Básica Filial (EBF),-8.85576,125.49992
+"EB 1º,2º Ciclo Aitura",Escola Básica Filial (EBF),-8.78954,125.39474
+"EB 1º,2º Ciclo Ana Lemos Gleno",Escola Básica Filial (EBF),-8.72092,125.43367
+"EB 1º,2º Ciclo Assi",Escola Básica Filial (EBF),-8.8662,125.43149
+"EB 1º,2º Ciclo Assui Lacao",Escola Básica Filial (EBF),-8.84107,125.47127
+"EB 1º,2º Ciclo Atara",Escola Básica Filial (EBF),-8.9715,125.38663
+"EB 1º,2º Ciclo Atsabe Vila",Escola Básica Filial (EBF),-8.92398,125.39822
+"EB 1º,2º Ciclo Baboe Craik",Escola Básica Filial (EBF),-8.91555,125.40887
+"EB 1º,2º Ciclo Baboe Leten",Escola Básica Filial (EBF),-8.90484,125.41581
+"EB 1º,2º Ciclo Biluli",Escola Básica Filial (EBF),-8.73132,125.41341
+"EB 1º,2º Ciclo Cacoa",Escola Básica Filial (EBF),-8.69886,125.46206
+"EB 1º,2º Ciclo Caitarahei",Escola Básica Filial (EBF),-8.69976,125.44838
+"EB 1º,2º Ciclo Catrai Craic",Escola Básica Filial (EBF),-8.88051,125.44004
+"EB 1º,2º Ciclo Cucara",Escola Básica Filial (EBF),-8.79563,125.32316
+"EB 1º,2º Ciclo Daralau Leimea Leten",Escola Básica Filial (EBF),-8.88981,125.37872
+"EB 1º,2º Ciclo Eraulo",Escola Básica Filial (EBF),-8.77629,125.44337
+"EB 1º,2º Ciclo Estado",Escola Básica Filial (EBF),-8.7985,125.4302
+"EB 1º,2º Ciclo Hatolia Vila",Escola Básica Filial (EBF),-8.81165,125.3109
+"EB 1º,2º Ciclo Hatugau",Escola Básica Filial (EBF),-8.8474,125.38998
+"EB 1º,2º Ciclo Hatuleta",Escola Básica Filial (EBF),-8.75608,125.40553
+"EB 1º,2º Ciclo Hulorema",Escola Básica Filial (EBF),-8.76909,125.38274
+"EB 1º,2º Ciclo Humboe",Escola Básica Filial (EBF),-8.75941,125.42993
+"EB 1º,2º Ciclo Kusbouk",Escola Básica Filial (EBF),-8.80369,125.30602
+"EB 1º,2º Ciclo Lacao",Escola Básica Filial (EBF),-8.96248,125.37953
+"EB 1º,2º Ciclo Laclo",Escola Básica Filial (EBF),-8.94391,125.41247
+"EB 1º,2º Ciclo Lafaek Mutin Norema",Escola Básica Filial (EBF),-8.87052,125.35015
+"EB 1º,2º Ciclo Lauala",Escola Básica Filial (EBF),-8.72866,125.4479
+"EB 1º,2º Ciclo Lauana",Escola Básica Filial (EBF),-8.89325,125.41036
+"EB 1º,2º Ciclo Laubuno Bia-Bote",Escola Básica Filial (EBF),-8.95075,125.35337
+"EB 1º,2º Ciclo Laurahou",Escola Básica Filial (EBF),-8.71106,125.310638888889
+"EB 1º,2º Ciclo Lebululi",Escola Básica Filial (EBF),-8.82416,125.46682
+"EB 1º,2º Ciclo Leguimea",Escola Básica Filial (EBF),-8.77733,125.40703
+"EB 1º,2º Ciclo Leimea Craic",Escola Básica Filial (EBF),-8.81346,125.32515
+"EB 1º,2º Ciclo Leimea Sorin Balu",Escola Básica Filial (EBF),-8.86442,125.32041
+"EB 1º,2º Ciclo Leirema",Escola Básica Filial (EBF),-8.79316,125.31771
+"EB 1º,2º Ciclo Lequeci",Escola Básica Filial (EBF),-8.72858,125.395588888889
+"EB 1º,2º Ciclo Lequicala",Escola Básica Filial (EBF),-8.82602,125.491
+"EB 1º,2º Ciclo Letefoho Vila",Escola Básica Filial (EBF),-8.83475,125.42728
+"EB 1º,2º Ciclo Leubassa",Escola Básica Filial (EBF),-8.89911,125.43231
+"EB 1º,2º Ciclo Leubudo",Escola Básica Filial (EBF),-8.84052,125.45498
+"EB 1º,2º Ciclo Licapat",Escola Básica Filial (EBF),-8.74372,125.36497
+"EB 1º,2º Ciclo Lodudo",Escola Básica Filial (EBF),-8.74673,125.42765
+"EB 1º,2º Ciclo Lumutou",Escola Básica Filial (EBF),-8.86815,125.43411
+"EB 1º,2º Ciclo Malabe",Escola Básica Filial (EBF),-8.93381,125.39155
+"EB 1º,2º Ciclo Malimea",Escola Básica Filial (EBF),-8.94704,125.38825
+"EB 1º,2º Ciclo Manulete",Escola Básica Filial (EBF),-8.7321,125.37106
+"EB 1º,2º Ciclo Matata",Escola Básica Filial (EBF),-8.70102,125.4025
+"EB 1º,2º Ciclo Mau-Ubo",Escola Básica Filial (EBF),-8.72833,125.33691
+"EB 1º,2º Ciclo Nunutali",Escola Básica Filial (EBF),-8.75014,125.439511111111
+"EB 1º,2º Ciclo Obulo",Escola Básica Filial (EBF),-8.97122,125.3498
+"EB 1º,2º Ciclo Olopana",Escola Básica Filial (EBF),-8.8156,125.47286
+"EB 1º,2º Ciclo Otete",Escola Básica Filial (EBF),-8.78237,125.35324
+"EB 1º,2º Ciclo Paramim",Escola Básica Filial (EBF),-8.92882,125.40489
+"EB 1º,2º Ciclo Pedro Lemos Tugarema",Escola Básica Filial (EBF),-8.77644,125.40092
+"EB 1º,2º Ciclo Porema",Escola Básica Filial (EBF),-8.76642,125.34552
+"EB 1º,2º Ciclo Raerega",Escola Básica Filial (EBF),-8.84312,125.31286
+"EB 1º,2º Ciclo Railaco Craic",Escola Básica Filial (EBF),-8.67369,125.46568
+"EB 1º,2º Ciclo Railaco Leten",Escola Básica Filial (EBF),-8.68711,125.49852
+"EB 1º,2º Ciclo Railaco Vila",Escola Básica Filial (EBF),-8.67604,125.42267
+"EB 1º,2º Ciclo Raimerhei",Escola Básica Filial (EBF),-8.81051,125.40534
+"EB 1º,2º Ciclo Riamori",Escola Básica Filial (EBF),-8.85879,125.43695
+"EB 1º,2º Ciclo Sacoco",Escola Básica Filial (EBF),-8.71353,125.37138
+"EB 1º,2º Ciclo Samalete 1",Escola Básica Filial (EBF),-8.68438,125.51468
+"EB 1º,2º Ciclo Samara",Escola Básica Filial (EBF),-8.83158,125.30113
+"EB 1º,2º Ciclo Sare",Escola Básica Filial (EBF),-8.74819,125.2408
+"EB 1º,2º Ciclo Sinlelo",Escola Básica Filial (EBF),-8.72201,125.43371
+"EB 1º,2º Ciclo Sirui Lesumau",Escola Básica Filial (EBF),-8.91685,125.36099
+"EB 1º,2º Ciclo Talimoro",Escola Básica Filial (EBF),-8.74351,125.4103
+"EB 1º,2º Ciclo Talo",Escola Básica Filial (EBF),-8.80774,125.35213
+"EB 1º,2º Ciclo Taraco",Escola Básica Filial (EBF),-8.65899,125.4936
+"EB 1º,2º Ciclo Tiarlelo",Escola Básica Filial (EBF),-8.92398,125.37319
+"EB 1º,2º Ciclo Tocoluli",Escola Básica Filial (EBF),-8.70302,125.43086
+"EB 1º,2º Ciclo Urahou 1",Escola Básica Filial (EBF),-8.72122,125.32404
+"EB 1º,2º Ciclo Urahou 2",Escola Básica Filial (EBF),-8.71564,125.2977
+"EB 1º,2º Ciclo Urema",Escola Básica Filial (EBF),-8.78276,125.35315
+EP C Fatubesi,Escola Básica Filial (EBF),-8.75332,125.32559
+EPC Nossa Senhora de Lurdes,Escola Básica Filial (EBF),-8.74794,125.40012
+"EBC 1º,2º,3º Ciclo Batumano",Escola Básica Central (EBC),-8.94652,125.36397
+"EBC 1º,2º,3º Ciclo Catrai-Leten",Escola Básica Central (EBC),-8.82945,125.45343
+"EBC 1º,2º,3º Ciclo DR. Jose Ramos Horta",Escola Básica Central (EBC),-8.92674,125.39498
+"EBC 1º,2º,3º Ciclo Ducurai",Escola Básica Central (EBC),-8.82945,125.45343
+"EBC 1º,2º,3º Ciclo Fatubessi",Escola Básica Central (EBC),-8.7498,125.32346
+"EBC 1º,2º,3º Ciclo Fatuquero",Escola Básica Central (EBC),-8.71188,125.44208
+"EBC 1º,2º,3º Ciclo Goulolo",Escola Básica Central (EBC),-8.80174,125.42924
+"EBC 1º,2º,3º Ciclo Hatuhei",Escola Básica Central (EBC),-8.85797,125.47725
+"EBC 1º,2º,3º Ciclo Lebuto",Escola Básica Central (EBC),-8.79776,125.36402
+"EBC 1º,2º,3º Ciclo Mirtuto",Escola Básica Central (EBC),-8.75125,125.40928
+"EBC 1º,2º,3º Ciclo Ponilala",Escola Básica Central (EBC),-8.73083,125.38058
+"EBC 1º,2º,3º Ciclo Tata",Escola Básica Central (EBC),-8.80076,125.27331
+EBC 3º Ciclo 10 de Abril Gleno,Escola Básica Central (EBC),-8.72219,125.43236
+EBC 3º Ciclo 20 de Agusto Ermera,Escola Básica Central (EBC),-8.75039,125.40091
+EBC 3º Ciclo Hatolia,Escola Básica Central (EBC),-8.81146,125.31162
+EBC 3º Ciclo Lação,Escola Básica Central (EBC),-8.96248,125.37953
+EBC 3º Ciclo Letefoho Vila,Escola Básica Central (EBC),-8.83251,125.4263
+EBC 3º Ciclo Licapat,Escola Básica Central (EBC),-8.74372,125.36497
+EBC 3º Ciclo Raicala,Escola Básica Central (EBC),-8.79047,125.43585
+EBC 3º Ciclo Railaco Vila,Escola Básica Central (EBC),-8.67779,125.4204
+EPS C Imaculada Conceicao Ermera,Escola Básica Central (EBC),-8.75224,125.39513
+ES C F Nossa Senhora de Fatima Railaco,Escola Secundária Geral (ESG),-8.67421,125.42234
+ES C Imaculada Conceicao Ermera,Escola Secundária Geral (ESG),-8.75224,125.39513
+ES P F Cesar Maulaka,Escola Secundária Geral (ESG),-8.83021,125.42365
+ES P Nino Konis Santana,Escola Secundária Geral (ESG),-8.72754,125.43298
+Escola Tecnica Comercio Gleno,Escola Secundária Técnica (ESTV),-8.72121318289473,125.433406972685
+Escola Tecnica Comercio Hatolia,Escola Secundária Técnica (ESTV),-8.81265333796111,125.317222376563
+Nucleo Pré-Escolar M,Pre-Escolar,-8.39816155,126.9094466
+Pre-Escolar Beira Mar,Pre-Escolar,-8.35682852,127.0574347
+Pré-Escolar Esperança,Pre-Escolar,-8.52424247,126.9969263
+Pré-Escolar Holinere,Pre-Escolar,-8.4398823,127.0194888
+Pré-Escolar Ica Tutun (Chauluturo),Pre-Escolar,-8.45506897,127.0010994
+Pré-Escolar Ica Tutun (Culuhun),Pre-Escolar,-8.52924521,126.9978439
+Pré-Escolar Ica Tutun (Home),Pre-Escolar,-8.50248397,126.9680309
+Pré-Escolar Ica Tutun (Ira-Ara),Pre-Escolar,-8.52094394,127.0018197
+Pré-Escolar Iliomar,Pre-Escolar,-8.52459627,126.994753
+Pré-Escolar Moris Foun,Pre-Escolar,-8.52397777777778,126.995815
+Pré-Escolar Mua Chau,Pre-Escolar,-8.39359358,127.2558988
+Pré-Escolar Muapitine,Pre-Escolar,-8.51544281,127.0906163
+Pré-Escolar Nacroman,Pre-Escolar,-8.50406765,126.9914454
+EB 1º Ciclo Abere,Escola Básica Filial (EBF),-8.55769,126.84203
+EB 1º Ciclo Aelafa,Escola Básica Filial (EBF),-8.48217,126.81799
+EB 1º Ciclo Alaira,Escola Básica Filial (EBF),-8.60086,126.84776
+EB 1º Ciclo Boboira,Escola Básica Filial (EBF),-8.53634,126.8145
+EB 1º Ciclo Boruguai,Escola Básica Filial (EBF),-8.54094,126.79001
+EB 1º Ciclo Bubutau,Escola Básica Filial (EBF),-8.6818,126.84224
+EB 1º Ciclo Bussi-Ira,Escola Básica Filial (EBF),-8.72409,126.81979
+EB 1º Ciclo Huruleu,Escola Básica Filial (EBF),-8.49082,126.88955
+EB 1º Ciclo Lequidiga,Escola Básica Filial (EBF),-8.47651,126.74925
+EB 1º Ciclo Lereado,Escola Básica Filial (EBF),-8.48307,126.86392
+EB 1º Ciclo Liarafa,Escola Básica Filial (EBF),-8.54094,126.72395
+EB 1º Ciclo Macalodo,Escola Básica Filial (EBF),-8.49315,126.84632
+EB 1º Ciclo Narunteino,Escola Básica Filial (EBF),-8.51981,126.85346
+EB 1º Ciclo Nauteto,Escola Básica Filial (EBF),-8.69767,126.8118
+EB 1º Ciclo Raimoco,Escola Básica Filial (EBF),-8.4148,126.79238
+EB 1º Ciclo Sika,Escola Básica Filial (EBF),-8.37778167296046,126.867849285195
+EB 1º Ciclo Somocho,Escola Básica Filial (EBF),-8.42742,127.07952
+EB 1º Ciclo Teno,Escola Básica Filial (EBF),-8.3296,126.97191
+EB 1º Ciclo Vaniria,Escola Básica Filial (EBF),-8.48044,126.77649
+"EB 1º,2º Ciclo Assailaino",Escola Básica Filial (EBF),-8.43854,127.00439
+"EB 1º,2º Ciclo Baduro",Escola Básica Filial (EBF),-8.45725645032769,126.886874242094
+"EB 1º,2º Ciclo Barikafa",Escola Básica Filial (EBF),-8.56722,126.81559
+"EB 1º,2º Ciclo Buanomar",Escola Básica Filial (EBF),-8.55161,126.81126
+"EB 1º,2º Ciclo Cacavem",Escola Básica Filial (EBF),-8.56786,126.88394
+"EB 1º,2º Ciclo Chai",Escola Básica Filial (EBF),-8.61227,127.0157
+"EB 1º,2º Ciclo Culuhun",Escola Básica Filial (EBF),-8.53358,126.99986
+"EB 1º,2º Ciclo Daudere",Escola Básica Filial (EBF),-8.45317,126.82074
+"EB 1º,2º Ciclo Dom Norico",Escola Básica Filial (EBF),-8.54317,126.83274
+"EB 1º,2º Ciclo Euquise",Escola Básica Filial (EBF),-8.42274,126.76152
+"EB 1º,2º Ciclo Foema'a",Escola Básica Filial (EBF),-8.54313,126.94519
+"EB 1º,2º Ciclo Home",Escola Básica Filial (EBF),-8.50445,126.97174
+"EB 1º,2º Ciclo Ililai",Escola Básica Filial (EBF),-8.41209,126.73721
+"EB 1º,2º Ciclo Ililapa",Escola Básica Filial (EBF),-8.57162,126.98389
+"EB 1º,2º Ciclo Ira-Ara",Escola Básica Filial (EBF),-8.34231,127.01849
+"EB 1º,2º Ciclo Iradaratu",Escola Básica Filial (EBF),-8.6824,126.84369
+"EB 1º,2º Ciclo Iralafai",Escola Básica Filial (EBF),-8.43185,127.04048
+"EB 1º,2º Ciclo Lacawa",Escola Básica Filial (EBF),-8.52885,126.80072
+"EB 1º,2º Ciclo Laikara",Escola Básica Filial (EBF),-8.44776,126.87589
+"EB 1º,2º Ciclo Larimi",Escola Básica Filial (EBF),-8.69652,126.74188
+"EB 1º,2º Ciclo Leuro",Escola Básica Filial (EBF),-8.53269,126.9217
+"EB 1º,2º Ciclo Lori",Escola Básica Filial (EBF),-8.66999,127.02268
+"EB 1º,2º Ciclo Maina I",Escola Básica Filial (EBF),-8.39721,126.91023
+"EB 1º,2º Ciclo Maina II",Escola Básica Filial (EBF),-8.46677,126.88416
+"EB 1º,2º Ciclo Malahara",Escola Básica Filial (EBF),-8.47678,127.14087
+"EB 1º,2º Ciclo Maluro",Escola Básica Filial (EBF),-8.63308055555556,127.01367
+"EB 1º,2º Ciclo Mehara",Escola Básica Filial (EBF),-8.39987,127.18564
+"EB 1º,2º Ciclo Moro",Escola Básica Filial (EBF),-8.36108,126.93027
+"EB 1º,2º Ciclo Muapitine",Escola Básica Filial (EBF),-8.52162,127.08123
+"EB 1º,2º Ciclo No 1 Lospalos",Escola Básica Filial (EBF),-8.52271,126.99533
+"EB 1º,2º Ciclo No 2 Lospalos",Escola Básica Filial (EBF),-8.52281,126.99521
+"EB 1º,2º Ciclo No 3 Lospalos",Escola Básica Filial (EBF),-8.52079,126.99885
+"EB 1º,2º Ciclo Pairara",Escola Básica Filial (EBF),-8.38161,126.92001
+"EB 1º,2º Ciclo Poros",Escola Básica Filial (EBF),-8.42217,127.11006
+"EB 1º,2º Ciclo Puno",Escola Básica Filial (EBF),-8.43316,126.93807
+"EB 1º,2º Ciclo Serelau",Escola Básica Filial (EBF),-8.44,126.85416
+"EB 1º,2º Ciclo Soikili",Escola Básica Filial (EBF),-8.34892,126.98562
+"EB 1º,2º Ciclo Tasi Ibun",Escola Básica Filial (EBF),-8.36733,126.89805
+"EB 1º,2º Ciclo Tirilolo",Escola Básica Filial (EBF),-8.69782,126.8163
+"EB 1º,2º Ciclo Titilari",Escola Básica Filial (EBF),-8.47347,126.99285
+"EB 1º,2º Ciclo Tutuala",Escola Básica Filial (EBF),-8.39431,127.25581
+"EB 1º,2º Ciclo Vairoque",Escola Básica Filial (EBF),-8.5253,126.77994
+EP C Caidabo,Escola Básica Filial (EBF),-8.65047,126.8273
+EP C Fuiluro,Escola Básica Filial (EBF),-8.44794,127.01492
+EP C St. Yosep Pitileti,Escola Básica Filial (EBF),-8.37033,127.03641
+"EBC 1º,2º,3º Ciclo Cainleu Iliomar",Escola Básica Central (EBC),-8.69708,126.82344
+"EBC 1º,2º,3º Ciclo Com Lautem",Escola Básica Central (EBC),-8.35033,127.05175
+"EBC 1º,2º,3º Ciclo Iliomar",Escola Básica Central (EBC),-8.71271,126.82646
+"EBC 1º,2º,3º Ciclo Luro",Escola Básica Central (EBC),-8.54174,126.83491
+"EBC 1º,2º,3º Ciclo Odofuro Luro",Escola Básica Central (EBC),-8.5144,126.83498
+"EBC 1º,2º,3º Ciclo Raça Lospalos",Escola Básica Central (EBC),-8.43983638303363,126.981381374023
+"EBC 1º,2º,3º Ciclo Souro Lospalos",Escola Básica Central (EBC),-8.52654,126.96064
+EBC 3º Ciclo Culuhun Lospalos,Escola Básica Central (EBC),-8.53533,126.99978
+EBC 3º Ciclo Laiku Lospalos,Escola Básica Central (EBC),-8.50489,127.006
+EBC 3º Ciclo Lautem,Escola Básica Central (EBC),-8.36434898643358,126.903764494368
+EBC 3º Ciclo Leusari Lautem,Escola Básica Central (EBC),-8.39477,126.84161
+EBC 3º Ciclo Lospalos,Escola Básica Central (EBC),-8.52016,126.99771
+EBC 3º Ciclo Lulira Lospalos,Escola Básica Central (EBC),-8.52508,127.00661
+EBC 3º Ciclo Mehara Tutuala,Escola Básica Central (EBC),-8.39996,127.19388
+EPS C Dom Bosco Fuiloro,Escola Básica Central (EBC),-8.44826,127.01447
+EPS C Joao Paulo II Iliomar,Escola Básica Central (EBC),-8.70717,126.82664
+ES P Nino C. Santana Lospalos,Escola Secundária Geral (ESG),-8.50829,126.9896
+ES P No 1 Lautem,Escola Secundária Geral (ESG),-8.36451741364894,126.905170152556
+Escola Tecnica Lospalos,Escola Secundária Técnica (ESTV),-8.50504739345922,127.006445539918
+Nucleu Pré-Escolar C,Pre-Escolar,-8.57206659,125.4644329
+Pré-Escolar Agape Ki,Pre-Escolar,-8.62173834,125.3847804
+Pré-Escolar Baura,Pre-Escolar,-8.65865308,125.3786252
+Pré-Escolar Bermeta,Pre-Escolar,-8.59249396,125.4000151
+Pré-Escolar Ergaa,Pre-Escolar,-8.68326402,125.370419
+Pré-Escolar Labarik,Pre-Escolar,-8.59313308,125.3281711
+Pré-Escolar Lauhata,Pre-Escolar,-8.5803713,125.3625553
+Pré-Escolar Madre El,Pre-Escolar,-8.61164116,125.2002044
+Pré-Escolar Maubara,Pre-Escolar,-8.61195917,125.2047485
+Pré-Escolar Metagou,Pre-Escolar,-8.62772184,125.3624773
+Pré-Escolar O.G Darulete,Pre-Escolar,-8.65717116,125.3584141
+Pré-Escolar O.G Epe,Pre-Escolar,-8.5654552,125.4199328
+Pré-Escolar O.G Leb,Pre-Escolar,-8.64312493,125.3207711
+Pré-Escolar O.G Puke,Pre-Escolar,-8.59725614,125.3347013
+Pré-Escolar O.G Rae,Pre-Escolar,-8.60793762,125.2649736
+Pré-Escolar O.G Vatunau,Pre-Escolar,-8.60639024,125.2857376
+Pré-Escolar Oca Gorr,Pre-Escolar,-8.59189239,125.3254576
+Pré-Escolar St. Rafael (Degimea),Pre-Escolar,-8.61957413,125.3838494
+Pré-Escolar St. Rafael (Fahite),Pre-Escolar,-8.62170313,125.3849838
+Pré-Escolar Sta. Teresinha,Pre-Escolar,-8.59616331,125.3295564
+Pré-Escolar Tibar,Pre-Escolar,-8.57028376,125.4906726
+Pré-Escolar Varela H,Pre-Escolar,-8.5653998,125.4199027
+EB 1º Ciclo Banitur,Escola Básica Filial (EBF),-8.70135,125.28996
+EB 1º Ciclo Baura,Escola Básica Filial (EBF),-8.65787,125.38069
+EB 1º Ciclo Caicavae,Escola Básica Filial (EBF),-8.64519,125.18892
+EB 1º Ciclo Caiteho,Escola Básica Filial (EBF),-8.56447,125.41976
+EB 1º Ciclo Dair,Escola Básica Filial (EBF),-8.63725,125.13833
+EB 1º Ciclo Ermeta,Escola Básica Filial (EBF),-8.63625,125.40997
+EB 1º Ciclo Gamanuhati,Escola Básica Filial (EBF),-8.621,125.43001
+EB 1º Ciclo Gariana,Escola Básica Filial (EBF),-8.67436,125.29428
+EB 1º Ciclo Humbuti,Escola Básica Filial (EBF),-8.60114794389847,125.524730737996
+EB 1º Ciclo Pilarparia,Escola Básica Filial (EBF),-8.62991,125.45009
+EB 1º Ciclo Vaupu,Escola Básica Filial (EBF),-8.59308,125.35788
+"EB 1º,2º Ciclo Asumano",Escola Básica Filial (EBF),-8.68563,125.34964
+"EB 1º,2º Ciclo Bazartete",Escola Básica Filial (EBF),-8.62707,125.38259
+"EB 1º,2º Ciclo Cabulimo",Escola Básica Filial (EBF),-8.63746,125.34135
+"EB 1º,2º Ciclo Caicasa",Escola Básica Filial (EBF),-8.64505,125.15484
+"EB 1º,2º Ciclo Ediri",Escola Básica Filial (EBF),-8.60692,125.23922
+"EB 1º,2º Ciclo Fahilebo",Escola Básica Filial (EBF),-8.64312,125.39018
+"EB 1º,2º Ciclo Fahite",Escola Básica Filial (EBF),-8.61875,125.46532
+"EB 1º,2º Ciclo Fatumasi",Escola Básica Filial (EBF),-8.62148,125.38489
+"EB 1º,2º Ciclo Faulara",Escola Básica Filial (EBF),-8.71843,125.24217
+"EB 1º,2º Ciclo Fazenda",Escola Básica Filial (EBF),-8.6604,125.33079
+"EB 1º,2º Ciclo Guico",Escola Básica Filial (EBF),-8.73897,125.162888888889
+"EB 1º,2º Ciclo Hatukesilete",Escola Básica Filial (EBF),-8.64174,125.32032
+"EB 1º,2º Ciclo Laclolema",Escola Básica Filial (EBF),-8.61996,125.31565
+"EB 1º,2º Ciclo Lauhata",Escola Básica Filial (EBF),-8.59381,125.35801
+"EB 1º,2º Ciclo Leborema",Escola Básica Filial (EBF),-8.68492,125.38896
+"EB 1º,2º Ciclo Lebotatalelo",Escola Básica Filial (EBF),-8.63848,125.30325
+"EB 1º,2º Ciclo Lebotelo",Escola Básica Filial (EBF),-8.65764,125.20876
+"EB 1º,2º Ciclo Lebuloa",Escola Básica Filial (EBF),-8.64782,125.4375
+"EB 1º,2º Ciclo Liquiça",Escola Básica Filial (EBF),-8.59148,125.32856
+"EB 1º,2º Ciclo Lisaico",Escola Básica Filial (EBF),-8.65942,125.25721
+"EB 1º,2º Ciclo Loidahar",Escola Básica Filial (EBF),-8.62618,125.33077
+"EB 1º,2º Ciclo Luculai",Escola Básica Filial (EBF),-8.6231,125.32201
+"EB 1º,2º Ciclo Maubara",Escola Básica Filial (EBF),-8.61351,125.2052
+"EB 1º,2º Ciclo Mauboque",Escola Básica Filial (EBF),-8.59709,125.31423
+"EB 1º,2º Ciclo Maumeta",Escola Básica Filial (EBF),-8.58561953783969,125.34512194797
+"EB 1º,2º Ciclo Metagou",Escola Básica Filial (EBF),-8.62792,125.36264
+"EB 1º,2º Ciclo Siamodo",Escola Básica Filial (EBF),-8.73342,125.20063
+"EB 1º,2º Ciclo Tapomanulu",Escola Básica Filial (EBF),-8.72863,125.15346
+"EB 1º,2º Ciclo Tibar",Escola Básica Filial (EBF),-8.57017,125.49067
+"EB 1º,2º Ciclo Turleo",Escola Básica Filial (EBF),-8.6042,125.48469
+"EB 1º,2º Ciclo Vatuboro",Escola Básica Filial (EBF),-8.7292,125.10758
+"EB 1º,2º Ciclo Vatunau",Escola Básica Filial (EBF),-8.60602,125.28609
+"EB 1º,2º Ciclo Vatuvou",Escola Básica Filial (EBF),-8.64414,125.22682
+EP C Nº02 Bazartete,Escola Básica Filial (EBF),-8.62025,125.3826
+EP C São João de Brito - Epelo,Escola Básica Filial (EBF),-8.5732,125.37966
+EP C São João de Brito - Liquiçá,Escola Básica Filial (EBF),-8.59736,125.32957
+EP C São João de Brito - Maubara,Escola Básica Filial (EBF),-8.63212,125.17009
+EB 3º Ciclo Fatumasse Bazartete,Escola Básica Central (EBC),-8.62148,125.38489
+"EBC 1º,2º,3º Ciclo Bogoro Bazartete",Escola Básica Central (EBC),-8.5933,125.39905
+"EBC 1º,2º,3º Ciclo Cassait",Escola Básica Central (EBC),-8.5716,125.46413
+"EBC 1º,2º,3º Ciclo Darulete",Escola Básica Central (EBC),-8.657,125.35795
+"EBC 1º,2º,3º Ciclo Leorema",Escola Básica Central (EBC),-8.67761,125.37173
+EBC 3º Ciclo Liquiça,Escola Básica Central (EBC),-8.5935,125.3322
+EBC 3º Ciclo Loes,Escola Básica Central (EBC),-8.7302,125.13175
+EBC 3º Ciclo Maubara,Escola Básica Central (EBC),-8.61043,125.20755
+EPS C Immalate Heart Mary Eschool Tibar,Escola Básica Central (EBC),-8.66362,125.11347
+EPS C Sao Joao de Brito Liquica,Escola Básica Central (EBC),-8.59249,125.32761
+ES C Sao J. Brito Liquica,Escola Secundária Geral (ESG),-8.59249,125.32761
+ES P F Fatumasi,Escola Secundária Geral (ESG),-8.62148,125.38489
+ES P F Maubara,Escola Secundária Geral (ESG),-8.61043,125.20755
+ES P I Liquiçá,Escola Secundária Geral (ESG),-8.58976123496996,125.333592263787
+Escola Tecnica Comercio Liquica,Escola Secundária Técnica (ESTV),-8.59125014413059,125.349243511133
+Pré-Escolar Belun Obrato,Pre-Escolar,-8.50729016,125.9952667
+Pré-Escolar Moris Cr,Pre-Escolar,-8.67936174,125.990131
+Pré-Escolar Moris Foun (Hatu Metak),Pre-Escolar,-8.47639069,125.8612126
+Pré-Escolar Moris Foun (Ilheu),Pre-Escolar,-8.53887116,125.9457022
+Pré-Escolar Moris Foun (Nunsurana),Pre-Escolar,-8.51318365,126.0159769
+Pré-Escolar Moris Foun (Raimean),Pre-Escolar,-8.6061216,126.1452123
+Pré-Escolar Publico Sau Lidun,Pre-Escolar,-8.51327358,126.0082359
+Pré-Escolar St. Antonio,Pre-Escolar,-8.51221687,126.0175762
+Pré-Escolar Uma Boco,Pre-Escolar,-8.47635138,125.8612127
+EB 1º Ciclo Cara,Escola Básica Filial (EBF),-8.55593,125.85816
+"EB 1º,2º Ciclo Aimeta Laran",Escola Básica Filial (EBF),-8.9501,126.09706
+"EB 1º,2º Ciclo Aiteas",Escola Básica Filial (EBF),-8.51051,126.01662
+"EB 1º,2º Ciclo Bahadik",Escola Básica Filial (EBF),-8.59219,125.9038
+"EB 1º,2º Ciclo Bahareduk",Escola Básica Filial (EBF),-8.7059,125.964588888889
+"EB 1º,2º Ciclo Barique",Escola Básica Filial (EBF),-8.84899,126.06333
+"EB 1º,2º Ciclo Batara",Escola Básica Filial (EBF),-8.74618,125.90965
+"EB 1º,2º Ciclo Be'Edan",Escola Básica Filial (EBF),-8.49296,125.95371
+"EB 1º,2º Ciclo Beboro",Escola Básica Filial (EBF),-8.54016,126.16476
+"EB 1º,2º Ciclo Bora",Escola Básica Filial (EBF),-8.80356,125.92269
+"EB 1º,2º Ciclo Cacai Uman",Escola Básica Filial (EBF),-8.97672,126.10196
+"EB 1º,2º Ciclo Cairui",Escola Básica Filial (EBF),-8.60809,126.1448
+"EB 1º,2º Ciclo Condar",Escola Básica Filial (EBF),-8.53485,125.95998
+"EB 1º,2º Ciclo Dirik-Hun",Escola Básica Filial (EBF),-8.74845,125.91901
+"EB 1º,2º Ciclo Fahe Lacor",Escola Básica Filial (EBF),-8.65477,125.79649
+"EB 1º,2º Ciclo Fatu Makerek",Escola Básica Filial (EBF),-8.79379,125.79887
+"EB 1º,2º Ciclo Funar",Escola Básica Filial (EBF),-8.74988,125.86759
+"EB 1º,2º Ciclo Hatu Ermera",Escola Básica Filial (EBF),-8.60743,125.76321
+"EB 1º,2º Ciclo Labubo",Escola Básica Filial (EBF),-8.61658,125.82907
+"EB 1º,2º Ciclo Manehat",Escola Básica Filial (EBF),-8.93824,125.96427
+"EB 1º,2º Ciclo Manelima",Escola Básica Filial (EBF),-8.76666,125.90362
+"EB 1º,2º Ciclo Mantane",Escola Básica Filial (EBF),-8.55675,125.91001
+"EB 1º,2º Ciclo Obrato",Escola Básica Filial (EBF),-8.50738,125.99526
+"EB 1º,2º Ciclo Orlalan",Escola Básica Filial (EBF),-8.74887,125.90972
+"EB 1º,2º Ciclo Pualaca",Escola Básica Filial (EBF),-8.79018,125.96832
+"EB 1º,2º Ciclo Rebutikeon",Escola Básica Filial (EBF),-8.58649,125.84512
+"EB 1º,2º Ciclo Rembor",Escola Básica Filial (EBF),-8.54736,125.96425
+"EB 1º,2º Ciclo Rentau",Escola Básica Filial (EBF),-8.51033,126.0161
+"EB 1º,2º Ciclo Rubae",Escola Básica Filial (EBF),-8.6082,125.80577
+"EB 1º,2º Ciclo Rulalan",Escola Básica Filial (EBF),-8.75512,125.96153
+"EB 1º,2º Ciclo Samalai",Escola Básica Filial (EBF),-8.57486,126.15949
+"EB 1º,2º Ciclo Sananain",Escola Básica Filial (EBF),-8.63986,125.97541
+"EB 1º,2º Ciclo Sassahe",Escola Básica Filial (EBF),-8.79746,125.835
+"EB 1º,2º Ciclo Tasi Fatin",Escola Básica Filial (EBF),-8.86736,125.87552
+"EB 1º,2º Ciclo Uma Boco",Escola Básica Filial (EBF),-8.97587,126.05242
+EP C Hatuconam,Escola Básica Filial (EBF),-8.56472,125.8291
+EP C Iliheu 18,Escola Básica Filial (EBF),-8.53805,125.94683
+EP C St. Francisco 12,Escola Básica Filial (EBF),-8.98311,126.06337
+"EBC 1º,2º,3º Ciclo Abat Oan",Escola Básica Central (EBC),-8.98385,126.02607
+"EBC 1º,2º,3º Ciclo Beadi",Escola Básica Central (EBC),-8.53613,126.01144
+"EBC 1º,2º,3º Ciclo Cribas",Escola Básica Central (EBC),-8.67244,125.99144
+"EBC 1º,2º,3º Ciclo Hatu Metak",Escola Básica Central (EBC),-8.47733,125.85915
+"EBC 1º,2º,3º Ciclo Labatin",Escola Básica Central (EBC),-8.5915,125.8592
+EBC 3º Ciclo 5 de Maio,Escola Básica Central (EBC),-8.55419,125.90693
+EBC 3º Ciclo Horta Cairui,Escola Básica Central (EBC),-8.60809,126.1448
+EBC 3º Ciclo Laclubar,Escola Básica Central (EBC),-8.74628,125.91385
+EBC 3º Ciclo Lay Doe Laleia,Escola Básica Central (EBC),-8.53209069455633,126.161828703654
+EBC 3º Ciclo Natarbora,Escola Básica Central (EBC),-8.97214,126.05462
+EBC 3º Ciclo Sao Bento Salau,Escola Básica Central (EBC),-8.82791,125.98474
+EBC 3º Ciclo Vasco Da Gama,Escola Básica Central (EBC),-8.51299,126.01577
+EPS C Nossa Senhora de Aitara,Escola Básica Central (EBC),-8.85794,125.9427
+EPS C Santo Antonio,Escola Básica Central (EBC),-8.5118,126.01736
+ES C Dom Basilio,Escola Secundária Geral (ESG),-8.74653,125.91212
+ES C Santo Antonio,Escola Secundária Geral (ESG),-8.5118,126.01736
+ES F Primeira Dama Cristy Sword,Escola Secundária Geral (ESG),-8.53364,126.16475
+ES P Kay Rala,Escola Secundária Geral (ESG),-8.53479,126.01053
+Nucleu Pré-Escolar W,Pre-Escolar,-9.03627072,125.9841975
+Pré-Escolar Antonio,Pre-Escolar,-9.12895404,125.8333831
+Pré-Escolar Babulo,Pre-Escolar,-9.025719,125.6572507
+Pré-Escolar Cossamar,Pre-Escolar,-8.98606022,125.6932659
+Pré-Escolar Dotic,Pre-Escolar,-9.06758032,125.9169688
+Pré-Escolar Fatulo,Pre-Escolar,-8.97692492,125.6614201
+Pré-Escolar Francisco,Pre-Escolar,-9.02946814,125.99386
+Pré-Escolar Haburas,Pre-Escolar,-9.07202281,125.9799059
+Pré-Escolar Kiras As,Pre-Escolar,-9.01050182,126.0090337
+Pré-Escolar Nossa Senhora,Pre-Escolar,-9.01029303,126.006704
+Pré-Escolar Publico Letefoho,Pre-Escolar,-8.99862743,125.6496933
+Pré-Escolar Raikotu,Pre-Escolar,-9.0786539,125.6873655
+Pré-Escolar Raimalia,Pre-Escolar,-8.91140614,125.7840538
+Pré-Escolar Rainha da Paz,Pre-Escolar,-9.02601488,125.9167089
+Pré-Escolar St. Miguel (Kotalala),Pre-Escolar,-8.9990114,125.645524
+Pré-Escolar St. Miguel (Lalika),Pre-Escolar,-9.14580518,125.7043239
+EB 1º Ciclo Bemetan,Escola Básica Filial (EBF),-9.15313,125.718619444444
+EB 1º Ciclo Bercoban,Escola Básica Filial (EBF),-9.00716,125.76336
+EB 1º Ciclo Blaro,Escola Básica Filial (EBF),-8.92685,125.666880555556
+EB 1º Ciclo Cledik,Escola Básica Filial (EBF),-9.00206,125.91396
+EB 1º Ciclo Hatsana-Udo/Daisua Lama,Escola Básica Filial (EBF),-9.01817,125.620061111111
+EB 1º Ciclo Motakelan,Escola Básica Filial (EBF),-9.13615,125.799969444444
+EB 1º Ciclo Orana,Escola Básica Filial (EBF),-8.86597,125.75393
+EB 1º Ciclo Sesurai,Escola Básica Filial (EBF),-9.10048,125.69535
+EB 1º Ciclo Turon,Escola Básica Filial (EBF),-9.03896,125.66365
+"EB 1º,2º Ciclo Ailalec 1",Escola Básica Filial (EBF),-8.89791,125.78002
+"EB 1º,2º Ciclo Ailuli",Escola Básica Filial (EBF),-8.99669,125.676680555556
+"EB 1º,2º Ciclo Aitemua",Escola Básica Filial (EBF),-8.83543,125.695438888889
+"EB 1º,2º Ciclo Aituha",Escola Básica Filial (EBF),-8.98683,125.7826
+"EB 1º,2º Ciclo Aituha",Escola Básica Filial (EBF),-8.91666,125.78114
+"EB 1º,2º Ciclo Auberlico",Escola Básica Filial (EBF),-9.04657,125.8525
+"EB 1º,2º Ciclo Beremana",Escola Básica Filial (EBF),-8.83465,125.71788
+"EB 1º,2º Ciclo Bitirai",Escola Básica Filial (EBF),-9.04229,126.0367
+"EB 1º,2º Ciclo Boraulo",Escola Básica Filial (EBF),-8.95337,125.745538888889
+"EB 1º,2º Ciclo Bubususu",Escola Básica Filial (EBF),-8.94001,125.779488888889
+"EB 1º,2º Ciclo Cablaqui",Escola Básica Filial (EBF),-8.9815,125.62346
+"EB 1º,2º Ciclo Caimauc",Escola Básica Filial (EBF),-8.81615,125.7009
+"EB 1º,2º Ciclo Carbulau",Escola Básica Filial (EBF),-8.95651,125.653638888889
+"EB 1º,2º Ciclo Colocau",Escola Básica Filial (EBF),-9.11922,125.92099
+"EB 1º,2º Ciclo Cotolala",Escola Básica Filial (EBF),-8.99724,125.639211111111
+"EB 1º,2º Ciclo Daramatan",Escola Básica Filial (EBF),-8.96871,125.73829
+"EB 1º,2º Ciclo Fatucahi",Escola Básica Filial (EBF),-9.03654,125.98373
+"EB 1º,2º Ciclo Fatucalo",Escola Básica Filial (EBF),-8.7562,125.78267
+"EB 1º,2º Ciclo Fericsare",Escola Básica Filial (EBF),-9.10226,125.78197
+"EB 1º,2º Ciclo Fohotu",Escola Básica Filial (EBF),-8.83381,125.76371
+"EB 1º,2º Ciclo Furaclau",Escola Básica Filial (EBF),-8.86314,125.70318
+"EB 1º,2º Ciclo Grotu",Escola Básica Filial (EBF),-9.01759,125.624661111111
+"EB 1º,2º Ciclo Lesuata",Escola Básica Filial (EBF),-8.78808,125.75974
+"EB 1º,2º Ciclo Liurai",Escola Básica Filial (EBF),-8.82957,125.74437
+"EB 1º,2º Ciclo Manico",Escola Básica Filial (EBF),-9.00595,125.63427
+"EB 1º,2º Ciclo Manumera",Escola Básica Filial (EBF),-8.82322,125.71083
+"EB 1º,2º Ciclo Manus",Escola Básica Filial (EBF),-9.01991,125.74625
+"EB 1º,2º Ciclo Matorec",Escola Básica Filial (EBF),-8.8345,125.76428
+"EB 1º,2º Ciclo Mendelo",Escola Básica Filial (EBF),-8.87659,125.6991
+"EB 1º,2º Ciclo Orluli",Escola Básica Filial (EBF),-8.96367,125.66045
+"EB 1º,2º Ciclo Quiramtetuk",Escola Básica Filial (EBF),-8.93654,125.89783
+"EB 1º,2º Ciclo Rialau",Escola Básica Filial (EBF),-8.99905,125.64961
+"EB 1º,2º Ciclo Riatu",Escola Básica Filial (EBF),-9.00687,125.61158
+"EB 1º,2º Ciclo Rotuto",Escola Básica Filial (EBF),-8.99195,125.59652
+"EB 1º,2º Ciclo Sadan Sarim",Escola Básica Filial (EBF),-8.99219,125.85665
+"EB 1º,2º Ciclo Searema",Escola Básica Filial (EBF),-9.0183,125.64482
+"EB 1º,2º Ciclo Selihasan",Escola Básica Filial (EBF),-9.15372,125.76758
+"EB 1º,2º Ciclo Tualaran",Escola Básica Filial (EBF),-9.07138,125.88492
+"EB 1º,2º Ciclo Wedauberec",Escola Básica Filial (EBF),-9.12279,125.85197
+"EB 1º,2º Ciclo Weleti",Escola Básica Filial (EBF),-9.07225,125.97785
+"EB 1º,2º Ciclo Wesusu",Escola Básica Filial (EBF),-9.11208,125.897138888889
+"EB 1º,2º Ciclo Weulun",Escola Básica Filial (EBF),-9.04785,125.950019444445
+EP C Nº1 Datina,Escola Básica Filial (EBF),-8.93228,125.62897
+EP C Rainha da Paz Weberek,Escola Básica Filial (EBF),-9.02783,125.91488
+EP C S.M. Arcanjo Letefoho,Escola Básica Filial (EBF),-8.99905,125.64961
+EP C Tutuluru,Escola Básica Filial (EBF),-8.9904,125.69065
+EP C Umatutun,Escola Básica Filial (EBF),-8.98803,125.69448
+"EBC 1º,2º,3º Ciclo Clacuc",Escola Básica Central (EBC),-9.01202,126.0077
+"EBC 1º,2º,3º Ciclo Daisua Simpang Tiga",Escola Básica Central (EBC),-9.07875,125.68726
+"EBC 1º,2º,3º Ciclo Dotic",Escola Básica Central (EBC),-9.06754,125.91686
+"EBC 1º,2º,3º Ciclo Fahinehan",Escola Básica Central (EBC),-8.92463,125.753
+"EBC 1º,2º,3º Ciclo Fatuco",Escola Básica Central (EBC),-8.97703,125.66144
+"EBC 1º,2º,3º Ciclo Raifusa",Escola Básica Central (EBC),-9.14609,125.70508
+"EBC 1º,2º,3º Ciclo Tarabula",Escola Básica Central (EBC),-8.85281,125.75024
+EBC 3º Ciclo Deligensia Letefoho,Escola Básica Central (EBC),-8.99602,125.65176
+EBC 3º Ciclo Mahaquidan,Escola Básica Central (EBC),-9.01998,125.79214
+EBC 3º Ciclo Nº2 Babulo,Escola Básica Central (EBC),-9.02537,125.65691
+EBC 3º Ciclo Turiscai,Escola Básica Central (EBC),-8.82071,125.71591
+EPS C Rainha da Paz Weberek,Escola Básica Central (EBC),-9.02675,125.9163
+EPS C Sao Miguel Arcanjo,Escola Básica Central (EBC),-9.02194,125.65497
+EPS C St Fransiskus Asis,Escola Básica Central (EBC),-9.03001,125.99326
+ES C Nossa Senhora De Fatima,Escola Secundária Geral (ESG),-8.82636,125.70634
+ES C St Fransiskus Asis,Escola Secundária Geral (ESG),-9.03001,125.99326
+ES P 1912 Same,Escola Secundária Geral (ESG),-8.98808,125.66048
+ES P Francisco B da C.Fatuberliu,Escola Secundária Geral (ESG),-9.03479,125.99289
+ES P Halibur Betano,Escola Secundária Geral (ESG),-9.14309,125.70687
+Escola Tecnica Comercio Acadiru-Hun,Escola Secundária Técnica (ESTV),-9.01863031081777,125.668671199204
+Escola Tecnica Comercio Dotic,Escola Secundária Técnica (ESTV),-9.12028577913527,125.836106928005
+Pré-Escolar Antonio,Pre-Escolar,-9.20237674,124.3706809
+Pré-Escolar Boboloa,Pre-Escolar,-9.28015519,124.3702545
+Pré-Escolar Francisco,Pre-Escolar,-9.24715983,124.3468722
+Pré-Escolar Marcelo,Pre-Escolar,-9.22969303,124.2610967
+Pré-Escolar Nossa Senhora,Pre-Escolar,-9.20877834,124.3564833
+EB 1º Ciclo Bona,Escola Básica Filial (EBF),-9.28837,124.1668
+EB 1º Ciclo Eunae,Escola Básica Filial (EBF),-9.25825,124.38498
+"EB 1º,2º Ciclo 1 de Maio",Escola Básica Filial (EBF),-9.19928,124.354261111111
+"EB 1º,2º Ciclo 28 de Agosto",Escola Básica Filial (EBF),-9.20005,124.36973
+"EB 1º,2º Ciclo 30 de Agosto",Escola Básica Filial (EBF),-9.20919,124.34877
+"EB 1º,2º Ciclo 31 de Agosto Binila",Escola Básica Filial (EBF),-9.30336,124.35355
+"EB 1º,2º Ciclo Baocnana",Escola Básica Filial (EBF),-9.30694,124.13015
+"EB 1º,2º Ciclo Baqiutba Elcona",Escola Básica Filial (EBF),-9.41223,124.35682
+"EB 1º,2º Ciclo Bibesi",Escola Básica Filial (EBF),-9.42207,124.341519444445
+"EB 1º,2º Ciclo Binibu Pune",Escola Básica Filial (EBF),-9.37018,124.31742
+"EB 1º,2º Ciclo Bobmanat",Escola Básica Filial (EBF),-9.39415,124.351369444444
+"EB 1º,2º Ciclo Faefnome",Escola Básica Filial (EBF),-9.33642,124.32245
+"EB 1º,2º Ciclo Mahata",Escola Básica Filial (EBF),-9.19122,124.38804
+"EB 1º,2º Ciclo Maquelab",Escola Básica Filial (EBF),-9.23815,124.25287
+"EB 1º,2º Ciclo Neonpene",Escola Básica Filial (EBF),-9.2955,124.33745
+"EB 1º,2º Ciclo Noapai",Escola Básica Filial (EBF),-9.25708,124.35211
+"EB 1º,2º Ciclo Oelcaem",Escola Básica Filial (EBF),-9.30801,124.23391
+"EB 1º,2º Ciclo Oenuno",Escola Básica Filial (EBF),-9.24318,124.21977
+"EB 1º,2º Ciclo Oesilo",Escola Básica Filial (EBF),-9.351,124.37948
+"EB 1º,2º Ciclo Passabe Maesmat",Escola Básica Filial (EBF),-9.45862,124.33819
+"EB 1º,2º Ciclo Quinat",Escola Básica Filial (EBF),-9.27555,124.41401
+"EB 1º,2º Ciclo Reliquio Citrana",Escola Básica Filial (EBF),-9.32817,124.09271
+"EB 1º,2º Ciclo Roti",Escola Básica Filial (EBF),-9.24647,124.31601
+"EB 1º,2º Ciclo Sakato",Escola Básica Filial (EBF),-9.17279,124.45806
+"EB 1º,2º Ciclo Sonamnasi",Escola Básica Filial (EBF),-9.31012,124.32509
+"EB 1º,2º Ciclo Ulas",Escola Básica Filial (EBF),-9.27016,124.324069444444
+EP C Haemnanu,Escola Básica Filial (EBF),-9.45975,124.33053
+EP C Oe-Lulan,Escola Básica Filial (EBF),-9.31954,124.40215
+EP C Oecusse,Escola Básica Filial (EBF),-9.19743,124.37464
+EP C Padiae,Escola Básica Filial (EBF),-9.24553,124.34991
+"EBC 1º,2º,3º Ciclo Bobolo´a",Escola Básica Central (EBC),-9.27989,124.37064
+"EBC 1º,2º,3º Ciclo Meco Sicaloti",Escola Básica Central (EBC),-9.28431,124.34999
+"EBC 1º,2º,3º Ciclo Tulaica Anmat",Escola Básica Central (EBC),-9.22908,124.29649
+EBC 3º Ciclo Baocnana,Escola Básica Central (EBC),-9.30624,124.13336
+EBC 3º Ciclo Oesilo,Escola Básica Central (EBC),-9.35209,124.37865
+EBC 3º Ciclo Pante Makasar Palaban,Escola Básica Central (EBC),-9.20072,124.35099
+EBC 3º Ciclo Passabe,Escola Básica Central (EBC),-9.46127,124.33692
+EPS C F St Antonio Padiae,Escola Básica Central (EBC),-9.24597,124.34903
+EPS C St.Antonio,Escola Básica Central (EBC),-9.19784,124.37384
+ES C St. Antonio,Escola Secundária Geral (ESG),-9.19758,124.39039
+ES P Baqui,Escola Secundária Geral (ESG),-9.28516,124.35209
+ES P Palaban,Escola Secundária Geral (ESG),-9.20185,124.34688
+Escola Tecnica Comercio Pante Macasar,Escola Secundária Técnica (ESTV),-9.20101099128796,124.349753948311
+Nucleu Pré-Escolar H,Pre-Escolar,-8.86897716,126.3661521
+Pré-Escolar Bre-Ana,Pre-Escolar,-8.75842471,126.313902
+Pré-Escolar Francisco,Pre-Escolar,-8.86907858,126.3646967
+Pré-Escolar Friendsh,Pre-Escolar,-8.858883,126.3631928
+Pré-Escolar Madre Tr,Pre-Escolar,-8.83455502,126.215097
+Pré-Escolar Maluruh,Pre-Escolar,-8.9447613,126.4489262
+Pré-Escolar Naroman,Pre-Escolar,-8.96587481,126.2692705
+Pré-Escolar Nossa Senhora,Pre-Escolar,-8.75015398,126.7000276
+Pré-Escolar Ra-Me-An,Pre-Escolar,-8.75936541,126.29425
+Pré-Escolar Santo Lu,Pre-Escolar,-8.73966501,126.3673291
+Pré-Escolar Sta. Teresinha,Pre-Escolar,-8.81804076,126.5309503
+Pré-Escolar Ularhik,Pre-Escolar,-8.85657446,126.3065951
+Pré-Escolar Vida Nov,Pre-Escolar,-8.91240078,126.2809797
+Pré-Escolar We-Hali,Pre-Escolar,-8.82996027,126.1734034
+EB 1º Ciclo Bubuha,Escola Básica Filial (EBF),-8.67649,126.69028
+EB 1º Ciclo Buta'o,Escola Básica Filial (EBF),-8.69772,126.2692
+EB 1º Ciclo Calo,Escola Básica Filial (EBF),-8.8312,126.17163
+EB 1º Ciclo Defalasi,Escola Básica Filial (EBF),-8.68085,126.485761111111
+EB 1º Ciclo Digamasi,Escola Básica Filial (EBF),-8.70547,126.52873
+EB 1º Ciclo Dotilita,Escola Básica Filial (EBF),-8.69187,126.64024
+EB 1º Ciclo Fatuai,Escola Básica Filial (EBF),-8.81128,126.4512
+EB 1º Ciclo Kaistura,Escola Básica Filial (EBF),-8.7381,126.6419
+EB 1º Ciclo Nuntetuk,Escola Básica Filial (EBF),-8.78833,126.09332
+EB 1º Ciclo Samanu,Escola Básica Filial (EBF),-8.71352,126.46929
+"EB 1º,2º Ciclo Aimanas Rai",Escola Básica Filial (EBF),-8.9411,126.155
+"EB 1º,2º Ciclo Assalaitula",Escola Básica Filial (EBF),-8.67419,126.36495
+"EB 1º,2º Ciclo Bahaneo",Escola Básica Filial (EBF),-8.75802,126.31276
+"EB 1º,2º Ciclo Bahatata",Escola Básica Filial (EBF),-8.65451,126.65395
+"EB 1º,2º Ciclo Baulale",Escola Básica Filial (EBF),-8.73663,126.71474
+"EB 1º,2º Ciclo Belia",Escola Básica Filial (EBF),-8.82104,126.52813
+"EB 1º,2º Ciclo Bibileo",Escola Básica Filial (EBF),-8.96584,126.26922
+"EB 1º,2º Ciclo Buanurac",Escola Básica Filial (EBF),-8.83154,126.3724
+"EB 1º,2º Ciclo Bubulita",Escola Básica Filial (EBF),-8.68263,126.54757
+"EB 1º,2º Ciclo Builale",Escola Básica Filial (EBF),-8.69889,126.34337
+"EB 1º,2º Ciclo Cailake Babo",Escola Básica Filial (EBF),-8.78412,126.13504
+"EB 1º,2º Ciclo Comu-Oli",Escola Básica Filial (EBF),-8.75798,126.65796
+"EB 1º,2º Ciclo Craras",Escola Básica Filial (EBF),-8.8574,126.30456
+"EB 1º,2º Ciclo Dalirisi",Escola Básica Filial (EBF),-8.73833,126.43587
+"EB 1º,2º Ciclo Debuisi",Escola Básica Filial (EBF),-8.74412,126.54509
+"EB 1º,2º Ciclo Dilor",Escola Básica Filial (EBF),-8.84131,126.20995
+"EB 1º,2º Ciclo Edemumo",Escola Básica Filial (EBF),-8.77477,126.50684
+"EB 1º,2º Ciclo Fatudere",Escola Básica Filial (EBF),-8.89959,126.5075
+"EB 1º,2º Ciclo Hau-Oli",Escola Básica Filial (EBF),-8.77508,126.63899
+"EB 1º,2º Ciclo Irabere",Escola Básica Filial (EBF),-8.70358,126.71503
+"EB 1º,2º Ciclo Irabin de Baixo",Escola Básica Filial (EBF),-8.74822,126.705869444445
+"EB 1º,2º Ciclo Iratokor",Escola Básica Filial (EBF),-8.80333,126.58279
+"EB 1º,2º Ciclo Kaikasa Bu'u",Escola Básica Filial (EBF),-8.77411,126.58551
+"EB 1º,2º Ciclo Laline",Escola Básica Filial (EBF),-8.76094,126.09619
+"EB 1º,2º Ciclo Liaruca",Escola Básica Filial (EBF),-8.73524,126.28113
+"EB 1º,2º Ciclo Loco-Loco",Escola Básica Filial (EBF),-8.77091,126.54839
+"EB 1º,2º Ciclo Loi Ulo",Escola Básica Filial (EBF),-8.68422,126.6782
+"EB 1º,2º Ciclo Loihunu",Escola Básica Filial (EBF),-8.79071,126.376
+"EB 1º,2º Ciclo Luga-Assa",Escola Básica Filial (EBF),-8.86452,126.507069444444
+"EB 1º,2º Ciclo Maimi",Escola Básica Filial (EBF),-8.74992,126.406319444445
+"EB 1º,2º Ciclo Maluru Cumo",Escola Básica Filial (EBF),-8.84981,126.51256
+"EB 1º,2º Ciclo Mamulac",Escola Básica Filial (EBF),-8.86095,126.36406
+"EB 1º,2º Ciclo Nahae",Escola Básica Filial (EBF),-8.67143,126.56141
+"EB 1º,2º Ciclo Nunululi",Escola Básica Filial (EBF),-8.72416,126.5879
+"EB 1º,2º Ciclo Osso Caiua",Escola Básica Filial (EBF),-8.71472,126.60953
+"EB 1º,2º Ciclo Raitahu",Escola Básica Filial (EBF),-8.92709,126.40101
+"EB 1º,2º Ciclo Ramahana",Escola Básica Filial (EBF),-8.83215,126.29913
+"EB 1º,2º Ciclo Tiha-Ai Tahan",Escola Básica Filial (EBF),-8.86905,126.33103
+"EB 1º,2º Ciclo Uabubo",Escola Básica Filial (EBF),-8.72028,126.41922
+"EB 1º,2º Ciclo Uaguia",Escola Básica Filial (EBF),-8.76322,126.4122
+"EB 1º,2º Ciclo Uaimori Tula",Escola Básica Filial (EBF),-8.69393,126.22154
+"EB 1º,2º Ciclo Uaitono",Escola Básica Filial (EBF),-8.68699,126.32881
+"EB 1º,2º Ciclo Ualake",Escola Básica Filial (EBF),-8.75463,126.53126
+"EB 1º,2º Ciclo Uatukila",Escola Básica Filial (EBF),-8.7884,126.268019444445
+"EB 1º,2º Ciclo Uatumaluli",Escola Básica Filial (EBF),-8.74341,126.49325
+"EB 1º,2º Ciclo Uetali",Escola Básica Filial (EBF),-8.9506,126.29832
+"EB 1º,2º Ciclo Ulusu",Escola Básica Filial (EBF),-8.7133,126.54695
+"EB 1º,2º Ciclo Uma Qui'ic",Escola Básica Filial (EBF),-8.87905,126.36817
+"EB 1º,2º Ciclo Uma Tolu",Escola Básica Filial (EBF),-8.8923,126.22192
+"EB 1º,2º Ciclo Waibira",Escola Básica Filial (EBF),-8.73798,126.58497
+"EB 1º,2º Ciclo Waimori",Escola Básica Filial (EBF),-8.85411,126.36452
+"EB 1º,2º Ciclo We-Eu-Laek",Escola Básica Filial (EBF),-8.76952,126.40622
+"EB 1º,2º Ciclo We-Sa",Escola Básica Filial (EBF),-8.87315,126.37651
+EP C 9 Sana,Escola Básica Filial (EBF),-8.80567,126.54487
+EP C Ahik,Escola Básica Filial (EBF),-8.83459,126.21394
+EP C Nº02 Luka,Escola Básica Filial (EBF),-8.93209,126.25643
+EP C Nº8 Macadiqui,Escola Básica Filial (EBF),-8.84365,126.51908
+EP C Santa Teresinha,Escola Básica Filial (EBF),-8.74364,126.38537
+EP C Sta. Maria Gorete,Escola Básica Filial (EBF),-8.86911,126.36491
+"EBC 1º,2º,3º Ciclo 28 De Novembro Afaloicai",Escola Básica Central (EBC),-8.68942,126.66912
+"EBC 1º,2º,3º Ciclo 30 de Agosto Ossolequimeta",Escola Básica Central (EBC),-8.75491,126.44645
+"EBC 1º,2º,3º Ciclo 8 de Agosto Caiju Laran",Escola Básica Central (EBC),-8.91045,126.27822
+"EBC 1º,2º,3º Ciclo Afaloicai Uatulari",Escola Básica Central (EBC),-8.77743,126.56197
+"EBC 1º,2º,3º Ciclo Bimali",Escola Básica Central (EBC),-8.70728,126.36668
+"EBC 1º,2º,3º Ciclo Cabira Oan",Escola Básica Central (EBC),-8.86833,126.36524
+"EBC 1º,2º,3º Ciclo Henaudere",Escola Básica Central (EBC),-8.77743,126.56197
+"EBC 1º,2º,3º Ciclo Iraler",Escola Básica Central (EBC),-8.70327,126.57006
+"EBC 1º,2º,3º Ciclo Lacluta",Escola Básica Central (EBC),-8.83457,126.21555
+"EBC 1º,2º,3º Ciclo Mundo Perdido",Escola Básica Central (EBC),-8.73636,126.36514
+"EBC 1º,2º,3º Ciclo Naedala",Escola Básica Central (EBC),-8.798,126.55558
+"EBC 1º,2º,3º Ciclo Nahareka",Escola Básica Central (EBC),-8.70287,126.48134
+"EBC 1º,2º,3º Ciclo Rosito Beaço",Escola Básica Central (EBC),-8.94522,126.44629
+"EBC 1º,2º,3º Ciclo Uani Uma",Escola Básica Central (EBC),-8.75856,126.683
+"EBC 1º,2º,3º Ciclo Uatolari",Escola Básica Central (EBC),-8.81945,126.52812
+"EBC 1º,2º,3º Ciclo Welolo",Escola Básica Central (EBC),-8.94215,126.19655
+EBC 3º Ciclo Uatocarbau,Escola Básica Central (EBC),-8.75084,126.696230555556
+EBC 3º Ciclo Viqueque,Escola Básica Central (EBC),-8.8557973999656,126.364519863265
+EPS C Sta Maria De Fatima Macadique,Escola Básica Central (EBC),-8.83391,126.51231
+EPS C Sta Teresinha de Ossu,Escola Básica Central (EBC),-8.7394,126.38463
+ES C St. Antonio Lacluta,Escola Secundária Geral (ESG),-8.83457,126.21555
+ES C St. Estevão,Escola Secundária Geral (ESG),-8.86898,126.36611
+ES C St. Madalena Canossa/Ossu,Escola Secundária Geral (ESG),-8.74346,126.37674
+ES P 4 de Setembro,Escola Secundária Geral (ESG),-8.85719,126.36815
+ES P Calixa,Escola Secundária Geral (ESG),-8.87905,126.36817
+ES P Olocassa,Escola Secundária Geral (ESG),-8.73636,126.36514
+ES P Uato Carbau,Escola Secundária Geral (ESG),-8.74985,126.70002
+ES P Uato Lari,Escola Secundária Geral (ESG),-8.81837,126.52866
+Escola Tecnica Industria Uato Lari,Escola Secundária Técnica (ESTV),-8.81308594881548,126.537515218901

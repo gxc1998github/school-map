@@ -55,8 +55,9 @@ you do not have to rename columns to match the template exactly. See
 
 ### What the current export is missing
 
-The dataset in `schools.csv` today carries only `school_id`, `school_name`,
-`education_level`, `latitude` and `longitude`. Adding **`municipality`** and
+The dataset in `schools.csv` today carries only `school_name`,
+`education_level`, `latitude` and `longitude` (1,409 schools, taken from
+`GPS_Schools_Timor_Leste.xlsx`). Adding **`municipality`** and
 **`administrative_post`** is the single highest-value change — it switches the
 two area filters from the approximate nearest-centre estimate to exact values.
 
