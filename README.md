@@ -15,7 +15,10 @@ a key shipped in a static page is public — you would have to restrict it by
 HTTP referrer and watch the quota.
 
 The basemap picker (top-right of the map) offers OpenStreetMap, Carto Light,
-Carto Dark and Esri satellite imagery — all free and key-free. Each popup also
+Carto Dark and Esri satellite imagery, all free and key-free. If a tile
+provider refuses requests (rate limit, referrer rule, or an "API key required"
+tile), the map notices and switches to the next basemap on its own, with a short
+notice in the corner. Each popup also
 links out to Google Maps for directions, which covers the common reason for
 wanting Google in the first place. If you do want Google tiles later, swap the
 `BASEMAPS` list in `assets/config.js`.

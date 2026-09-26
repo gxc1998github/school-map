@@ -107,7 +107,7 @@
     var name = currentBase && currentBase.name;
     if (name !== 'Carto Light' && name !== 'Carto Dark') return;
     var want = effectiveTheme() === 'dark' ? 'Carto Dark' : 'Carto Light';
-    if (want !== name) setBasemap(want);
+    if (want !== name && !baseLayers[want].failed) setBasemap(want);
   }
 
   function setBasemap(name) {
@@ -116,6 +116,31 @@
     if (currentBase) map.removeLayer(currentBase.layer);
     map.addLayer(next.layer);
     currentBase = next;
+  }
+
+  /* Leaflet never needs a key, but a tile provider can refuse requests
+     (rate limits, referrer rules, "API key required" images). If the active
+     basemap errors before a single tile loads, fall through to the next one
+     so the map never comes up blank or blocked. */
+  function watchBasemap(entry) {
+    entry.loaded = 0;
+    entry.errors = 0;
+    entry.layer.on('tileload', function () { entry.loaded++; });
+    entry.layer.on('tileerror', function () {
+      entry.errors++;
+      if (entry.failed || entry.loaded > 0 || entry.errors < 4) return;
+      entry.failed = true;
+      if (currentBase !== entry) return;
+      var fallback = CONFIG.BASEMAPS.filter(function (b) {
+        return !baseLayers[b.name].failed;
+      })[0];
+      if (!fallback) {
+        status('Map tiles could not be loaded. Check your connection.', 0);
+        return;
+      }
+      setBasemap(fallback.name);
+      status(entry.name + ' tiles are unavailable, switched to ' + fallback.name + '.', 5000);
+    });
   }
 
   /* ------------------------------------------------------------------ map */
@@ -132,6 +157,7 @@
     var overlays = {};
     CONFIG.BASEMAPS.forEach(function (b) {
       baseLayers[b.name] = { name: b.name, layer: L.tileLayer(b.url, b.options) };
+      watchBasemap(baseLayers[b.name]);
       overlays[b.name] = baseLayers[b.name].layer;
     });
     setBasemap(effectiveTheme() === 'dark' ? 'Carto Dark' : 'Carto Light');
