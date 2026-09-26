@@ -87,7 +87,7 @@ light and dark mode: lightness is monotone, every adjacent step is clearly
 apart, and the palest step still clears contrast against its marker ring.
 
 Because a colour ramp alone is a weak signal at 18px, every marker also carries
-a **letter** — P, B, S, T, H — and the legend, the results list and the popup
+a **letter** — P, B, S, T, H — and the legend and the popup
 all name the level in words. Colour never carries meaning on its own.
 
 Your raw `education_level` values drive the filter list untouched; they are
@@ -112,7 +112,7 @@ python3 -m http.server 8000
 index.html                    markup and script order
 assets/config.js              column aliases, level groups, palette, geography
 assets/data.js                CSV parsing, normalisation, point-in-polygon
-assets/app.js                 map, filters, search, results
+assets/app.js                 map, filters, search, export
 assets/app.css                theme tokens and layout
 data/schools.csv              the dataset
 data/schools.template.csv     empty file with the header the app expects

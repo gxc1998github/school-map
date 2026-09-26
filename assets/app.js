@@ -1,11 +1,9 @@
-/* UI: map, filters, search, results. */
+/* UI: map, filters, search, export. */
 (function () {
   'use strict';
 
   var CONFIG = window.CONFIG;
   var Data = window.SchoolData;
-
-  var RESULT_LIMIT = 300;
 
   var state = {
     schools: [],
@@ -16,7 +14,6 @@
     post: '',
     levels: null,            // Set of raw level strings, or null = all
     query: '',
-    activeId: null,
     sourceUrl: '',
     hasMunicipalityData: false,
     hasPostData: false,
@@ -211,7 +208,6 @@
         keyboard: true
       });
       marker.bindPopup(function () { return popupHtml(s); }, { maxWidth: 300, minWidth: 200 });
-      marker.on('popupopen', function () { setActive(s.id, false); });
       state.markers.set(s.id, marker);
     });
   }
@@ -355,7 +351,7 @@
     state.levels = (picked.size === 0 || picked.size === total) ? null : picked;
   }
 
-  /* -------------------------------------------------------------- results */
+  /* --------------------------------------------------------------- legend */
   function renderLegend() {
     var counts = Object.create(null);
     state.filtered.forEach(function (s) { counts[s.group] = (counts[s.group] || 0) + 1; });
@@ -371,34 +367,6 @@
         '<span class="legend-name">' + esc(g.label) + '</span>' +
         '<span class="legend-count">' + fmt(counts[g.key] || 0) + '</span></li>';
     }).join('');
-  }
-
-  function renderResults() {
-    var shown = state.filtered.slice(0, RESULT_LIMIT);
-    if (!shown.length) {
-      el.results.innerHTML = '<li class="empty">No schools match these filters.</li>';
-      el.resultsMore.hidden = true;
-      return;
-    }
-    var html = shown.map(function (s) {
-      var meta = [s.level, s.post, s.municipality].filter(Boolean).join(' · ');
-      return '<li><button type="button" class="result" data-id="' + esc(s.id) + '"' +
-        (state.activeId === s.id ? ' aria-current="true"' : '') + '>' +
-        '<span class="swatch" style="background:var(--lv-' + s.group +
-        ');color:var(--lvi-' + s.group + ')" aria-hidden="true">' + esc(s.glyph) + '</span>' +
-        '<span class="result-body"><span class="result-name">' + esc(s.name) + '</span>' +
-        '<span class="result-meta">' + esc(meta) + '</span></span></button></li>';
-    }).join('');
-    el.results.innerHTML = html;
-
-    if (state.filtered.length > RESULT_LIMIT) {
-      el.resultsMore.textContent = 'Showing the first ' + fmt(RESULT_LIMIT) + ' of ' +
-        fmt(state.filtered.length) + ' matches — narrow the filters or search to see the rest. All ' +
-        fmt(state.filtered.length) + ' are on the map.';
-      el.resultsMore.hidden = false;
-    } else {
-      el.resultsMore.hidden = true;
-    }
   }
 
   function renderStats() {
@@ -424,7 +392,6 @@
     renderFilterControls();
     renderMarkers();
     renderLegend();
-    renderResults();
     renderStats();
     if (!state.hydrating) writeHash();
     if (options.fit !== false) fitToResults();
@@ -438,22 +405,6 @@
       var bounds = L.latLngBounds(state.filtered.map(function (s) { return [s.lat, s.lon]; }));
       map.fitBounds(bounds, { padding: [40, 40], maxZoom: 15, animate: true });
     }, 60);
-  }
-
-  function setActive(id, pan) {
-    state.activeId = id;
-    el.results.querySelectorAll('.result').forEach(function (b) {
-      if (b.dataset.id === String(id)) b.setAttribute('aria-current', 'true');
-      else b.removeAttribute('aria-current');
-    });
-    if (pan) {
-      var school = state.schools.find(function (s) { return s.id === id; });
-      var marker = state.markers.get(id);
-      if (!school || !marker) return;
-      map.setView([school.lat, school.lon], Math.max(map.getZoom(), 16), { animate: true });
-      // The marker may be inside a cluster; ask the group to reveal it first.
-      cluster.zoomToShowLayer(marker, function () { marker.openPopup(); });
-    }
   }
 
   /* ----------------------------------------------------------- URL state */
@@ -548,8 +499,6 @@
       })
       .catch(function (err) {
         el.sourceNote.textContent = 'Could not load school data';
-        el.results.innerHTML = '<li class="empty">No data file found. ' +
-          'Add <code>data/schools.csv</code>.</li>';
         status('Could not load ' + CONFIG.DATA_SOURCES.join(' or ') + ' — ' + err.message, 0);
       });
   }
@@ -628,12 +577,6 @@
       apply();
     });
 
-    el.results.addEventListener('click', function (e) {
-      var btn = e.target.closest('.result');
-      if (!btn) return;
-      setActive(btn.dataset.id, true);
-    });
-
     el.exportCsv.addEventListener('click', function () {
       if (!state.filtered.length) { status('Nothing to export'); return; }
       var blob = new Blob([Data.toCsv(state.filtered)], { type: 'text/csv;charset=utf-8' });
@@ -682,8 +625,6 @@
       filterLevels: $('filter-levels'),
       clearFilters: $('clear-filters'),
       legend: $('legend'),
-      results: $('results'),
-      resultsMore: $('results-more'),
       exportCsv: $('export-csv'),
       geoNote: $('geo-note'),
       estimateRow: $('estimate-row'),

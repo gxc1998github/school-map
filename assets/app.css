@@ -427,60 +427,11 @@ select:disabled {
   font-variant-numeric: tabular-nums;
 }
 
-/* --------------------------------------------------------------- results */
-.results {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+/* ---------------------------------------------------------------- export */
+.export-row {
   display: flex;
-  flex-direction: column;
-  gap: 2px;
-  overflow-y: auto;
-  max-height: 360px;
-}
-
-.result {
-  display: flex;
-  gap: 8px;
-  align-items: flex-start;
-  width: 100%;
-  text-align: left;
-  font: inherit;
-  color: inherit;
-  background: transparent;
-  border: 0;
-  border-radius: 6px;
-  padding: 7px 8px;
-  cursor: pointer;
-}
-.result:hover { background: var(--accent-soft); }
-.result[aria-current="true"] { background: var(--accent-soft); }
-
-.result .swatch { margin-top: 2px; }
-
-.result-body { min-width: 0; flex: 1 1 auto; }
-
-.result-name {
-  display: block;
-  font-weight: 500;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.result-meta {
-  display: block;
-  font-size: 12px;
-  color: var(--text-secondary);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.empty {
-  padding: 14px 8px;
-  color: var(--text-secondary);
-  font-size: 13px;
+  justify-content: flex-end;
+  margin-top: 8px;
 }
 
 /* --------------------------------------------------------------- markers */
@@ -589,8 +540,6 @@ select:disabled {
   }
 
   .sidebar.open { transform: none; }
-
-  .results { max-height: none; }
 
   /* Give the title room to shrink instead of running under the buttons. */
   .brand > div { min-width: 0; }
