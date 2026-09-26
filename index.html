@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="auto">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="assets/app.css">
 </head>
 <body>
-  <a class="skip-link" href="#results">Skip to results</a>
+  <a class="skip-link" href="#map">Skip to map</a>
 
   <header class="topbar">
     <div class="brand">
@@ -26,14 +26,11 @@
     </div>
     <div class="topbar-actions">
       <button type="button" id="panel-toggle" class="btn btn-ghost" aria-expanded="false" aria-controls="sidebar">Filters</button>
-      <button type="button" id="theme-toggle" class="btn btn-ghost" title="Switch light / dark">
-        <span id="theme-label">Auto</span>
-      </button>
     </div>
   </header>
 
   <main class="layout">
-    <aside class="sidebar" id="sidebar" aria-label="Filters and results">
+    <aside class="sidebar" id="sidebar" aria-label="Filters">
       <div class="sidebar-scroll">
 
         <section class="block">
@@ -62,6 +59,9 @@
               <span class="stat-label">Admin. posts</span>
             </div>
           </div>
+          <div class="export-row">
+            <button type="button" id="export-csv" class="btn btn-link">Export CSV</button>
+          </div>
         </section>
 
         <section class="block">
@@ -86,19 +86,6 @@
           </fieldset>
 
           <p class="note" id="geo-note" hidden></p>
-          <label class="switch" id="estimate-row" hidden>
-            <input type="checkbox" id="estimate-toggle">
-            <span>Estimate municipality from coordinates <em>(approximate)</em></span>
-          </label>
-        </section>
-
-        <section class="block">
-          <div class="block-head">
-            <h2>Results</h2>
-            <button type="button" id="export-csv" class="btn btn-link">Export CSV</button>
-          </div>
-          <ol class="results" id="results" tabindex="-1"></ol>
-          <p class="note" id="results-more" hidden></p>
         </section>
 
       </div>

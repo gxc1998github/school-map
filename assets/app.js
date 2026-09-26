@@ -1,11 +1,9 @@
-/* UI: map, filters, search, results. */
+/* UI: map, filters, search, export. */
 (function () {
   'use strict';
 
   var CONFIG = window.CONFIG;
   var Data = window.SchoolData;
-
-  var RESULT_LIMIT = 300;
 
   var state = {
     schools: [],
@@ -16,11 +14,10 @@
     post: '',
     levels: null,            // Set of raw level strings, or null = all
     query: '',
-    activeId: null,
     sourceUrl: '',
     hasMunicipalityData: false,
     hasPostData: false,
-    estimateOn: false,
+    estimated: false,
     boundariesUsed: false,
     hydrating: false
   };
@@ -62,24 +59,15 @@
      every marker without rebuilding a single one. */
   function writeRampVars() {
     var keys = state.groupsPresent;
-    var css = [];
-    ['light', 'dark'].forEach(function (mode) {
-      var ramp = CONFIG.RAMP[mode];
-      var ink = CONFIG.RAMP_INK[mode];
-      var decls = [];
-      keys.forEach(function (key, i) {
-        var step = Math.min(i, ramp.length - 1);
-        decls.push('--lv-' + key + ':' + ramp[step] + ';--lvi-' + key + ':' + ink[step] + ';');
-      });
-      decls.push('--lv-other:' + CONFIG.RAMP.other + ';--lvi-other:' + CONFIG.RAMP_INK.other + ';');
-      var body = decls.join('');
-      if (mode === 'light') {
-        css.push(':root{' + body + '}');
-      } else {
-        css.push('@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){' + body + '}}');
-        css.push(':root[data-theme="dark"]{' + body + '}');
-      }
+    var ramp = CONFIG.RAMP.steps;
+    var ink = CONFIG.RAMP_INK.steps;
+    var decls = [];
+    keys.forEach(function (key, i) {
+      var step = Math.min(i, ramp.length - 1);
+      decls.push('--lv-' + key + ':' + ramp[step] + ';--lvi-' + key + ':' + ink[step] + ';');
     });
+    decls.push('--lv-other:' + CONFIG.RAMP.other + ';--lvi-other:' + CONFIG.RAMP_INK.other + ';');
+    var css = [':root{' + decls.join('') + '}'];
     var tag = $('ramp-vars');
     if (!tag) {
       tag = document.createElement('style');
@@ -211,7 +199,6 @@
         keyboard: true
       });
       marker.bindPopup(function () { return popupHtml(s); }, { maxWidth: 300, minWidth: 200 });
-      marker.on('popupopen', function () { setActive(s.id, false); });
       state.markers.set(s.id, marker);
     });
   }
@@ -355,35 +342,7 @@
     state.levels = (picked.size === 0 || picked.size === total) ? null : picked;
   }
 
-  /* -------------------------------------------------------------- results */
-  function renderResults() {
-    var shown = state.filtered.slice(0, RESULT_LIMIT);
-    if (!shown.length) {
-      el.results.innerHTML = '<li class="empty">No schools match these filters.</li>';
-      el.resultsMore.hidden = true;
-      return;
-    }
-    var html = shown.map(function (s) {
-      var meta = [s.level, s.post, s.municipality].filter(Boolean).join(' · ');
-      return '<li><button type="button" class="result" data-id="' + esc(s.id) + '"' +
-        (state.activeId === s.id ? ' aria-current="true"' : '') + '>' +
-        '<span class="swatch" style="background:var(--lv-' + s.group +
-        ');color:var(--lvi-' + s.group + ')" aria-hidden="true">' + esc(s.glyph) + '</span>' +
-        '<span class="result-body"><span class="result-name">' + esc(s.name) + '</span>' +
-        '<span class="result-meta">' + esc(meta) + '</span></span></button></li>';
-    }).join('');
-    el.results.innerHTML = html;
-
-    if (state.filtered.length > RESULT_LIMIT) {
-      el.resultsMore.textContent = 'Showing the first ' + fmt(RESULT_LIMIT) + ' of ' +
-        fmt(state.filtered.length) + ' matches — narrow the filters or search to see the rest. All ' +
-        fmt(state.filtered.length) + ' are on the map.';
-      el.resultsMore.hidden = false;
-    } else {
-      el.resultsMore.hidden = true;
-    }
-  }
-
+  /* ---------------------------------------------------------------- stats */
   function renderStats() {
     el.statShown.textContent = fmt(state.filtered.length);
     el.statTotal.textContent = fmt(state.schools.length);
@@ -406,7 +365,6 @@
     state.filtered = state.schools.filter(function (s) { return passing(s, null); });
     renderFilterControls();
     renderMarkers();
-    renderResults();
     renderStats();
     if (!state.hydrating) writeHash();
     if (options.fit !== false) fitToResults();
@@ -422,22 +380,6 @@
     }, 60);
   }
 
-  function setActive(id, pan) {
-    state.activeId = id;
-    el.results.querySelectorAll('.result').forEach(function (b) {
-      if (b.dataset.id === String(id)) b.setAttribute('aria-current', 'true');
-      else b.removeAttribute('aria-current');
-    });
-    if (pan) {
-      var school = state.schools.find(function (s) { return s.id === id; });
-      var marker = state.markers.get(id);
-      if (!school || !marker) return;
-      map.setView([school.lat, school.lon], Math.max(map.getZoom(), 16), { animate: true });
-      // The marker may be inside a cluster; ask the group to reveal it first.
-      cluster.zoomToShowLayer(marker, function () { marker.openPopup(); });
-    }
-  }
-
   /* ----------------------------------------------------------- URL state */
   function writeHash() {
     var p = new URLSearchParams();
@@ -445,7 +387,6 @@
     if (state.post) p.set('p', state.post);
     if (state.query) p.set('q', state.query);
     if (state.levels) p.set('l', Array.from(state.levels).join('|'));
-    if (state.estimateOn) p.set('est', '1');
     var hash = p.toString();
     var url = location.pathname + location.search + (hash ? '#' + hash : '');
     history.replaceState(null, '', url);
@@ -459,8 +400,7 @@
       municipality: p.get('m') || '',
       post: p.get('p') || '',
       query: p.get('q') || '',
-      levels: p.get('l') ? new Set(p.get('l').split('|')) : null,
-      estimate: p.get('est') === '1'
+      levels: p.get('l') ? new Set(p.get('l').split('|')) : null
     };
   }
 
@@ -500,19 +440,15 @@
     if (result.missing.length) {
       msgs.push('Missing expected column(s): ' + result.missing.join(', ') + '.');
     }
-    if (!state.hasMunicipalityData && !state.hasPostData) {
-      msgs.push('This file has no municipality or administrative post column. ' +
-        'Add one, drop boundary GeoJSON files into data/boundaries/, or switch on the estimate below.');
-    } else if (state.boundariesUsed) {
+    if (state.boundariesUsed) {
       msgs.push('Areas filled in from the boundary files in data/boundaries/.');
     }
-    if (state.estimateOn) {
-      msgs.push('Municipalities are estimated by nearest centre — approximate near municipal borders.');
+    if (state.estimated) {
+      msgs.push('Municipalities are estimated from coordinates — approximate near municipal borders.');
     }
     el.geoNote.textContent = msgs.join(' ');
     el.geoNote.hidden = !msgs.length;
-    el.geoNote.className = 'note warn';
-    el.estimateRow.hidden = state.hasMunicipalityData;
+    el.geoNote.className = result.missing.length ? 'note warn' : 'note';
   }
 
   function loadInitial() {
@@ -525,13 +461,16 @@
           var filled = Data.applyBoundaries(parsed.schools, boundaries);
           state.boundariesUsed = filled > 0;
         }
+        // Built-in fallback: with no municipality column and no boundary
+        // file, assign each school to the nearest municipal centre.
+        if (!parsed.schools.some(function (s) { return s.municipality; })) {
+          state.estimated = Data.estimateMunicipalities(parsed.schools) > 0;
+        }
         adoptDataset(parsed, res.url);
         hydrateFromHash();
       })
       .catch(function (err) {
         el.sourceNote.textContent = 'Could not load school data';
-        el.results.innerHTML = '<li class="empty">No data file found. ' +
-          'Add <code>data/schools.csv</code>.</li>';
         status('Could not load ' + CONFIG.DATA_SOURCES.join(' or ') + ' — ' + err.message, 0);
       });
   }
@@ -539,10 +478,6 @@
   function hydrateFromHash() {
     var h = readHash();
     state.hydrating = true;
-    if (h.estimate && !state.hasMunicipalityData) {
-      el.estimateToggle.checked = true;
-      applyEstimate(true);
-    }
     state.municipality = h.municipality || '';
     state.post = h.post || '';
     state.query = (h.query || '').toLowerCase();
@@ -550,21 +485,6 @@
     el.search.value = h.query || '';
     state.hydrating = false;
     apply();
-  }
-
-  function applyEstimate(on) {
-    state.estimateOn = on;
-    if (on) {
-      Data.estimateMunicipalities(state.schools);
-      state.hasMunicipalityData = state.schools.some(function (s) { return s.municipality; });
-    } else {
-      state.schools.forEach(function (s) {
-        if (s.estimated) { s.municipality = ''; s.estimated = false; }
-      });
-      state.hasMunicipalityData = state.schools.some(function (s) { return s.municipality; });
-      state.municipality = '';
-    }
-    updateGeoNote({ missing: [], dropped: [], schools: state.schools });
   }
 
   /* --------------------------------------------------------------- events */
@@ -610,12 +530,6 @@
       apply();
     });
 
-    el.results.addEventListener('click', function (e) {
-      var btn = e.target.closest('.result');
-      if (!btn) return;
-      setActive(btn.dataset.id, true);
-    });
-
     el.exportCsv.addEventListener('click', function () {
       if (!state.filtered.length) { status('Nothing to export'); return; }
       var blob = new Blob([Data.toCsv(state.filtered)], { type: 'text/csv;charset=utf-8' });
@@ -627,17 +541,6 @@
       document.body.removeChild(a);
       setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
       status('Exported ' + fmt(state.filtered.length) + ' schools');
-    });
-
-    el.estimateToggle.addEventListener('change', function () {
-      applyEstimate(this.checked);
-      apply();
-    });
-
-    el.themeToggle.addEventListener('click', function () {
-      var order = ['auto', 'light', 'dark'];
-      var current = localStorage.getItem('tl-school-map-theme') || 'auto';
-      applyTheme(order[(order.indexOf(current) + 1) % order.length]);
     });
 
     el.panelToggle.addEventListener('click', function () {
@@ -656,30 +559,19 @@
       sourceNote: $('source-note'),
       sidebar: $('sidebar'),
       panelToggle: $('panel-toggle'),
-      themeToggle: $('theme-toggle'),
-      themeLabel: $('theme-label'),
       search: $('search'),
       filterMunicipality: $('filter-municipality'),
       filterPost: $('filter-post'),
       filterLevels: $('filter-levels'),
       clearFilters: $('clear-filters'),
-      results: $('results'),
-      resultsMore: $('results-more'),
       exportCsv: $('export-csv'),
       geoNote: $('geo-note'),
-      estimateRow: $('estimate-row'),
-      estimateToggle: $('estimate-toggle'),
       statShown: $('stat-shown'),
       statTotal: $('stat-total'),
       statMunis: $('stat-munis'),
       statPosts: $('stat-posts'),
       mapStatus: $('map-status')
     };
-
-    var saved = 'auto';
-    try { saved = localStorage.getItem('tl-school-map-theme') || 'auto'; } catch (e) { /* private mode */ }
-    document.documentElement.setAttribute('data-theme', saved);
-    el.themeLabel.textContent = saved.charAt(0).toUpperCase() + saved.slice(1);
 
     initMap();
     bind();

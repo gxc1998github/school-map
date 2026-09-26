@@ -64,8 +64,8 @@ files and comma decimal separators (`-8,9912`) parse too.
 
 See [`data/README.md`](data/README.md) for the full column list, and for how to
 handle a file that has no municipality / administrative post column — either
-drop in a boundary GeoJSON for exact point-in-polygon assignment, or use the
-approximate nearest-centre estimate.
+drop in a boundary GeoJSON for exact point-in-polygon assignment, or rely on
+the built-in nearest-centre estimate, which runs automatically.
 
 ## Features
 
@@ -75,19 +75,19 @@ approximate nearest-centre estimate.
 - Multi-term search across name, ID, level, municipality, post and suco.
 - Shareable links: the filters and the search box are encoded in the URL hash.
 - **Export CSV** writes out exactly the current selection.
-- Light / dark / auto, and a keyboard-navigable sidebar.
+- A dark UI throughout, and a keyboard-navigable sidebar.
 - Popups link to Google Maps and OpenStreetMap for the exact coordinates.
 
 ## How education level is drawn
 
 Education level is a ladder, not a set of unrelated categories, so markers use
 an **ordered single-hue ramp** (pale blue → deep blue as the level rises)
-rather than a rainbow. The ramp was checked with a palette validator in both
-light and dark mode: lightness is monotone, every adjacent step is clearly
+rather than a rainbow. The ramp was checked with a palette validator against
+the dark UI: lightness is monotone, every adjacent step is clearly
 apart, and the palest step still clears contrast against its marker ring.
 
 Because a colour ramp alone is a weak signal at 18px, every marker also carries
-a **letter** — P, B, S, T, H — and the legend, the results list and the popup
+a **letter** — P, B, S, T, H — and the legend and the popup
 all name the level in words. Colour never carries meaning on its own.
 
 Your raw `education_level` values drive the filter list untouched; they are
@@ -112,7 +112,7 @@ python3 -m http.server 8000
 index.html                    markup and script order
 assets/config.js              column aliases, level groups, palette, geography
 assets/data.js                CSV parsing, normalisation, point-in-polygon
-assets/app.js                 map, filters, search, results
+assets/app.js                 map, filters, search, export
 assets/app.css                theme tokens and layout
 data/schools.csv              the dataset
 data/schools.template.csv     empty file with the header the app expects

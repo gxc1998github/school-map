@@ -1,43 +1,5 @@
 /* ---------------------------------------------------------------- tokens */
 :root {
-  color-scheme: light;
-  --surface-1: #fcfcfb;
-  --surface-2: #ffffff;
-  --plane: #f9f9f7;
-  --text-primary: #0b0b0b;
-  --text-secondary: #52514e;
-  --text-muted: #898781;
-  --hairline: #e1e0d9;
-  --border: rgba(11, 11, 11, 0.10);
-  --accent: #2a78d6;
-  --accent-soft: rgba(42, 120, 214, 0.10);
-  --focus: #2a78d6;
-  --shadow: 0 1px 2px rgba(11, 11, 11, 0.06), 0 8px 24px rgba(11, 11, 11, 0.06);
-  --marker-ring: #ffffff;
-  --sidebar-w: 340px;
-  --topbar-h: 56px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    color-scheme: dark;
-    --surface-1: #1a1a19;
-    --surface-2: #222221;
-    --plane: #0d0d0d;
-    --text-primary: #ffffff;
-    --text-secondary: #c3c2b7;
-    --text-muted: #898781;
-    --hairline: #2c2c2a;
-    --border: rgba(255, 255, 255, 0.10);
-    --accent: #3987e5;
-    --accent-soft: rgba(57, 135, 229, 0.16);
-    --focus: #86b6ef;
-    --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.35);
-    --marker-ring: #1a1a19;
-  }
-}
-
-:root[data-theme="dark"] {
   color-scheme: dark;
   --surface-1: #1a1a19;
   --surface-2: #222221;
@@ -52,6 +14,8 @@
   --focus: #86b6ef;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.35);
   --marker-ring: #1a1a19;
+  --sidebar-w: 340px;
+  --topbar-h: 56px;
 }
 
 /* ------------------------------------------------------------------ base */
@@ -395,60 +359,11 @@ select:disabled {
   white-space: nowrap;
 }
 
-/* --------------------------------------------------------------- results */
-.results {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+/* ---------------------------------------------------------------- export */
+.export-row {
   display: flex;
-  flex-direction: column;
-  gap: 2px;
-  overflow-y: auto;
-  max-height: 360px;
-}
-
-.result {
-  display: flex;
-  gap: 8px;
-  align-items: flex-start;
-  width: 100%;
-  text-align: left;
-  font: inherit;
-  color: inherit;
-  background: transparent;
-  border: 0;
-  border-radius: 6px;
-  padding: 7px 8px;
-  cursor: pointer;
-}
-.result:hover { background: var(--accent-soft); }
-.result[aria-current="true"] { background: var(--accent-soft); }
-
-.result .swatch { margin-top: 2px; }
-
-.result-body { min-width: 0; flex: 1 1 auto; }
-
-.result-name {
-  display: block;
-  font-weight: 500;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.result-meta {
-  display: block;
-  font-size: 12px;
-  color: var(--text-secondary);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.empty {
-  padding: 14px 8px;
-  color: var(--text-secondary);
-  font-size: 13px;
+  justify-content: flex-end;
+  margin-top: 8px;
 }
 
 /* --------------------------------------------------------------- markers */
@@ -525,7 +440,7 @@ select:disabled {
   font-size: 12px;
 }
 
-/* Leaflet chrome that needs to follow the theme. */
+/* Leaflet chrome restyled to match the dark UI. */
 .leaflet-bar a,
 .leaflet-control-layers {
   background: var(--surface-2);
@@ -557,8 +472,6 @@ select:disabled {
   }
 
   .sidebar.open { transform: none; }
-
-  .results { max-height: none; }
 
   /* Give the title room to shrink instead of running under the buttons. */
   .brand > div { min-width: 0; }
