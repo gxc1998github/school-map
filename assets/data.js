@@ -256,7 +256,7 @@
     return filled;
   }
 
-  /* Opt-in approximation used only when nothing better is available. */
+  /* Built-in approximation used automatically when nothing better is available. */
   function estimateMunicipalities(schools) {
     var filled = 0;
     schools.forEach(function (s) {

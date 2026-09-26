@@ -27,7 +27,7 @@
      ordered single-hue ramp rather than eight unrelated hues. Raw values from
      the CSV are always preserved for filtering, search and export; the group
      below only decides which ramp step a marker is painted with, capped at
-     five steps because that is the most the blue ramp fits on a light surface
+     five steps because that is the most the blue ramp fits on the dark surface
      while keeping every adjacent step visibly apart. Identity never rests on
      colour alone: each marker also carries the group's letter. */
   /* `order` is the rung on the ladder (display, legend, ramp step); `match` is
@@ -60,19 +60,16 @@
   var LEVEL_MATCH_ORDER = LEVEL_GROUPS.slice().sort(function (a, b) { return a.match - b.match; });
   var LEVEL_OTHER = { key: 'other', label: 'Other / unclassified', glyph: '·' };
 
-  /* Ordinal ramp, one hue, light -> dark. Both columns validated against the
-     surface they actually render on (white marker ring in light mode, the
-     dark panel in dark mode): monotone lightness, every adjacent gap
-     >= 0.06 OKLCH L, light end clears 2:1 contrast. */
+  /* Ordinal ramp, one hue, pale -> deep. Validated against the dark panel
+     the markers render on: monotone lightness, every adjacent gap
+     >= 0.06 OKLCH L, pale end clears 2:1 contrast. */
   var RAMP = {
-    light: ['#86b6ef', '#5598e7', '#2a78d6', '#184f95', '#0d366b'],
-    dark: ['#cde2fb', '#9ec5f4', '#5598e7', '#2a78d6', '#184f95'],
+    steps: ['#cde2fb', '#9ec5f4', '#5598e7', '#2a78d6', '#184f95'],
     other: '#898781'
   };
   /* Ink for the glyph drawn on top of each ramp step. */
   var RAMP_INK = {
-    light: ['#0b0b0b', '#ffffff', '#ffffff', '#ffffff', '#ffffff'],
-    dark: ['#0b0b0b', '#0b0b0b', '#0b0b0b', '#ffffff', '#ffffff'],
+    steps: ['#0b0b0b', '#0b0b0b', '#0b0b0b', '#ffffff', '#ffffff'],
     other: '#ffffff'
   };
 
@@ -81,10 +78,10 @@
   var TL_BOUNDS = [[-9.55, 123.9], [-8.05, 127.45]];
 
   /* The 13 municipalities plus the special administrative region. Coordinates
-     are rough centres used only by the opt-in "estimate from coordinates"
-     fallback, and only when the CSV carries no municipality column and no
-     boundary file is supplied. Nearest-centre assignment is approximate near
-     municipal borders, which is why it is opt-in and always labelled. */
+     are rough centres used by the built-in "estimate from coordinates"
+     fallback, which runs automatically when the CSV carries no municipality
+     column and no boundary file is supplied. Nearest-centre assignment is
+     approximate near municipal borders, so estimated values are labelled. */
   var MUNICIPALITIES = [
     { name: 'Aileu', center: [-8.73, 125.57] },
     { name: 'Ainaro', center: [-8.99, 125.51] },
