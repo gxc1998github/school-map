@@ -62,44 +62,48 @@ The dataset in `schools.csv` today carries only `school_id`, `school_name`,
 **`administrative_post`** is the single highest-value change — it switches the
 two area filters from the approximate nearest-centre estimate to exact values.
 
-## ICT donor and internet list
+## Donor project lists (ICT donor, devices, internet)
 
-Each school can also carry which **ICT donor** supplied it (e.g. `UNICEF`,
-`LiteHaus`) and what **internet** it has (e.g. `Modem Router`, `Starlink`,
-`Starlink-Vorakai`, `NCP`). Both get their own filter in the sidebar, show in
-the popup, are searchable and go out in **Export CSV**.
+Each school can also carry which **ICT donor** supplied it (`UNICEF`,
+`LiteHaus`), how many **devices** (laptops / Chromebooks) it got, the
+**project year** and **status**, the **license**, and what **internet** it
+has (`Modem Router`, `Router SIM Card`, `Starlink`, `Starlink-Vorakai`,
+`NCP`). Donor, internet, status and year each get a filter in the sidebar,
+the devices in the shown schools are totalled at the top, everything shows in
+the popup, and **Export CSV** carries it all.
 
-Two ways to supply them, and they can be mixed:
+Keep one file per donor. Each of these is loaded if it exists:
 
-1. **A separate list, `data/ict.csv`** (easiest). Use the empty template
-   `ict.template.csv` in this folder:
+- `data/litehaus.csv` (in place: 43 schools, 472 devices, from
+  `Lista_Eskola_LiteHaus.xlsx`)
+- `data/unicef.csv`
+- `data/ict.csv` (anything else)
 
-   ```csv
-   school_id,school_name,ict_donor,internet
-   1689,EB 1.2.3 Cafe Aileu,UNICEF,Starlink
-   473,EB Catolica 1.2 No 02 Seloi Kraik,"UNICEF; LiteHaus",Modem Router
-   ```
+The header, as in `ict.template.csv`:
 
-   Rows are matched to `schools.csv` by `school_id`; if the ID is blank, by
-   exact school name. The file is optional. Rows that match no school are
-   counted in the header line (hover it to see which).
+```csv
+school_id,school_name,education_level,municipality,administrative_post,latitude,longitude,ict_donor,devices,project_year,status,license,internet,teachers,students,observations
+```
 
-2. **Extra columns in `schools.csv`**: add `ict_donor` and `internet` columns
-   there instead.
+How a row is used:
+
+- If its `school_id` (or, when the ID is blank, its exact name) is already in
+  `schools.csv`, the donor / internet / status / year values are **added** to
+  that school, and devices, students, etc. fill in only where `schools.csv`
+  left them blank.
+- Otherwise, if it has coordinates, it is **added to the map as a school**.
+  That is why the LiteHaus schools show even though `schools.csv` is empty.
+- Otherwise it is counted as unmatched in the header line (hover to see which).
 
 Notes:
 
-- A school with more than one donor or connection lists them separated by
-  `;` (or `/`, `|`, `+`, `,`, quoted). A hyphen is part of the name, so
-  `Starlink-Vorakai` stays one value.
-- Spelling is matched loosely against the known names, so `unicef`,
-  `Lite Haus` and `starlink vorakai` all land on the right option. New donors
-  or connection types just appear as new options; add them to `FACETS` in
-  `assets/config.js` to fix their spelling and order.
-- Schools with nothing recorded are grouped as *No ICT donor recorded* /
-  *No internet recorded*, so you can filter for the gaps too.
-- Other header names work too: `ICT School`, `Donor`, `Internet Type`,
-  `Connectivity`, …
+- A single `GPS Coordinates` column holding `-8.7596533 125.5511246` works in
+  place of `latitude` / `longitude`.
+- Several donors or connections for one school: separate them with `;`.
+  A hyphen is part of the name, so `Starlink-Vorakai` stays one value.
+- Spelling is matched loosely against the known names in `FACETS` in
+  `assets/config.js`; new values simply appear as new filter options.
+- `None` in the internet column is read as "no internet".
 
 ## If your file has no municipality / administrative post column
 

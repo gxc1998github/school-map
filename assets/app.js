@@ -172,7 +172,12 @@
       ['Students', school.students],
       ['Teachers', school.teachers],
       ['ICT donor', school.donor.join(', ')],
+      ['Devices', school.devices],
+      ['Project year', school.projectYear.join(', ')],
+      ['Status', school.projectStatus.join(', ')],
+      ['License', school.license],
       ['Internet', school.internet.join(', ')],
+      ['Notes', school.notes],
       ['School ID', school.id]
     ].filter(function (r) { return r[1]; });
 
@@ -331,7 +336,9 @@
       var values = facetOptions(f.key);
       box.wrap.hidden = !values.length;
       if (!values.length) { box.list.innerHTML = ''; return; }
-      box.list.innerHTML = values.concat([NONE]).map(function (v) {
+      // Offer "none recorded" only when some school actually has none.
+      var gaps = state.schools.some(function (s) { return !s[f.key].length; });
+      box.list.innerHTML = values.concat(gaps ? [NONE] : []).map(function (v) {
         var label = v === NONE ? f.none : v;
         return '<label class="check"><input type="checkbox" checked value="' + esc(v) + '">' +
           '<span class="check-text' + (v === NONE ? ' check-none' : '') + '">' + esc(label) + '</span>' +
@@ -454,6 +461,12 @@
     el.statTotal.textContent = fmt(state.schools.length);
     el.statMunis.textContent = fmt(distinct(state.filtered.map(function (s) { return s.municipality; })).length);
     el.statPosts.textContent = fmt(distinct(state.filtered.map(function (s) { return s.post; })).length);
+    var devices = 0;
+    state.filtered.forEach(function (s) {
+      if (s.devices) devices += Number(s.devices);
+    });
+    el.statDevices.textContent = fmt(devices);
+    el.statDevicesWrap.hidden = !state.schools.some(function (s) { return s.devices; });
   }
 
   function renderMarkers() {
@@ -564,8 +577,13 @@
     bits.push(state.sourceUrl);
     if (result.dropped.length) bits.push(fmt(result.dropped.length) + ' skipped (no coordinates)');
     var extra = result.extra;
-    if (extra) bits.push(fmt(extra.matched) + ' ICT rows joined' +
-      (extra.unmatched.length ? ', ' + fmt(extra.unmatched.length) + ' unmatched' : ''));
+    if (extra) {
+      var parts = [];
+      if (extra.added) parts.push(fmt(extra.added) + ' added');
+      if (extra.matched) parts.push(fmt(extra.matched) + ' joined');
+      if (extra.unmatched.length) parts.push(fmt(extra.unmatched.length) + ' unmatched');
+      bits.push('project list: ' + (parts.join(', ') || 'empty'));
+    }
     el.sourceNote.textContent = bits.join(' · ');
     var tips = [];
     if (result.dropped.length) {
@@ -595,16 +613,23 @@
 
   function loadInitial() {
     var boundaries = {};
-    var extraText = null;
-    // The ICT / internet list is optional; a missing file is not an error.
-    var extraReq = Data.fetchFirst(CONFIG.EXTRA_SOURCES)
-      .then(function (r) { extraText = r.text; }, function () {});
+    var extraTexts = [];
+    // Project lists are optional; a missing file is not an error.
+    var extraReq = Promise.all(CONFIG.EXTRA_SOURCES.map(function (url) {
+      return Data.fetchFirst([url]).then(function (r) { return r.text; }, function () { return null; });
+    })).then(function (texts) { extraTexts = texts.filter(Boolean); });
     Data.fetchBoundaries()
       .then(function (b) { boundaries = b; return extraReq; })
       .then(function () { return Data.fetchFirst(CONFIG.DATA_SOURCES); })
       .then(function (res) {
         var parsed = Data.parseCsvText(res.text);
-        if (extraText) parsed.extra = Data.mergeExtra(parsed.schools, extraText);
+        extraTexts.forEach(function (text) {
+          var r = Data.mergeExtra(parsed.schools, text);
+          var e = parsed.extra || (parsed.extra = { matched: 0, added: 0, unmatched: [] });
+          e.matched += r.matched;
+          e.added += r.added;
+          e.unmatched = e.unmatched.concat(r.unmatched);
+        });
         if (Object.keys(boundaries).length) {
           var filled = Data.applyBoundaries(parsed.schools, boundaries);
           state.boundariesUsed = filled > 0;
@@ -737,6 +762,8 @@
       statTotal: $('stat-total'),
       statMunis: $('stat-munis'),
       statPosts: $('stat-posts'),
+      statDevices: $('stat-devices'),
+      statDevicesWrap: $('stat-devices-wrap'),
       mapStatus: $('map-status'),
       facets: {}
     };

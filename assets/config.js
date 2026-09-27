@@ -20,6 +20,12 @@
     ownership: ['ownership', 'management', 'sector', 'publicprivate', 'tipoescola', 'propriedade'],
     students: ['students', 'enrolment', 'enrollment', 'totalstudents', 'numstudents', 'alunos', 'estudantes'],
     teachers: ['teachers', 'totalteachers', 'numteachers', 'professores', 'docentes'],
+    gps: ['gpscoordinates', 'gps', 'coordinates', 'gpscoords', 'latlon', 'latlong', 'location'],
+    devices: ['devices', 'numdevices', 'laptopschromebooks', 'laptops', 'chromebooks', 'computers', 'ictdevices', 'equipamentos', 'computadores'],
+    projectYear: ['projectyear', 'year', 'ano', 'tinan'],
+    projectStatus: ['status', 'projectstatus', 'estado', 'situacao'],
+    license: ['license', 'licence', 'licenca'],
+    notes: ['observations', 'observation', 'notes', 'note', 'remarks', 'comments', 'observacoes', 'obs'],
     donor: ['ictdonor', 'donor', 'ictschool', 'ictprogram', 'ictprogramme', 'ictpartner', 'donors', 'funder', 'fundedby', 'doador', 'parceiro'],
     internet: ['internet', 'internettype', 'internetconnection', 'connectivity', 'connection', 'connectiontype', 'isp', 'conexao', 'ligacaointernet']
   };
@@ -39,14 +45,24 @@
     },
     {
       key: 'internet', label: 'Internet', none: 'No internet recorded',
-      known: ['Modem Router', 'Starlink', 'Starlink-Vorakai', 'NCP']
+      known: ['Modem Router', 'Router SIM Card', 'Starlink', 'Starlink-Vorakai', 'NCP']
+    },
+    {
+      key: 'projectStatus', label: 'Project status', none: 'No project status',
+      known: ['Distributed', 'Planning']
+    },
+    {
+      key: 'projectYear', label: 'Project year', none: 'No project year',
+      known: []
     }
   ];
 
-  /* Optional second list joined onto schools.csv by school ID (or, failing
-     that, by exact school name). Lets the ICT / internet list be kept as its
-     own spreadsheet instead of being merged into the main export. */
-  var EXTRA_SOURCES = ['data/ict.csv'];
+  /* Optional project list joined onto schools.csv by school ID (or, failing
+     that, by exact school name). Lets a donor's list be kept as its own
+     spreadsheet instead of being merged into the main export. Rows that match
+     no school but carry coordinates are added to the map as schools. */
+  /* Every file listed here that exists is loaded, in this order. */
+  var EXTRA_SOURCES = ['data/litehaus.csv', 'data/unicef.csv', 'data/ict.csv'];
 
   /* -------------------------------------------------------- education level */
   /* Education level is ORDINAL (a ladder), not categorical, so colour is an

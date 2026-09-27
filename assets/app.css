@@ -346,6 +346,9 @@ fieldset.field[hidden] { display: none; }
   min-width: 0;
 }
 
+.stat-wide { grid-column: 1 / -1; }
+.stat[hidden] { display: none; }
+
 .stat-value {
   font-size: 18px;
   font-weight: 600;
