@@ -1,0 +1,386 @@
+old_school_id,old_school_name,old_education_level,latitude,longitude,name_exists_in_current,nearest_current_school,nearest_current_level,nearest_current_municipality,distance_m,assessment
+1259,EBF 1 Bitila,Basic,-9.367578,124.157166,no,EBC 3º Ciclo Baocnana,Escola Básica Central (EBC),Oecusse,7304,likely absent from current export
+988,EBF 1.2 Railuli,Basic,-9.022063,124.962398,no,EB 1º Ciclo Lalis,Escola Básica Filial (EBF),Bobonaro,6980,likely absent from current export
+1589,EBF 1.2 Nefolete,Basic,-9.366055,124.240881,no,"EB 1º,2º Ciclo Oelcaem",Escola Básica Filial (EBF),Oecusse,6499,likely absent from current export
+1590,EBF 1.2 Eno - Nesu,Basic,-9.396751,124.265236,no,"EB 1º,2º Ciclo Binibu Pune",Escola Básica Filial (EBF),Oecusse,6442,likely absent from current export
+1233,EBF 1 Dato Moris,Basic,-8.716001,125.822751,no,"EB 1º,2º Ciclo Funar",Escola Básica Filial (EBF),Manatuto,6203,likely absent from current export
+799,EBF 1.2 Cussi,Basic,-9.419588,124.286977,no,"EB 1º,2º Ciclo Bibesi",Escola Básica Filial (EBF),Oecusse,5989,likely absent from current export
+865,EBF 1.2 Neten-Bitimo,Basic,-9.368803,124.264970,no,"EB 1º,2º Ciclo Binibu Pune",Escola Básica Filial (EBF),Oecusse,5756,likely absent from current export
+1218,EBF 1.2 Nur-Um,Basic,-8.690521,125.915964,no,"EB 1º,2º Ciclo Bahareduk",Escola Básica Filial (EBF),Manatuto,5612,likely absent from current export
+693,EBF 1 Sawaki,Basic,-8.832384,126.114990,no,EB 1º Ciclo Nuntetuk,Escola Básica Filial (EBF),Viqueque,5447,likely absent from current export
+949,EBF 1.2 Fatumeta,Basic,-9.182410,125.619960,no,"EB 1º,2º Ciclo Bobe",Escola Básica Filial (EBF),Ainaro,5052,likely absent from current export
+971,EBF 1 Raifusar,Basic,-8.750953,125.718645,no,EB 1º Ciclo Raifusar,Escola Básica Filial (EBF),Aileu,4992,likely absent from current export
+1679,EBF 1 Camedar,Basic,-8.754181,126.052213,no,"EB 1º,2º Ciclo Laline",Escola Básica Filial (EBF),Viqueque,4891,likely absent from current export
+1239,EBF 1.2 Hatugara,Basic,-9.337403,124.201297,no,"EB 1º,2º Ciclo Oelcaem",Escola Básica Filial (EBF),Oecusse,4846,likely absent from current export
+1537,EPE Uma Tutun Tutuluro,Pre-School,-8.946398,125.702408,no,"EB 1º,2º Ciclo Daramatan",Escola Básica Filial (EBF),Manufahi,4657,likely absent from current export
+1907,Pre Escolar Iradarate,Pre-School,-8.738104,126.859635,no,"EBC 1º,2º,3º Ciclo Iliomar",Escola Básica Central (EBC),Lautem,4612,likely absent from current export
+5511,EBF 1.2 Binino  Lelaufe,Basic,-9.350698,124.280423,no,"EB 1º,2º Ciclo Binibu Pune",Escola Básica Filial (EBF),Oecusse,4601,likely absent from current export
+314,EBF 1.2 Afoneno,Basic,-9.303213,124.441273,no,"EB 1º,2º Ciclo Quinat",Escola Básica Filial (EBF),Oecusse,4291,likely absent from current export
+1058,EBF 1.2 Oelnites,Basic,-9.387232,124.283867,no,"EB 1º,2º Ciclo Binibu Pune",Escola Básica Filial (EBF),Oecusse,4141,likely absent from current export
+1513,EBF 1 Palsam,Basic,-9.429426,124.309583,no,EP C Haemnanu,Escola Básica Filial (EBF),Oecusse,4080,likely absent from current export
+1260,EBC 1.2.3 - 7/12/ Maulau,Basic,-9.362084,124.081623,no,"EB 1º,2º Ciclo Reliquio Citrana",Escola Básica Filial (EBF),Oecusse,3962,likely absent from current export
+857,EBC 1.2.3 Haobeno Quiubuquif Bimanat,Basic,-9.340649,124.247875,no,"EB 1º,2º Ciclo Oelcaem",Escola Básica Filial (EBF),Oecusse,3940,likely absent from current export
+1215,EBF 1.2 Marmore,Basic,-8.480280,125.920692,no,"EB 1º,2º Ciclo Be'Edan",Escola Básica Filial (EBF),Manatuto,3895,likely absent from current export
+873,EBF 1.2 Sei Taneis,Basic,-9.445013,124.298356,no,EP C Haemnanu,Escola Básica Filial (EBF),Oecusse,3891,likely absent from current export
+313,EBF 1.2 Lalehan,Basic,-9.242255,124.424426,no,"EB 1º,2º Ciclo Quinat",Escola Básica Filial (EBF),Oecusse,3875,likely absent from current export
+1701,Pre Escolar Comandante Maubuti,Pre-School,-8.479250,126.402968,no,"EB 1º,2º Ciclo Golgota",Escola Básica Filial (EBF),Baucau,3785,likely absent from current export
+999,EBF 1.2 Bimanu,Basic,-9.286798,124.294254,no,"EB 1º,2º Ciclo Ulas",Escola Básica Filial (EBF),Oecusse,3759,likely absent from current export
+1279,EBF 1.2 Poas Boot,Basic,-9.299242,124.266993,no,"EB 1º,2º Ciclo Oelcaem",Escola Básica Filial (EBF),Oecusse,3759,likely absent from current export
+1237,EBF 1.2 Lilias,Basic,-9.259558,124.443667,no,"EB 1º,2º Ciclo Quinat",Escola Básica Filial (EBF),Oecusse,3709,likely absent from current export
+5315,EBF 1.2 Liurai,Basic,-8.847780,125.541968,no,"EBC 1º,2º,3º Ciclo Riamori",Escola Básica Central (EBC),Ainaro,3451,likely absent from current export
+91,EBF 1.2 Uaibobo,Basic,-8.649350,126.473770,no,"EB 1º,2º Ciclo Sarabata",Escola Básica Filial (EBF),Baucau,3435,likely absent from current export
+859,EBF 1.2 Fatubena,Basic,-9.336995,124.226509,no,"EB 1º,2º Ciclo Oelcaem",Escola Básica Filial (EBF),Oecusse,3324,likely absent from current export
+1166,EB Privado 3 Fila-Delfia,Basic,-8.672855,125.163871,no,"EB 1º,2º Ciclo Caicasa",Escola Básica Filial (EBF),Liquiça,3247,likely absent from current export
+1258,EBF 1 Lamasi,Basic,-9.142184,125.634623,no,"EB 1º,2º Ciclo Bobe",Escola Básica Filial (EBF),Ainaro,3132,likely absent from current export
+1163,EBF 1.2 Liquitei,Basic,-9.322699,124.374077,no,"EB 1º,2º Ciclo 31 de Agosto Binila",Escola Básica Filial (EBF),Oecusse,3114,likely absent from current export
+1363,EBF 1.2 Bubulale,Basic,-8.896194,126.391167,no,"EB 1º,2º Ciclo We-Sa",Escola Básica Filial (EBF),Viqueque,3026,likely absent from current export
+1273,EBF 1.2 Besatoco,Basic,-9.395677,124.309573,no,"EB 1º,2º Ciclo Binibu Pune",Escola Básica Filial (EBF),Oecusse,2963,likely absent from current export
+1272,EBC 1.2.3 Tasaebeno Pune,Basic,-9.369480,124.341272,no,"EB 1º,2º Ciclo Bobmanat",Escola Básica Filial (EBF),Oecusse,2958,likely absent from current export
+1006,EBF 1.2 Hauboni,Basic,-9.332591,124.244135,no,"EB 1º,2º Ciclo Oelcaem",Escola Básica Filial (EBF),Oecusse,2955,likely absent from current export
+996,EBF 1 Nanafoe,Basic,-8.409874,127.059464,no,EB 1º Ciclo Somocho,Escola Básica Filial (EBF),Lautem,2945,likely absent from current export
+1640,Pre Escolar Tasaebeno,Pre-School,-9.369247,124.342284,no,"EB 1º,2º Ciclo Bobmanat",Escola Básica Filial (EBF),Oecusse,2943,likely absent from current export
+1535,EPE Falitehu,Pre-School,-8.946638,125.683861,no,EB 1º Ciclo Blaro,Escola Básica Filial (EBF),Manufahi,2885,likely absent from current export
+985,EBF 1.2 Lias,Basic,-9.112111,125.534247,no,"EBC 1º,2º,3º Ciclo Central Cassa",Escola Básica Central (EBC),Ainaro,2847,likely absent from current export
+1362,EBF 1.2 Motalee,Basic,-9.303308,124.380214,no,Pré-Escolar Boboloa,Pre-Escolar,Oecusse,2797,likely absent from current export
+1238,EBF 1.2 Fatuquenfua,Basic,-9.396267,124.327318,no,"EB 1º,2º Ciclo Bobmanat",Escola Básica Filial (EBF),Oecusse,2649,likely absent from current export
+995,EBF 1.2 Raebohat/Huhurlelo,Basic,-8.759338,125.460275,no,"EB 1º,2º Ciclo Eraulo",Escola Básica Filial (EBF),Ermera,2647,likely absent from current export
+619,EBF 1.2 Samoro,Basic,-8.826904,125.920426,no,"EB 1º,2º Ciclo Bora",Escola Básica Filial (EBF),Manatuto,2608,likely absent from current export
+1208,EBF 1.2 Hatumdei,Basic,-8.883683,125.463523,no,"EB 1º,2º Ciclo Catrai Craic",Escola Básica Filial (EBF),Ermera,2604,likely absent from current export
+2295,EBF 1 Cailoibere,Basic,-8.608653,126.472459,no,EP C Dara Lata,Escola Básica Filial (EBF),Baucau,2586,likely absent from current export
+5006,EBF 1 Raiklaran Purogoa,Basic,-8.953306,125.326577,no,EB 1º Ciclo Oho Ana,Escola Básica Filial (EBF),Bobonaro,2579,likely absent from current export
+1527,Pre Escolar Raeraga,Pre-School,-8.830520,125.374205,no,"EB 1º,2º Ciclo Hatugau",Escola Básica Filial (EBF),Ermera,2555,likely absent from current export
+5497,EBF 1.2 Ailarino,Basic,-8.551914,126.867487,no,"EB 1º,2º Ciclo Cacavem",Escola Básica Filial (EBF),Lautem,2533,likely absent from current export
+1192,EB Privado 1.2 Marcelo 02 Comoro,Basic,-8.776323,125.923908,no,"EB 1º,2º Ciclo Manelima",Escola Básica Filial (EBF),Manatuto,2475,likely absent from current export
+1538,Pre Escolar Filial Larimi,Pre-School,-8.687665,126.762469,no,"EB 1º,2º Ciclo Larimi",Escola Básica Filial (EBF),Lautem,2468,likely absent from current export
+1203,EBF 1.2 Aiurlalan ,Basic,-8.659883,125.531410,no,"EB 1º,2º Ciclo Sarlala",Escola Básica Filial (EBF),Aileu,2456,likely absent from current export
+1204,EBF 1.2 Rehatu,Basic,-8.632755,125.794751,no,"EB 1º,2º Ciclo Fahe Lacor",Escola Básica Filial (EBF),Manatuto,2455,likely absent from current export
+1902,Pre Escolar Francisco de Assis-Boebau/Manati,Pre-School,-8.684097,125.314102,no,EB 1º Ciclo Gariana,Escola Básica Filial (EBF),Liquiça,2433,likely absent from current export
+1489,EBF 1 Laklese,Basic,-9.267926,125.178187,no,"EB 1º,2º Ciclo Lawacou",Escola Básica Filial (EBF),Covalima,2403,likely absent from current export
+90,EBF 1.2.3 Osso Lari,Basic,-8.735587,126.457401,no,"EB 1º,2º Ciclo Dalirisi",Escola Básica Filial (EBF),Viqueque,2386,likely absent from current export
+1210,EBF 1.2 Bua,Basic,-8.584299,125.820417,no,EP C Hatuconam,Escola Básica Filial (EBF),Manatuto,2377,likely absent from current export
+1283,EBF 1 Berelisu,Basic,-8.644748,125.719194,no,"EB 1º,2º Ciclo Faturasa",Escola Básica Filial (EBF),Aileu,2355,likely absent from current export
+1230,EBF 1.2  Talale,Basic,-8.878932,125.654477,no,"EB 1º,2º Ciclo Liurai",Escola Básica Filial (EBF),Ainaro,2275,likely absent from current export
+1162,EBF 1 Oenoah,Basic,-9.340064,124.362128,no,EBC 3º Ciclo Oesilo,Escola Básica Central (EBC),Oecusse,2253,likely absent from current export
+1532,Pre Escolar Beato Edmund Rice Aiurlaran,Pre-School,-8.652861,125.529357,no,"EB 1º,2º Ciclo Bocolelo",Escola Básica Filial (EBF),Aileu,2249,likely absent from current export
+165,EBF 1.2 Tobur,Basic,-9.138261,125.324746,no,EB 1º Ciclo Zoilpo,Escola Básica Filial (EBF),Bobonaro,2240,likely absent from current export
+1808,EBF 1.2 Mulara,Basic,-8.855913,125.413977,no,"EB 1º,2º Ciclo Assi",Escola Básica Filial (EBF),Ermera,2238,likely absent from current export
+1193,EBF 1.2 Haburas Hatuhei,Basic,-8.782873,125.949418,no,"EB 1º,2º Ciclo Pualaca",Escola Básica Filial (EBF),Manatuto,2230,likely absent from current export
+1227,EBF 1 Lequigari,Basic,-8.762715,126.372041,no,ES C St. Madalena Canossa/Ossu,Escola Secundária Geral (ESG),Viqueque,2202,likely absent from current export
+1266,EBC 3 Lospalos,Basic,-8.826260,125.393710,no,"EB 1º,2º Ciclo Raimerhei",Escola Básica Filial (EBF),Ermera,2168,likely absent from current export
+1282,EBF 1.2 Aijaofukan,Basic,-9.440350,124.328921,no,EP C Haemnanu,Escola Básica Filial (EBF),Oecusse,2164,likely absent from current export
+1180,EBC 1.2.3 Baboe Leten,Basic,-8.700073,125.983307,no,"EB 1º,2º Ciclo Bahareduk",Escola Básica Filial (EBF),Manatuto,2157,likely absent from current export
+789,EBF 1.2 Coilequi,Basic,-8.909642,125.448570,no,"EB 1º,2º Ciclo Leubassa",Escola Básica Filial (EBF),Ermera,2136,likely absent from current export
+681,EBF 1.2 C. S. Bubria,Basic,-8.734509,125.300241,no,"EB 1º,2º Ciclo Urahou 2",Escola Básica Filial (EBF),Ermera,2117,likely absent from current export
+1600,Pre Escolar Sao Francisco Lolotoe,Pre-School,-9.138086,125.261971,no,EB 1º Ciclo Deudet,Escola Básica Filial (EBF),Bobonaro,2110,likely absent from current export
+1201,EBF 1.2 Madede,Basic,-8.791680,125.455002,no,EBC 3º Ciclo Raicala,Escola Básica Central (EBC),Ermera,2109,likely absent from current export
+1668,EBF 1.2 Lasama,Basic,-8.935665,126.237618,no,EP C Nº02 Luka,Escola Básica Filial (EBF),Viqueque,2104,likely absent from current export
+1170,EBF 1 Osso-Ufulari,Basic,-8.615371,125.348136,no,Pré-Escolar Metagou,Pre-Escolar,Liquiça,2091,likely absent from current export
+311,EBF 1.2 Quiupanaf,Basic,-9.318994,124.308299,no,"EB 1º,2º Ciclo Sonamnasi",Escola Básica Filial (EBF),Oecusse,2090,likely absent from current export
+1534,Pre Escolar Beato Edmund Rice Datuleo,Pre-School,-8.651558,125.527989,no,"EB 1º,2º Ciclo Bocolelo",Escola Básica Filial (EBF),Aileu,2089,likely absent from current export
+1061,EBF 1.2 Naetuna,Basic,-9.442199,124.346917,no,"EB 1º,2º Ciclo Passabe Maesmat",Escola Básica Filial (EBF),Oecusse,2062,likely absent from current export
+1522,EPE Naelaran,Pre-School,-9.045893,125.871228,no,"EB 1º,2º Ciclo Auberlico",Escola Básica Filial (EBF),Manufahi,2058,likely absent from current export
+574,EBF 1.2 Dilai,Basic,-9.172375,125.323302,no,EB 1º Ciclo Silagolo,Escola Básica Filial (EBF),Bobonaro,2037,likely absent from current export
+189,EBC 1.2.3 Catrai Leten,Basic,-8.875324,125.413206,no,"EB 1º,2º Ciclo Lauana",Escola Básica Filial (EBF),Ermera,2018,likely absent from current export
+1530,Pre Escolar Beato Edmund Rice Manufonihei,Pre-School,-8.653061,125.565615,no,EB 1º Ciclo Licimori,Escola Básica Filial (EBF),Aileu,2001,likely absent from current export
+1246,EBF 1.2 Teliga,Basic,-8.607374,125.370066,no,EP C Nº02 Bazartete,Escola Básica Filial (EBF),Liquiça,1987,likely absent from current export
+939,EBF 1 Ussuvasu,Basic,-8.576815,126.800345,no,"EB 1º,2º Ciclo Barikafa",Escola Básica Filial (EBF),Lautem,1987,likely absent from current export
+1661,Pre Escolar Tatamailau Ctrai Leten,Pre-School,-8.875861,125.414003,no,"EB 1º,2º Ciclo Lauana",Escola Básica Filial (EBF),Ermera,1975,likely absent from current export
+978,EBC 1.2.3 D.Baumeta Suco Liurai,Basic,-8.759653,125.551125,no,"EB 1º,2º Ciclo Mantane",Escola Básica Filial (EBF),Aileu,1973,likely absent from current export
+1264,EBF 1.2 Domingos Martins Bassar,Basic,-8.850400,125.870271,no,"EB 1º,2º Ciclo Tasi Fatin",Escola Básica Filial (EBF),Manatuto,1972,likely absent from current export
+844,EBF 1.2 Fatuk Aibalun,Basic,-8.917731,125.998650,no,"EBC 1º,2º,3º Ciclo Palaca Balibo",Escola Básica Central (EBC),Bobonaro,1954,likely absent from current export
+1104,EBF 1 Seurtulan,Basic,-8.723294,125.977569,no,"EB 1º,2º Ciclo Bereleu Leubuto",Escola Básica Filial (EBF),Aileu,1953,likely absent from current export
+1637,Pre Escolar Dom Baumeta,Pre-School,-8.759180,125.551317,no,"EB 1º,2º Ciclo Mantane",Escola Básica Filial (EBF),Aileu,1940,likely absent from current export
+1185,EBF 1.2 Nunusakari,Basic,-9.089597,125.301261,no,"EB 1º,2º Ciclo Maui",Escola Básica Filial (EBF),Bobonaro,1919,likely absent from current export
+352,EBF 1.2 Samalari,Basic,-8.520647,126.471452,no,"EB 1º,2º Ciclo Buibau",Escola Básica Filial (EBF),Baucau,1907,likely absent from current export
+1168,EBF 1.2 Uloana,Basic,-8.673614,125.311386,no,EB 1º Ciclo Gariana,Escola Básica Filial (EBF),Liquiça,1882,likely absent from current export
+1220,EBF 1.2 Faloai,Basic,-9.014046,125.069193,no,"EB 1º,2º Ciclo Ai Assa",Escola Básica Filial (EBF),Bobonaro,1878,likely absent from current export
+1547,Pre-Escolar Liurai B,Pre-School,-8.756375,125.530599,no,"EB 1º,2º Ciclo Maurusa",Escola Básica Filial (EBF),Aileu,1857,likely absent from current export
+1214,EBF 1.2 Fatu Laun,Basic,-8.749728,125.935747,no,"EB 1º,2º Ciclo Dirik-Hun",Escola Básica Filial (EBF),Manatuto,1845,likely absent from current export
+1656,Pre Escolar Basar Hoholau,Pre-School,-8.651700,125.567349,no,EB 1º Ciclo Licimori,Escola Básica Filial (EBF),Aileu,1837,likely absent from current export
+1788,Pre Escolar Leo - Lima,Pre-School,-8.926835,125.130553,no,"EB 1º,2º Ciclo Halecou",Escola Básica Filial (EBF),Bobonaro,1836,likely absent from current export
+1783,Pre Escolar Liquitura,Pre-School,-8.815754,125.596970,no,"EB 1º,2º Ciclo Liquitura",Escola Básica Filial (EBF),Aileu,1827,likely absent from current export
+318,EBF 1.2 Maunaebeno,Basic,-9.358908,124.305466,no,"EB 1º,2º Ciclo Binibu Pune",Escola Básica Filial (EBF),Oecusse,1814,likely absent from current export
+486,EBF 1.2 Lequitura,Basic,-8.815594,125.596930,no,"EB 1º,2º Ciclo Liquitura",Escola Básica Filial (EBF),Aileu,1810,likely absent from current export
+1491,EBF 1 Basar Hoholau,Basic,-8.651003,125.567455,no,EB 1º Ciclo Licimori,Escola Básica Filial (EBF),Aileu,1759,likely absent from current export
+5111,EBF 1 Laclo,Basic,-8.811373,125.497042,no,"EB 1º,2º Ciclo Lequicala",Escola Básica Filial (EBF),Ermera,1759,likely absent from current export
+210,EBF 1.2 Leimea Craik,Basic,-8.834487,125.380737,no,"EB 1º,2º Ciclo Hatugau",Escola Básica Filial (EBF),Ermera,1759,likely absent from current export
+322,EBF 1.2 Niquinaheten,Basic,-9.378524,124.349355,no,"EB 1º,2º Ciclo Bobmanat",Escola Básica Filial (EBF),Oecusse,1752,likely absent from current export
+1627,Pre Escolar Tunubibi,Pre-School,-8.958674,124.962874,no,Pré-Escolar Batugade,Pre-Escolar,Bobonaro,1751,likely absent from current export
+1516,EPE Lebenei,Pre-School,-8.608981,126.676048,no,"EB 1º,2º Ciclo Lebenei",Escola Básica Filial (EBF),Baucau,1741,likely absent from current export
+1616,Pre Escolar Uani-Uma,Pre-School,-8.929383,126.144729,no,"EB 1º,2º Ciclo Aimanas Rai",Escola Básica Filial (EBF),Viqueque,1723,likely absent from current export
+1439,Pre Escolar Nossa Senhora Virgem Peregrina,Pre-School,-8.748525,125.350220,no,"EB 1º,2º Ciclo Licapat",Escola Básica Filial (EBF),Ermera,1707,likely absent from current export
+13,EBF 1.2 Hatsana - Udo / Daisualama,Basic,-9.030193,125.610488,no,EB 1º Ciclo Hatsana-Udo/Daisua Lama,Escola Básica Filial (EBF),Manufahi,1701,likely absent from current export
+1442,Pre Escolar Tomas Ximenes,Pre-School,-8.660818,125.429736,no,"EB 1º,2º Ciclo Lebuloa",Escola Básica Filial (EBF),Liquiça,1679,likely absent from current export
+1221,EBF 1 Mabelis,Basic,-9.095300,125.271791,no,EB 1º Ciclo Leber Taz,Escola Básica Filial (EBF),Bobonaro,1673,likely absent from current export
+1508,EPE Fatu Kilat,Pre-School,-8.897439,125.764834,no,"EB 1º,2º Ciclo Ailalec 1",Escola Básica Filial (EBF),Manufahi,1669,likely absent from current export
+557,EBF 1 Goulolo,Basic,-8.834630,125.382108,no,"EB 1º,2º Ciclo Hatugau",Escola Básica Filial (EBF),Ermera,1663,likely absent from current export
+991,EBF 1.2  Hatete,Basic,-8.781396,125.374224,no,"EB 1º,2º Ciclo Hulorema",Escola Básica Filial (EBF),Ermera,1658,likely absent from current export
+1262,EBF 1.2 Ernaru,Basic,-9.033771,125.520461,no,"EB 1º,2º Ciclo Builico",Escola Básica Filial (EBF),Ainaro,1655,likely absent from current export
+304,EBF 1.2 Grotu,Basic,-9.033771,125.520461,no,"EB 1º,2º Ciclo Builico",Escola Básica Filial (EBF),Ainaro,1655,likely absent from current export
+1533,Pre Escolar Beato Edmund Rice Bohemata,Pre-School,-8.672666,125.505410,no,"EB 1º,2º Ciclo Samalete 1",Escola Básica Filial (EBF),Ermera,1654,likely absent from current export
+962,EBF 1.2 Mape,Basic,-9.064397,125.411361,no,EB 1º Ciclo Mape,Escola Básica Filial (EBF),Covalima,1638,likely absent from current export
+1234,EBC 3 Bisakrem,Basic,-9.243367,125.111664,no,"EB 1º,2º Ciclo Lactos",Escola Básica Filial (EBF),Covalima,1636,likely absent from current export
+1200,EBF 1 Darahe,Basic,-8.802881,125.605494,no,"EB 1º,2º Ciclo Fatubessi",Escola Básica Filial (EBF),Ainaro,1625,likely absent from current export
+216,EBF 1.2.3 Porema,Basic,-8.755005,125.354683,no,"EB 1º,2º Ciclo Porema",Escola Básica Filial (EBF),Ermera,1620,likely absent from current export
+1225,EBF 1.2 Cacaegoa,Basic,-8.794326,125.234249,no,EB 1º Ciclo Turema,Escola Básica Filial (EBF),Bobonaro,1603,likely absent from current export
+1222,EBF 1 Mologuen,Basic,-9.037031,125.281329,no,"EB 1º,2º Ciclo Oeleu",Escola Básica Filial (EBF),Bobonaro,1601,likely absent from current export
+1169,EBF 1 Maumetalau,Basic,-8.719600,125.227753,no,"EB 1º,2º Ciclo Faulara",Escola Básica Filial (EBF),Liquiça,1590,likely absent from current export
+1223,EBC 3 Remanarum,Basic,-8.629351,125.787243,no,EB 1º Ciclo Fatubutik,Escola Básica Filial (EBF),Aileu,1576,likely absent from current export
+1511,EPE Buibaro,Pre-School,-8.896910,125.390202,no,"EB 1º,2º Ciclo Daralau Leimea Leten",Escola Básica Filial (EBF),Ermera,1488,likely absent from current export
+1531,Pre Escolar Beato Edmund Rice Riamor,Pre-School,-8.680338,125.477234,no,"EB 1º,2º Ciclo Railaco Craic",Escola Básica Filial (EBF),Ermera,1470,likely absent from current export
+1205,EBC 3 We- Ai- Huduik,Basic,-8.852058,125.931028,no,EPS C Nossa Senhora de Aitara,Escola Básica Central (EBC),Manatuto,1440,likely absent from current export
+808,EBF 1.2 Sauria,Basic,-8.836058,125.395768,no,"EB 1º,2º Ciclo Hatugau",Escola Básica Filial (EBF),Ermera,1412,likely absent from current export
+1732,EBF 1.2 Wernae-Leu,Basic,-8.751822,125.973849,no,"EB 1º,2º Ciclo Rulalan",Escola Básica Filial (EBF),Manatuto,1403,likely absent from current export
+1901,Pre Escolar Siamado,Pre-School,-8.723435,125.208383,no,"EB 1º,2º Ciclo Siamodo",Escola Básica Filial (EBF),Liquiça,1400,likely absent from current export
+990,EBF 1.2 Tidin Besi,Basic,-8.696479,125.356054,no,"EB 1º,2º Ciclo Asumano",Escola Básica Filial (EBF),Liquiça,1397,likely absent from current export
+1276,EBF 1 Cabana,Basic,-9.298878,124.225308,no,"EB 1º,2º Ciclo Oelcaem",Escola Básica Filial (EBF),Oecusse,1386,likely absent from current export
+1172,EBF 1.2 Assanuno,Basic,-8.556148,126.685481,no,EP C Lavateri,Escola Básica Filial (EBF),Baucau,1382,likely absent from current export
+5326,EBF 1. Bubuha,Basic,-8.678789,126.702630,no,EB 1º Ciclo Bubuha,Escola Básica Filial (EBF),Viqueque,1381,likely absent from current export
+1369,Pre-Escolar Madre Trindade,Pre-School,-9.297773,125.306346,no,"EB 1º,2º Ciclo Sanfuk",Escola Básica Filial (EBF),Covalima,1364,likely absent from current export
+1165,EBF 1.2 Eluli,Basic,-9.468023,124.321406,no,EP C Haemnanu,Escola Básica Filial (EBF),Oecusse,1359,likely absent from current export
+1651,Pre Escolar 7 de Dezembro Bermoli,Pre-School,-8.809508,125.657391,no,EPC Maulau,Escola Básica Filial (EBF),Ainaro,1347,likely absent from current export
+1525,Pre Escolar Flos Carmeli,Pre-School,-8.839376,125.441086,no,Pré-Escolar Pico Ram,Pre-Escolar,Ermera,1346,likely absent from current export
+1261,EBF 1.2 Taul - Rem,Basic,-8.809499,125.657593,no,EPC Maulau,Escola Básica Filial (EBF),Ainaro,1330,likely absent from current export
+1120,EPE Garibuana Mauchiga,Pre-School,-8.937104,125.586522,no,"EB 1º,2º Ciclo Mauciga",Escola Básica Filial (EBF),Ainaro,1325,likely absent from current export
+1700,Pre Escolar Dominicana Hera,Pre-School,-8.544265,125.673051,no,EP do Centro de Ensino Alpha,Escola Básica Filial (EBF),Dili,1317,likely absent from current export
+863,EBF 1.2.3 Banaefmanat,Basic,-9.371241,124.305463,no,"EB 1º,2º Ciclo Binibu Pune",Escola Básica Filial (EBF),Oecusse,1317,likely absent from current export
+1189,EBC 3 Koro-Asu de Maluro,Basic,-8.775779,126.396129,no,"EB 1º,2º Ciclo We-Eu-Laek",Escola Básica Filial (EBF),Viqueque,1309,likely absent from current export
+1186,EBF 1.2 Tahagaba,Basic,-8.729643,125.119486,no,"EB 1º,2º Ciclo Vatuboro",Escola Básica Filial (EBF),Liquiça,1309,likely absent from current export
+1914,Pre Escolar Alfa Terra,Pre-School,-8.568674,125.515854,no,EPS Nicolau Lobato,Escola Básica Central (EBC),Dili,1295,likely absent from current export
+1512,EBF 1 Buqui,Basic,-9.348057,124.321890,no,"EB 1º,2º Ciclo Faefnome",Escola Básica Filial (EBF),Oecusse,1295,likely absent from current export
+1699,Pre Escolar Centro Educativo Mae de Deus,Pre-School,-8.592704,125.483225,no,"EB 1º,2º Ciclo Turleo",Escola Básica Filial (EBF),Liquiça,1288,likely absent from current export
+1761,Pre Escolar Claterema,Pre-School,-8.773108,125.371787,no,"EB 1º,2º Ciclo Hulorema",Escola Básica Filial (EBF),Ermera,1284,likely absent from current export
+1587,Pre Escolar Nossa Senhora de Fatima Manu-Mera,Pre-School,-8.899290,125.577631,no,EPS C Sagrado Coracão de Jesus Aituto,Escola Básica Central (EBC),Ainaro,1267,likely absent from current export
+1588,EBF 1.2 Quirilelo,Basic,-8.890429,125.424860,no,"EB 1º,2º Ciclo Leubassa",Escola Básica Filial (EBF),Ermera,1266,likely absent from current export
+343,EBC 1.2.3 Osso-Huna Baguia,Basic,-8.659249,126.636212,no,"EBC 1º,2º,3º Ciclo Ossohuna Baguia",Escola Básica Central (EBC),Baucau,1262,likely absent from current export
+882,EBF 1.2 A. S. Tidir,Basic,-8.778900,125.388400,no,"EB 1º,2º Ciclo Hulorema",Escola Básica Filial (EBF),Ermera,1256,likely absent from current export
+1650,Pre Escolar Casa-Mou,Pre-School,-8.720918,125.520769,no,EP C Nº02 Seloi Kraik,Escola Básica Filial (EBF),Aileu,1251,likely absent from current export
+1226,EBF 1.2 Tula - Oli,Basic,-8.697511,126.324896,no,"EB 1º,2º Ciclo Uaitono",Escola Básica Filial (EBF),Viqueque,1246,likely absent from current export
+1598,Pre Escolar Leorapil,Pre-School,-9.141504,125.276676,no,EB 1º Ciclo Tepa,Escola Básica Filial (EBF),Bobonaro,1238,likely absent from current export
+1603,Pre Escolar Sao Pedro,Pre-School,-8.858628,125.182649,no,"EB 1º,2º Ciclo Aidabasalala",Escola Básica Filial (EBF),Bobonaro,1232,likely absent from current export
+1505,EPE Aituha,Pre-School,-8.930122,125.774532,no,"EB 1º,2º Ciclo Bubususu",Escola Básica Filial (EBF),Manufahi,1227,likely absent from current export
+1016,EBF 1 Biseo,Basic,-9.259721,124.327638,no,"EB 1º,2º Ciclo Ulas",Escola Básica Filial (EBF),Oecusse,1225,likely absent from current export
+1364,Escola Tecnico Dom Bosco Maumali Maliana,Secondary,-8.639053,126.655773,no,ES P F Baguia,Escola Secundária Geral (ESG),Baucau,1188,likely absent from current export
+1257,EBF 1.2 Bui Fu,Basic,-8.770966,125.434268,no,"EB 1º,2º Ciclo Eraulo",Escola Básica Filial (EBF),Ermera,1162,likely absent from current export
+1937,EPE Louro - Nairete,Pre-School,-8.521207,126.951615,no,"EBC 1º,2º,3º Ciclo Souro Lospalos",Escola Básica Central (EBC),Lautem,1156,likely absent from current export
+2313,EBF 1.2 Pilaparia,Basic,-8.640217,125.451096,no,EB 1º Ciclo Pilarparia,Escola Básica Filial (EBF),Liquiça,1151,likely absent from current export
+1779,EBF 1.2 Cotabot Bobonaro,Basic,-9.014052,125.390946,no,EB 1º Ciclo Polo,Escola Básica Filial (EBF),Bobonaro,1132,likely absent from current export
+907,EBF 1.2 Fatu Makerek,Basic,-8.791808,125.788871,no,"EB 1º,2º Ciclo Fatu Makerek",Escola Básica Filial (EBF),Manatuto,1121,likely absent from current export
+1731,EBF 1.2 Rialeco,Basic,-8.802263,125.613960,no,"EB 1º,2º Ciclo Fatubessi",Escola Básica Filial (EBF),Ainaro,1101,likely absent from current export
+1934,EPE Bancada 83 Anos de Serelau,Pre-School,-8.399938,126.833081,no,EBC 3º Ciclo Leusari Lautem,Escola Básica Central (EBC),Lautem,1100,likely absent from current export
+1908,Pre Escolar Alfredo de Jesus Lemos,Pre-School,-8.657483,125.438409,no,"EB 1º,2º Ciclo Lebuloa",Escola Básica Filial (EBF),Liquiça,1079,likely absent from current export
+1274,EBF 1 Ornai,Basic,-8.607259,125.582605,no,Pré-Escolar Neo Rosa,Pre-Escolar,Dili,1058,likely absent from current export
+757,EBC 1.2 Baguia,Basic,-8.637436,126.657459,no,ES P F Baguia,Escola Secundária Geral (ESG),Baucau,1052,likely absent from current export
+549,EBF 1.2 - 12 de Abril/Marco,Basic,-8.873312,125.204028,no,EBC 3º Ciclo Jose Maria Cailaco,Escola Básica Central (EBC),Bobonaro,1052,likely absent from current export
+1102,EBF 1.2 Culina Osso-Uailale,Basic,-8.662751,126.367583,no,EP C Fatulia,Escola Básica Filial (EBF),Baucau,1042,likely absent from current export
+1932,EPE Bemmalaia Cordiosa de Arcanjo,Pre-School,-8.577787,125.543727,no,Pré-Escolar Canosiana,Pre-Escolar,Dili,1033,likely absent from current export
+1482,Pre Escolar Fatuco,Pre-School,-8.932739,125.638352,no,EP C Nº1 Datina,Escola Básica Filial (EBF),Manufahi,1032,likely absent from current export
+1900,Pre Escolar Hatmanter Tatabauria Mirtuto,Pre-School,-8.761638,125.396471,no,Pré-Escolar Muniçipal,Pre-Escolar,Ermera,1031,likely absent from current export
+1749,Pre Escolar Aitemua,Pre-School,-8.843445,125.690823,no,"EB 1º,2º Ciclo Aitemua",Escola Básica Filial (EBF),Manufahi,1025,likely absent from current export
+1323,Pre Escolar 20 de Maio Natarbora,Pre-School,-8.976516,126.043195,no,"EB 1º,2º Ciclo Uma Boco",Escola Básica Filial (EBF),Manatuto,1016,likely absent from current export
+938,EBF 1.2 Samoro,Basic,-8.845761,125.593311,no,Pré-Escolar Nazareth,Pre-Escolar,Ainaro,988,likely absent from current export
+62,EBF 1.2 Fatubessi,Basic,-8.807831,125.625469,no,"EB 1º,2º Ciclo Fatubessi",Escola Básica Filial (EBF),Ainaro,980,likely absent from current export
+1367,Pre Escloar Leuro,Pre-School,-8.727886,125.123225,no,EBC 3º Ciclo Loes,Escola Básica Central (EBC),Liquiça,972,likely absent from current export
+20,EBF 1.2 Lebotatalelo,Basic,-8.651630,125.322811,no,Pré-Escolar O.G Leb,Pre-Escolar,Liquiça,972,likely absent from current export
+390,EBF 1.2 Abo-Uaimatale,Basic,-8.612344,126.555218,no,"EB 1º,2º Ciclo Lacoliu",Escola Básica Filial (EBF),Baucau,958,likely absent from current export
+1224,EBF 1 Nedere,Basic,-8.756713,126.666563,no,"EB 1º,2º Ciclo Comu-Oli",Escola Básica Filial (EBF),Viqueque,956,likely absent from current export
+1265,EBF 1.2 Luis Martins Lou - mo,Basic,-8.804462,125.421030,no,"EBC 1º,2º,3º Ciclo Goulolo",Escola Básica Central (EBC),Ermera,952,likely absent from current export
+1465,Pre Escolar Francisco Mouzinho,Pre-School,-9.239504,124.343178,no,Pré-Escolar Francisco,Pre-Escolar,Oecusse,943,likely absent from current export
+307,EBC 1.2.3 Meco-Sicalotim,Basic,-9.275893,124.349252,no,"EBC 1º,2º,3º Ciclo Meco Sicaloti",Escola Básica Central (EBC),Oecusse,939,likely absent from current export
+453,EBF 1.2.3 Ramcabean de Leuro,Basic,-8.529481,126.929418,no,"EB 1º,2º Ciclo Leuro",Escola Básica Filial (EBF),Lautem,921,likely absent from current export
+1631,Pre Escolar Mirtutu,Pre-School,-8.763909,125.408125,no,"EB 1º,2º Ciclo Hatuleta",Escola Básica Filial (EBF),Ermera,916,likely absent from current export
+1784,Pre Escolar Rairema,Pre-School,-8.797219,125.527053,no,"EB 1º,2º Ciclo Rairema",Escola Básica Filial (EBF),Aileu,913,likely absent from current export
+680,EBF 1.2 Hatolailete,Basic,-8.616818,125.327249,no,"EB 1º,2º Ciclo Luculai",Escola Básica Filial (EBF),Liquiça,905,likely absent from current export
+295,EBF 1.2  Sesurai,Basic,-9.108421,125.696022,no,EB 1º Ciclo Sesurai,Escola Básica Filial (EBF),Manufahi,886,likely absent from current export
+952,EBC 3 - 20 Agosto Ermera,Basic,-8.720814,125.394788,no,"EB 1º,2º Ciclo Lequeci",Escola Básica Filial (EBF),Ermera,868,likely absent from current export
+1936,EPE Cotamutu,Pre-School,-8.538068,126.826889,no,"EB 1º,2º Ciclo Dom Norico",Escola Básica Filial (EBF),Lautem,858,likely absent from current export
+1903,Pre Escolar Feto Hitu,Pre-School,-8.623648,125.308802,no,"EB 1º,2º Ciclo Laclolema",Escola Básica Filial (EBF),Liquiça,857,likely absent from current export
+1571,Pre Escolar Nossa Senhora de Grasa Railuli,Pre-School,-8.677321,125.390275,no,"EB 1º,2º Ciclo Leborema",Escola Básica Filial (EBF),Liquiça,857,likely absent from current export
+1451,Pre Escola Belun Sta. Rafaela Tuhilo Kraik,Pre-School,-8.677313,125.389984,no,"EB 1º,2º Ciclo Leborema",Escola Básica Filial (EBF),Liquiça,853,likely absent from current export
+1198,EBF 1.2 Cadabunak,Basic,-8.567333,125.624072,no,"EB 1º,2º Ciclo Aidac Bihare",Escola Básica Filial (EBF),Dili,849,likely absent from current export
+1188,EBF 1 Wekfia,Basic,-8.712823,126.371983,no,"EBC 1º,2º,3º Ciclo Bimali",Escola Básica Central (EBC),Viqueque,848,likely absent from current export
+974,EBF 1.2.3 Samalari,Basic,-8.506304,126.671065,no,EP C F Lalulai,Escola Básica Filial (EBF),Baucau,843,likely absent from current export
+1135,EBC 3 Oesilo,Basic,-9.359610,124.379430,no,EBC 3º Ciclo Oesilo,Escola Básica Central (EBC),Oecusse,841,likely absent from current export
+1122,EPE Centro Eden (PRECEN) Samagia,Pre-School,-8.502657,126.602190,no,"EB 1º,2º Ciclo Samaguia",Escola Básica Filial (EBF),Baucau,840,likely absent from current export
+993,EBF 1.2 Dato Rua L.Craik,Basic,-8.916633,125.396159,no,Pré-Escolar Girasol,Pre-Escolar,Ermera,833,likely absent from current export
+1702,Pre Escolar Filial Sagrado Coracao de Jesus Maliana,Pre-School,-8.976683,125.216580,no,Pré-Escolar Raifun,Pre-Escolar,Bobonaro,828,likely absent from current export
+1910,Pre Escolar Nai Belis,Pre-School,-9.030639,125.310785,no,"EB 1º,2º Ciclo Dom Armando Ai-Assa",Escola Básica Filial (EBF),Bobonaro,825,likely absent from current export
+34,EBF 1.2 Maubara,Basic,-8.610291,125.215019,no,EBC 3º Ciclo Maubara,Escola Básica Central (EBC),Liquiça,821,likely absent from current export
+1523,Pre Escolar Filial Abrigo Nino Conis Santana Ersoi,Pre-School,-8.753947,125.387949,no,EPS C Imaculada Conceicao Ermera,Escola Básica Central (EBC),Ermera,812,likely absent from current export
+305,EBF 1.2 Borugae,Basic,-8.548086,126.790784,no,EB 1º Ciclo Boruguai,Escola Básica Filial (EBF),Lautem,799,likely absent from current export
+5316,EBC 1.2.3 RIMORI,Basic,-8.843834,125.595020,no,Pré-Escolar Nazareth,Pre-Escolar,Ainaro,785,likely absent from current export
+1778,EBF 1 Atumanaro,Basic,-9.020493,125.385796,no,"EB 1º,2º Ciclo Carabau/Asasuri",Escola Básica Filial (EBF),Bobonaro,762,likely absent from current export
+1183,EBF 1.2 Holbese,Basic,-8.995421,125.380133,no,Pré-Escolar Hauba,Pre-Escolar,Bobonaro,752,likely absent from current export
+1171,EBF 1.2 Daralari/Atelari,Basic,-8.634747,126.650715,no,EP C Sao Jose Baguia,Escola Básica Filial (EBF),Baucau,747,likely absent from current export
+1269,EBF 1.2 Grutu Lau,Basic,-8.929132,125.634978,no,EP C Nº1 Datina,Escola Básica Filial (EBF),Manufahi,747,likely absent from current export
+543,EBC 1.2.3 - 30 De Agosto Atuaben Bobonaro,Basic,-9.004584,125.333191,no,Pré-Escolar Atuaben,Pre-Escolar,Bobonaro,735,likely absent from current export
+1199,EBF 1.2 Maubisse Balibo,Basic,-8.843179,125.595704,no,Pré-Escolar Nazareth,Pre-Escolar,Ainaro,732,likely absent from current export
+1164,EBF 1.2 Bemeni Quaeb,Basic,-8.843179,125.595704,no,Pré-Escolar Nazareth,Pre-Escolar,Ainaro,732,likely absent from current export
+855,EBF 1.2 Carbulau,Basic,-8.970605,125.662061,no,Pré-Escolar Fatulo,Pre-Escolar,Manufahi,706,likely absent from current export
+555,EBC 1.2.3 Samutuabem Cailaco,Basic,-8.977486,125.217423,no,Pré-Escolar Raifun,Pre-Escolar,Bobonaro,704,likely absent from current export
+1209,EBF 1.2 Raemantete,Basic,-8.993239,125.372118,no,"EB 1º,2º Ciclo Poelaun",Escola Básica Filial (EBF),Bobonaro,704,likely absent from current export
+1217,EBF 1.2 Tatiri,Basic,-8.965650,125.525594,no,"EB 1º,2º Ciclo Nunomogue",Escola Básica Filial (EBF),Ainaro,702,likely absent from current export
+1456,Pre Escolar Hatuquessi,Pre-School,-8.635531,125.321085,no,"EB 1º,2º Ciclo Hatukesilete",Escola Básica Filial (EBF),Liquiça,696,likely absent from current export
+1629,Pre Escolar Ritabou,Pre-School,-8.929490,125.634543,no,EP C Nº1 Datina,Escola Básica Filial (EBF),Manufahi,686,likely absent from current export
+1569,Pre Escolar Fatunero,Pre-School,-8.680333,125.384918,no,"EB 1º,2º Ciclo Leborema",Escola Básica Filial (EBF),Liquiça,676,likely absent from current export
+700,EBF 1.2 Seamrema,Basic,-9.017255,125.651064,no,EPS C Sao Miguel Arcanjo,Escola Básica Central (EBC),Manufahi,675,likely absent from current export
+1568,Pre Escolar Fatuhou,Pre-School,-8.683234,125.364460,no,Pré-Escolar Ergaa,Pre-Escolar,Liquiça,655,likely absent from current export
+293,EBF 1.2 Cotolala,Basic,-9.003089,125.639790,no,"EB 1º,2º Ciclo Cotolala",Escola Básica Filial (EBF),Manufahi,653,likely absent from current export
+878,EBF 1 Motakelan,Basic,-9.140347,125.803962,no,EB 1º Ciclo Motakelan,Escola Básica Filial (EBF),Manufahi,640,likely absent from current export
+941,EBF 1 Sika,Basic,-8.376210,126.873430,no,EB 1º Ciclo Sika,Escola Básica Filial (EBF),Lautem,638,likely absent from current export
+1642,Pre Escolar Tulaica-Anmat,Pre-School,-9.226619,124.301710,no,"EBC 1º,2º,3º Ciclo Tulaica Anmat",Escola Básica Central (EBC),Oecusse,635,likely absent from current export
+1187,EBF 1 Rai-Uatu,Basic,-8.748800,125.433900,no,"EB 1º,2º Ciclo Nunutali",Escola Básica Filial (EBF),Ermera,634,likely absent from current export
+1216,EBF 1 Hatulete,Basic,-8.861674,125.472910,no,"EBC 1º,2º,3º Ciclo Hatuhei",Escola Básica Central (EBC),Ermera,630,likely absent from current export
+1794,Pre Escolar Fatudere,Pre-School,-8.904629,126.505036,no,"EB 1º,2º Ciclo Fatudere",Escola Básica Filial (EBF),Viqueque,622,likely absent from current export
+5500,EBF 1.2 Oeleo,Basic,-9.026137,125.297931,no,"EB 1º,2º Ciclo Oeleu",Escola Básica Filial (EBF),Bobonaro,620,likely absent from current export
+411,EBF 1.2 Dara Lata,Basic,-8.476850,126.448441,no,"EB 1º,2º Ciclo Vila Nova Baucau",Escola Básica Filial (EBF),Baucau,615,likely absent from current export
+1751,Pre Escolar Sesurai,Pre-School,-9.014028,125.648171,no,"EB 1º,2º Ciclo Searema",Escola Básica Filial (EBF),Manufahi,601,likely absent from current export
+1190,EBC 3 Tidin botir,Basic,-8.949213,126.102419,no,"EB 1º,2º Ciclo Aimeta Laran",Escola Básica Filial (EBF),Manatuto,597,likely absent from current export
+1361,EBF 1 Manunessi,Basic,-9.284003,124.373870,no,"EBC 1º,2º,3º Ciclo Bobolo´a",Escola Básica Central (EBC),Oecusse,579,likely absent from current export
+58,EBF 1.2 Lebo Lau,Basic,-8.964448,125.525936,no,"EB 1º,2º Ciclo Nunomogue",Escola Básica Filial (EBF),Ainaro,577,likely absent from current export
+661,EBF 1.2 Cailake Babo,Basic,-8.780082,126.131847,no,"EB 1º,2º Ciclo Cailake Babo",Escola Básica Filial (EBF),Viqueque,570,likely absent from current export
+1206,EBC 3 Debur Butin,Basic,-8.748367,125.862657,no,"EB 1º,2º Ciclo Funar",Escola Básica Filial (EBF),Manatuto,568,likely absent from current export
+1015,EBC 3 Bei-Ubo Nunomoge,Basic,-8.959378,125.529700,no,"EB 1º,2º Ciclo Nunomogue",Escola Básica Filial (EBF),Ainaro,549,likely absent from current export
+1379,Pre Escolar Halibur,Pre-School,-8.860015,126.310152,no,Pré-Escolar Ularhik,Pre-Escolar,Viqueque,547,likely absent from current export
+1765,Pre Escolar Nossa Senhora de Lurdes No.2,Pre-School,-9.120667,125.586708,no,"EB 1º,2º Ciclo Hato-Udo",Escola Básica Filial (EBF),Ainaro,520,likely absent from current export
+197,EBF 1.2 Lequici,Basic,-8.724007,125.394788,no,"EB 1º,2º Ciclo Lequeci",Escola Básica Filial (EBF),Ermera,516,likely absent from current export
+1014,EBC 1.2.3 20 de Agosto 82 DARE BOETUA,Basic,-8.961819,125.528673,no,"EB 1º,2º Ciclo Nunomogue",Escola Básica Filial (EBF),Ainaro,513,likely absent from current export
+332,EBF 1.2.3 Bobmanat,Basic,-9.395293,124.355892,no,"EB 1º,2º Ciclo Bobmanat",Escola Básica Filial (EBF),Oecusse,512,likely absent from current export
+1645,Pre Escolar Bobmanat,Pre-School,-9.395578,124.355798,no,"EB 1º,2º Ciclo Bobmanat",Escola Básica Filial (EBF),Oecusse,511,likely absent from current export
+1212,EBF 1 Raimerhei,Basic,-8.658792,125.754682,no,Pré-Escolar Remehei,Pre-Escolar,Aileu,510,likely absent from current export
+775,EBF 1.2 Comu-oli,Basic,-8.759784,126.662180,no,"EB 1º,2º Ciclo Comu-Oli",Escola Básica Filial (EBF),Viqueque,505,likely absent from current export
+431,EBF 1.2 Baduro,Basic,-8.456070,126.891250,no,"EB 1º,2º Ciclo Baduro",Escola Básica Filial (EBF),Lautem,499,possible re-survey
+296,EBF 1.2 Turon,Basic,-9.041323,125.667460,no,EB 1º Ciclo Turon,Escola Básica Filial (EBF),Manufahi,494,possible re-survey
+1576,Pre Escolar Uaibua,Pre-School,-8.735682,126.369508,no,"EBC 1º,2º,3º Ciclo Mundo Perdido",Escola Básica Central (EBC),Viqueque,486,possible re-survey
+845,EBF 1.2 Salasa,Basic,-9.124620,125.444690,no,"EB 1º,2º Ciclo Salasa",Escola Básica Filial (EBF),Covalima,484,possible re-survey
+1546,EPE 12 Cotalala,Pre-School,-9.003133,125.648072,no,"EB 1º,2º Ciclo Rialau",Escola Básica Filial (EBF),Manufahi,484,possible re-survey
+1913,Pre Escolar Boa Esperanca YMCA Terra Santa,Pre-School,-8.553309,125.515197,no,EP C São Miguel,Escola Básica Filial (EBF),Dili,472,possible re-survey
+120,EBF 1.2 Uma Qui'ic,Basic,-8.873039,126.367244,no,Nucleu Pré-Escolar H,Pre-Escolar,Viqueque,467,possible re-survey
+1611,Pre Escolar Haburas Welolo,Pre-School,-8.939437,126.193409,no,"EBC 1º,2º,3º Ciclo Welolo",Escola Básica Central (EBC),Viqueque,458,possible re-survey
+994,EBF 1.2 Berbuit Udu,Basic,-8.715598,125.438299,no,Pré-Escolar Esperança,Pre-Escolar,Ermera,451,possible re-survey
+1760,Pre Escolar Ducurai,Pre-School,-8.826402,125.431449,no,EB 1º Ciclo Cailiti,Escola Básica Filial (EBF),Ermera,447,possible re-survey
+1502,EPE Sta. Teresinha do Menino Jesus,Pre-School,-8.566633,125.617893,no,EP C Nº7 Sebraka-Laran,Escola Básica Filial (EBF),Dili,445,possible re-survey
+1501,EPE Dominicana Salau,Pre-School,-8.830479,125.987822,no,EBC 3º Ciclo Sao Bento Salau,Escola Básica Central (EBC),Manatuto,443,possible re-survey
+5012,Pre Escolar St.Miguel Arcanjo (Cosamar 2) Raifusa Betano,Pre-School,-9.149233,125.719029,no,EB 1º Ciclo Bemetan,Escola Básica Filial (EBF),Manufahi,436,possible re-survey
+66,EBF 1.2 Manumera,Basic,-8.822067,125.707070,no,"EB 1º,2º Ciclo Manumera",Escola Básica Filial (EBF),Manufahi,433,possible re-survey
+987,EBF 1.2 Molop Tas,Basic,-9.095510,125.326121,no,"EB 1º,2º Ciclo Mapeop",Escola Básica Filial (EBF),Bobonaro,432,possible re-survey
+1909,Pre Escolar Belola,Pre-School,-8.953409,125.070151,no,"EB 1º,2º Ciclo Builecun",Escola Básica Filial (EBF),Bobonaro,430,possible re-survey
+1741,Pre Escolar Monop_Taz,Pre-School,-9.095753,125.326247,no,"EB 1º,2º Ciclo Mapeop",Escola Básica Filial (EBF),Bobonaro,430,possible re-survey
+317,EBF 1.2 30 de Agosto,Basic,-9.204054,124.343701,no,ES P Palaban,Escola Secundária Geral (ESG),Oecusse,426,possible re-survey
+1281,EBF 1.2 Pasa - Hei,Basic,-8.750438,125.427338,no,"EB 1º,2º Ciclo Lodudo",Escola Básica Filial (EBF),Ermera,414,possible re-survey
+1510,EPE Caridade Laivai,Pre-School,-8.411146,126.740843,no,"EB 1º,2º Ciclo Ililai",Escola Básica Filial (EBF),Lautem,413,possible re-survey
+1339,Pre-Escolar Raimaliak,Pre-School,-8.913644,125.779099,no,"EB 1º,2º Ciclo Aituha",Escola Básica Filial (EBF),Manufahi,403,possible re-survey
+839,EBC 3 Fatu Meta,Basic,-8.553370,125.561853,no,Pré-Escolar Creche K,Pre-Escolar,Dili,391,possible re-survey
+1948,PEK Weroun-Aubeon,Pre-School,-8.975177,126.105161,no,"EB 1º,2º Ciclo Cacai Uman",Escola Básica Filial (EBF),Manatuto,391,possible re-survey
+1764,Pre Escolar Irmao Sol,Pre-School,-8.536960,126.163364,no,"EB 1º,2º Ciclo Beboro",Escola Básica Filial (EBF),Manatuto,388,possible re-survey
+934,EBC 1.2.3 08 Uma Sege Uatulari,Basic,-8.774291,126.563321,no,"EBC 1º,2º,3º Ciclo Afaloicai Uatulari",Escola Básica Central (EBC),Viqueque,379,possible re-survey
+1524,Pre Escolar Lauana,Pre-School,-8.890064,125.411514,no,"EB 1º,2º Ciclo Lauana",Escola Básica Filial (EBF),Ermera,376,possible re-survey
+1033,EBC 3 Hauba Bobonaro,Basic,-9.007680,125.388387,no,EB 1º Ciclo Polo,Escola Básica Filial (EBF),Bobonaro,370,possible re-survey
+1599,Pre Escolar Sao Francsico Mape,Pre-School,-9.179410,125.264628,no,Pré-Escolar Opa,Pre-Escolar,Bobonaro,368,possible re-survey
+1219,EBF 1.2 Kaiwalita,Basic,-8.618828,126.660157,no,"EB 1º,2º Ciclo Haudere",Escola Básica Filial (EBF),Baucau,366,possible re-survey
+103,EBC 1.2.3 Iraler,Basic,-8.675697,126.513336,no,"EB 1º,2º Ciclo Samarogo",Escola Básica Filial (EBF),Baucau,365,possible re-survey
+1173,EBF Catolica 1 Queze / Auraba,Basic,-8.479900,126.628200,no,EP C F Larifanu,Escola Básica Filial (EBF),Baucau,363,possible re-survey
+1791,Pre Escolar Padre Arturo Liquica,Pre-School,-8.594172,125.312790,no,"EB 1º,2º Ciclo Mauboque",Escola Básica Filial (EBF),Liquiça,361,possible re-survey
+234,EBF 1.2 Lauana,Basic,-8.890186,125.411297,no,"EB 1º,2º Ciclo Lauana",Escola Básica Filial (EBF),Ermera,356,possible re-survey
+674,EBF 1.2 Calma Uatu-kila,Basic,-8.791572,126.268004,no,"EB 1º,2º Ciclo Uatukila",Escola Básica Filial (EBF),Viqueque,353,possible re-survey
+1106,EPE Naroman Esperanca,Pre-School,-8.726865,125.445265,no,"EB 1º,2º Ciclo Lauala",Escola Básica Filial (EBF),Ermera,352,possible re-survey
+1560,Pre Escolar Sarlala,Pre-School,-8.672932,125.545945,no,"EB 1º,2º Ciclo Sarlala",Escola Básica Filial (EBF),Aileu,350,possible re-survey
+178,EBF 1.2 Lacao,Basic,-8.965205,125.378073,no,"EB 1º,2º Ciclo Lacao",Escola Básica Filial (EBF),Ermera,343,possible re-survey
+953,EBC 3 Lacao,Basic,-8.965213,125.378112,no,"EB 1º,2º Ciclo Lacao",Escola Básica Filial (EBF),Ermera,341,possible re-survey
+684,EBF 1 Fatubutik,Basic,-8.627785,125.776051,no,EB 1º Ciclo Fatubutik,Escola Básica Filial (EBF),Aileu,340,possible re-survey
+1467,Pre Escolar Atoni Oe-Cusse,Pre-School,-9.204350,124.368331,no,Pré-Escolar Antonio,Pre-Escolar,Oecusse,339,possible re-survey
+1555,EPE 30 Agosto Samalari,Pre-School,-8.602448,126.664595,no,"EB 1º,2º Ciclo Lebenei",Escola Básica Filial (EBF),Baucau,337,possible re-survey
+1319,Pre Escolar Salele/Nabilan,Pre-School,-9.395912,125.161767,no,Nucleu Pre-Escolar S,Pre-Escolar,Covalima,336,possible re-survey
+1366,Pre Escolar Wini-Bruma Ismaik Raemeda,Pre-School,-9.048909,125.947238,no,"EB 1º,2º Ciclo Weulun",Escola Básica Filial (EBF),Manufahi,327,possible re-survey
+1252,EBF 1 Aelita,Basic,-8.468065,126.462390,no,EBC 3º Ciclo Tirilolo Baucau,Escola Básica Central (EBC),Baucau,325,possible re-survey
+1529,Pre Escolar  de Raicala,Pre-School,-8.803631,125.426996,no,"EBC 1º,2º,3º Ciclo Goulolo",Escola Básica Central (EBC),Ermera,324,possible re-survey
+980,EBF 3 Uailaco,Basic,-8.633090,126.443581,no,EB 3º Ciclo Uailaco,Escola Básica Central (EBC),Baucau,323,possible re-survey
+701,EBC 1.2.3 Babulo,Basic,-9.022857,125.658238,no,EBC 3º Ciclo Nº2 Babulo,Escola Básica Central (EBC),Manufahi,315,possible re-survey
+1707,EB 1.2 Cafe Ainaro,Basic,-8.993096,125.503693,no,Nucleo Pré-Escolar K,Pre-Escolar,Ainaro,308,possible re-survey
+998,EBF 1 Maurem,Basic,-9.015550,125.619152,no,EB 1º Ciclo Hatsana-Udo/Daisua Lama,Escola Básica Filial (EBF),Manufahi,308,possible re-survey
+1486,Pre Escolar Nova Tasi Tolu,Pre-School,-8.561668,125.509154,no,"EB 1º,2º Ciclo 12 de Outubro",Escola Básica Filial (EBF),Dili,307,possible re-survey
+1565,Pre Escolar Mahaquidan,Pre-School,-9.019369,125.789572,no,EBC 3º Ciclo Mahaquidan,Escola Básica Central (EBC),Manufahi,290,possible re-survey
+1321,Pre Escolar Casabauc,Pre-School,-9.380808,125.188540,no,EP C Cassabauc,Escola Básica Filial (EBF),Covalima,288,possible re-survey
+1360,EBF 1.2 Teinae,Basic,-8.565342,125.599122,no,Pré-Escolar Publico Coba,Pre-Escolar,Dili,286,possible re-survey
+1742,Pre Escolar Oho Ana,Pre-School,-8.996376,125.221900,no,Pré-Escolar Florinda,Pre-Escolar,Bobonaro,284,possible re-survey
+487,EBF 1.2 Madabeno,Basic,-8.636750,125.579940,no,"EB 1º,2º Ciclo Madabeno",Escola Básica Filial (EBF),Aileu,282,possible re-survey
+1690,EB 1.2.3 Cafe Liquica,Basic,-8.594379,125.325534,no,Pré-Escolar Oca Gorr,Pre-Escolar,Liquiça,277,possible re-survey
+740,EBF 1.2 Caisero,Basic,-9.099769,125.682432,no,"EB 1º,2º Ciclo Caessero",Escola Básica Filial (EBF),Ainaro,276,possible re-survey
+2237,EBC 1.3 Hera,Basic,-8.556251,125.649698,no,Nucleu Pré-Escolar A,Pre-Escolar,Dili,274,possible re-survey
+1003,EBC 3 Fahisoi,Basic,-8.692625,125.633535,no,"EB 1º,2º Ciclo Fahisoi",Escola Básica Filial (EBF),Aileu,270,possible re-survey
+1213,EBF 1 Mautoba,Basic,-8.665433,125.643075,no,Pré-Escolar Fahisoi,Pre-Escolar,Aileu,266,possible re-survey
+567,EBF 1.2 Silagolo,Basic,-9.172124,125.303012,no,EB 1º Ciclo Silagolo,Escola Básica Filial (EBF),Bobonaro,265,possible re-survey
+1519,Pre Escolar Pirilampo,Pre-School,-8.567365,125.555669,no,"EB 1º,2º Ciclo Fatumeta",Escola Básica Filial (EBF),Dili,263,possible re-survey
+1917,Pre Escolar Loilubo,Pre-School,-8.571316,126.336365,no,EPS C Ossoqueli,Escola Básica Central (EBC),Baucau,260,possible re-survey
+827,EBF 1.2 Maneto,Basic,-8.836600,125.693413,no,"EB 1º,2º Ciclo Aitemua",Escola Básica Filial (EBF),Manufahi,258,possible re-survey
+47,EBF 1.2 Queorema,Basic,-8.882953,125.534489,no,"EB 1º,2º Ciclo Queorema",Escola Básica Filial (EBF),Ainaro,258,possible re-survey
+1935,EPE Horupeno Pitileti,Pre-School,-8.368325,127.035242,no,EP C St. Yosep Pitileti,Escola Básica Filial (EBF),Lautem,257,possible re-survey
+1046,EBC 3 Zumalai,Basic,-9.161307,125.449259,no,"EB 1º,2º Ciclo Zumalai",Escola Básica Filial (EBF),Covalima,254,possible re-survey
+1950,EPE Titibuti,Pre-School,-8.700250,125.404668,no,"EB 1º,2º Ciclo Matata",Escola Básica Filial (EBF),Ermera,253,possible re-survey
+1662,Pre escolar Epelo,Pre-School,-8.573675,125.381892,no,EP C São João de Brito - Epelo,Escola Básica Filial (EBF),Liquiça,251,possible re-survey
+1757,Pre Escolar S. Joao Maria VianoyMetinaro,Pre-School,-8.529189,125.738516,no,"EB 1º,2º Ciclo Metinaro",Escola Básica Filial (EBF),Dili,249,possible re-survey
+1121,EPE Leotelo,Pre-School,-8.965187,125.538160,no,"EB 1º,2º Ciclo Leotelo",Escola Básica Filial (EBF),Ainaro,246,possible re-survey
+1372,Pre Escolar Daraloi,Pre-School,-8.750615,126.694043,no,EBC 3º Ciclo Uatocarbau,Escola Básica Central (EBC),Viqueque,242,possible re-survey
+488,EBF 1.2 Fatuchun,Basic,-8.638398,125.613211,no,"EB 1º,2º Ciclo Fatuk Hun",Escola Básica Filial (EBF),Aileu,239,possible re-survey
+1647,Pre Escolar Futuru,Pre-School,-8.553340,125.523529,no,Pré-Escolar Maria Auxiliadora,Pre-Escolar,Dili,236,possible re-survey
+5254,EBF 1.2 Zumalai,Basic,-9.161384,125.448574,no,EBC 3º Ciclo Zumalai,Escola Básica Central (EBC),Covalima,232,possible re-survey
+18,EBF 1.2 Maumeta,Basic,-8.587694,125.345082,no,"EB 1º,2º Ciclo Maumeta",Escola Básica Filial (EBF),Liquiça,231,possible re-survey
+1498,EPE Moriel,Pre-School,-8.438951,126.979558,no,"EBC 1º,2º,3º Ciclo Raça Lospalos",Escola Básica Central (EBC),Lautem,223,possible re-survey
+1268,EBC 3 Suri Rema,Basic,-8.807671,126.544749,no,EP C 9 Sana,Escola Básica Filial (EBF),Viqueque,223,possible re-survey
+1504,EPE Ailalek,Pre-School,-8.897643,125.778048,no,"EB 1º,2º Ciclo Ailalec 1",Escola Básica Filial (EBF),Manufahi,219,possible re-survey
+344,EB Catolica 1.2 Fatumaka,Basic,-8.569310,126.387470,no,EP C Fatumaka,Escola Básica Filial (EBF),Baucau,217,possible re-survey
+937,EB Catolica 3 D. Bosco Fatumaca,Basic,-8.569310,126.387470,no,EP C Fatumaka,Escola Básica Filial (EBF),Baucau,217,possible re-survey
+364,EBF 1.2 Central,Basic,-8.461956,126.449055,no,EP C St.D.Savio Baucau,Escola Básica Filial (EBF),Baucau,214,possible re-survey
+1506,EPE Maurem,Pre-School,-9.019500,125.624899,no,"EB 1º,2º Ciclo Grotu",Escola Básica Filial (EBF),Manufahi,214,possible re-survey
+1398,Pre Escolar Munawarah,Pre-School,-8.550511,125.556731,no,"EB 1º,2º Ciclo Fatuhada",Escola Básica Filial (EBF),Dili,205,possible re-survey
+1944,EPE Hatulailete,Pre-School,-8.717192,125.296754,no,"EB 1º,2º Ciclo Urahou 2",Escola Básica Filial (EBF),Ermera,201,possible re-survey
+1620,Pre Escolar Manico,Pre-School,-8.822875,125.709044,no,"EB 1º,2º Ciclo Manumera",Escola Básica Filial (EBF),Manufahi,200,possible re-survey
+2233,EBF 1.2 Hera,Basic,-8.539801,125.685219,no,Pré-Escolar Arca Inf,Pre-Escolar,Dili,199,possible re-survey
+563,EBF 1.2 Opa Vila,Basic,-9.166829,125.266698,no,Pré-Escolar Deudet,Pre-Escolar,Bobonaro,193,possible re-survey
+457,EBF 1.2 No.3 Lospalos,Basic,-8.522566,126.997251,no,Pré-Escolar Esperança,Pre-Escolar,Lautem,190,possible re-survey
+666,EBC 1.2.3 Bidau Akadiruhun,Basic,-8.558299,125.582347,no,Pré-Escolar Publico Loke Neon,Pre-Escolar,Dili,186,possible re-survey
+1528,Pre Escolar Filial Hatuleta,Pre-School,-8.754531,125.406083,no,"EB 1º,2º Ciclo Hatuleta",Escola Básica Filial (EBF),Ermera,183,possible re-survey
+929,EBF 1.2 Leolima,Basic,-9.110540,125.586240,no,EP C Nosa Senhora de Lurdes,Escola Básica Filial (EBF),Ainaro,182,possible re-survey
+662,EBF 1.2 Culuhun,Basic,-8.558504,125.593858,no,"EB 1º,2º Ciclo Culuhun",Escola Básica Filial (EBF),Dili,179,possible re-survey
+1686,EB 1.2.3 Cafe Manatuto,Basic,-8.513855,126.014395,no,EBC 3º Ciclo Vasco Da Gama,Escola Básica Central (EBC),Manatuto,179,possible re-survey
+1736,EB 1.2.3 Cafe Bobonaro,Basic,-8.991623,125.200192,no,"EB 1º,2º Ciclo Colegio São Miguel/Holsa",Escola Básica Filial (EBF),Bobonaro,178,possible re-survey
+408,EBF 1.2 Ariana,Basic,-8.636804,126.418382,no,EP C Ariana,Escola Básica Filial (EBF),Baucau,177,possible re-survey
+191,EBF 1.2 Ana Lemos,Basic,-8.721440,125.435217,no,"EB 1º,2º Ciclo Sinlelo",Escola Básica Filial (EBF),Ermera,177,possible re-survey
+5010,Pre Escolar Kiar As Welaku/Bitirai,Pre-School,-9.043119,126.038081,no,"EB 1º,2º Ciclo Bitirai",Escola Básica Filial (EBF),Manufahi,177,possible re-survey
+946,EBC 1.2.3 Deligencia Letefoho,Basic,-8.997224,125.650723,no,EBC 3º Ciclo Deligensia Letefoho,Escola Básica Central (EBC),Manufahi,176,possible re-survey
+5109,EBF 1.2 Sasahe,Basic,-8.798593,125.836069,no,"EB 1º,2º Ciclo Sassahe",Escola Básica Filial (EBF),Manatuto,172,possible re-survey
+1648,Pre Escolar Ai-Loktuto,Pre-School,-8.587371,125.608793,no,"EB 1º,2º Ciclo Ailok",Escola Básica Filial (EBF),Dili,169,possible re-survey
+1559,Pre Escolar Cafe Oecusse,Pre-School,-9.202211,124.348374,no,ES P Palaban,Escola Secundária Geral (ESG),Oecusse,169,possible re-survey
+479,EBF 1.2 Mantane,Basic,-8.757017,125.568756,no,Nucleo Pré-Escolar M,Pre-Escolar,Aileu,168,possible re-survey
+1292,Pre Escolar Pe.Antonio Eduardo Brito,Pre-School,-8.615282,125.664739,no,"EB 1º,2º Ciclo Acumau",Escola Básica Filial (EBF),Aileu,168,possible re-survey
+1940,EPE Wairoque,Pre-School,-8.525659,126.778465,no,"EB 1º,2º Ciclo Vairoque",Escola Básica Filial (EBF),Lautem,167,possible re-survey
+1710,EB 1.2.3 Cafe Dili,Basic,-8.568803,125.592439,no,"EB 1º,2º Ciclo Aituri Laran",Escola Básica Filial (EBF),Dili,165,possible re-survey
+2266,EBF 1 Mota Ulun,Basic,-9.223329,125.065646,no,EB 1º Ciclo Mota Ulun,Escola Básica Filial (EBF),Covalima,161,possible re-survey
+830,EBC 1.2.3 Fatuco,Basic,-8.977914,125.660288,no,"EBC 1º,2º,3º Ciclo Fatuco",Escola Básica Central (EBC),Manufahi,160,possible re-survey
+1377,Pre Escolar Beaco,Pre-School,-8.855346,126.363182,no,EBC 3º Ciclo Viqueque,Escola Básica Central (EBC),Viqueque,155,possible re-survey
+1604,Pre Escolar St. Maria Imaculada Conceicao Aidabaslala,Pre-School,-8.867977,125.179258,no,"EB 1º,2º Ciclo Aidabasalala",Escola Básica Filial (EBF),Bobonaro,153,possible re-survey
+651,EBF 1.2 Tuana Laran,Basic,-8.564065,125.561853,no,Pré-Escolar Rainha da Paz,Pre-Escolar,Dili,153,possible re-survey
+1606,Pre Escolar St. Arnold Janssen,Pre-School,-8.834763,126.513358,no,EPS C Sta Maria De Fatima Macadique,Escola Básica Central (EBC),Viqueque,149,possible re-survey
+328,EBF 1.2 - 1 de Maio,Basic,-9.200128,124.352201,no,EBC 3º Ciclo Pante Makasar Palaban,Escola Básica Central (EBC),Oecusse,148,possible re-survey
+5319,EBC 2.3 Uatucarbau,Basic,-8.750946,126.697575,no,EBC 3º Ciclo Uatocarbau,Escola Básica Central (EBC),Viqueque,148,possible re-survey
+1013,EBC 1.2.3 Hatubuilico,Basic,-8.898219,125.519777,no,"EB 1º,2º Ciclo Hatubuilico",Escola Básica Filial (EBF),Ainaro,147,possible re-survey
+1248,EBF 1.2 Lutumutu,Basic,-8.992643,125.507800,no,Pré-Escolar Centro C,Pre-Escolar,Ainaro,146,possible re-survey
+1916,Pre Escolar Antonio de Vasconselhos Afaloicai,Pre-School,-8.669754,126.614159,no,EP C Afaloicai,Escola Básica Filial (EBF),Baucau,141,possible re-survey
+879,EBF 1.2 Ta-Bessi Fera Naben Fuat,Basic,-8.682854,126.841528,no,EB 1º Ciclo Bubutau,Escola Básica Filial (EBF),Lautem,141,possible re-survey
+1754,Pre Escolar Cadson Villa Beto,Pre-School,-8.547912,125.530255,no,Pré-Escolar São Domingos,Pre-Escolar,Dili,139,possible re-survey
+1747,Pre Escolar Cablaque/Mirbuti,Pre-School,-8.998466,125.639198,no,"EB 1º,2º Ciclo Cotolala",Escola Básica Filial (EBF),Manufahi,136,possible re-survey
+335,EB Catolica 1.2 Afaloicai,Basic,-8.689314,126.667906,no,"EBC 1º,2º,3º Ciclo 28 De Novembro Afaloicai",Escola Básica Central (EBC),Viqueque,134,possible re-survey
+706,EBC 3 Railaco Vila,Basic,-8.673397,125.423227,no,ES C F Nossa Senhora de Fatima Railaco,Escola Secundária Geral (ESG),Ermera,133,possible re-survey
+1586,Pre Escolar  Filial de Tirilolo,Pre-School,-8.697825,126.812987,no,EB 1º Ciclo Nauteto,Escola Básica Filial (EBF),Lautem,132,possible re-survey
+1507,EPE Bora-ulo,Pre-School,-8.954553,125.745673,no,"EB 1º,2º Ciclo Boraulo",Escola Básica Filial (EBF),Manufahi,132,possible re-survey
+1659,Pre Escolar Colimau,Pre-School,-8.987626,125.387134,no,"EB 1º,2º Ciclo Colimau",Escola Básica Filial (EBF),Bobonaro,128,possible re-survey
+5114,EBF 1.2 Dr. Jacob Xavier,Basic,-8.997135,125.504036,no,ES P Ainaro,Escola Secundária Geral (ESG),Ainaro,127,possible re-survey
+1352,Pre Escolar Ira Ara,Pre-School,-8.520281,127.000886,no,Pré-Escolar Ica Tutun (Ira-Ara),Pre-Escolar,Lautem,126,possible re-survey
+1915,Pre Escolar Sao Tarcisio Osso-Queli ( Loi - Lobu ),Pre-School,-8.573655,126.335043,no,EP C Loi Lubo,Escola Básica Filial (EBF),Baucau,124,possible re-survey
+1657,Pre Escolar Bereleu,Pre-School,-8.721875,125.679264,no,"EB 1º,2º Ciclo Bereleu",Escola Básica Filial (EBF),Aileu,123,possible re-survey
+1514,Pre Escolar Komunidade Baha-Dato,Pre-School,-8.656326,126.361837,no,EP C Fatulia,Escola Básica Filial (EBF),Baucau,118,possible re-survey
+1562,Pre Escolar D. Filomena Lobato,Pre-School,-8.924217,125.753977,no,"EBC 1º,2º,3º Ciclo Fahinehan",Escola Básica Central (EBC),Manufahi,117,possible re-survey
+1697,Pre Escolar Amaira Luro,Pre-School,-8.542749,126.834668,no,"EBC 1º,2º,3º Ciclo Luro",Escola Básica Central (EBC),Lautem,115,possible re-survey
+1414,Pre Escolar Balibo Lima,Pre-School,-8.969972,125.042244,no,Pré-Escolar CC. Balibo,Pre-Escolar,Bobonaro,114,possible re-survey
+1469,Pre Escolar Bobolo'a,Pre-School,-9.279212,124.369851,no,Pré-Escolar Boboloa,Pre-Escolar,Oecusse,114,possible re-survey
+1471,Pre Escolar Lilahunal,Pre-School,-8.184212,125.629046,no,Pre-Escolar Lilahuna,Pre-Escolar,Ataúro,113,possible re-survey
