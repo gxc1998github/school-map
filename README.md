@@ -70,9 +70,9 @@ the built-in nearest-centre estimate, which runs automatically.
 ## Features
 
 - Marker clustering, so a large point set stays responsive.
-- Donor project lists (`data/litehaus.csv`, `data/unicef.csv`, …): ICT donor,
-  internet, project status and year filters, and a total of devices in the
-  shown schools; see `data/README.md`.
+- Donor project lists (`data/litehaus.csv`, `data/unicef.csv`, …): an ICT donor
+  filter (LiteHaus, UNICEF, UNDP, Gov) and a total of devices in the shown
+  schools; see `data/README.md`.
 - Cascading filters — picking a municipality narrows the administrative posts,
   and every option shows its live count.
 - Multi-term search across name, ID, level, municipality, post and suco.
