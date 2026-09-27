@@ -328,49 +328,10 @@ fieldset.field[hidden] { display: none; }
 .switch input { margin: 2px 0 0; accent-color: var(--accent); }
 .switch em { font-style: normal; color: var(--text-muted); }
 
-/* ----------------------------------------------------------- stat tiles */
-.stat-row {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 6px;
-}
-
-.stat {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-  padding: 8px 6px;
-  background: var(--surface-2);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  min-width: 0;
-}
-
-.stat-wide { grid-column: 1 / -1; }
-.stat[hidden] { display: none; }
-
-.stat-value {
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  color: var(--text-primary);
-}
-
-.stat-label {
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--text-muted);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
 /* ---------------------------------------------------------------- export */
 .export-row {
   display: flex;
   justify-content: flex-end;
-  margin-top: 8px;
 }
 
 /* --------------------------------------------------------------- markers */
