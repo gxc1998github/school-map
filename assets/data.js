@@ -195,45 +195,103 @@
     return best;
   }
 
+  /* Splits a multi-value cell and snaps each part onto its canonical name. */
+  var canonical = {};
+  CONFIG.FACETS.forEach(function (f) {
+    canonical[f.key] = {};
+    f.known.forEach(function (name) { canonical[f.key][slug(name)] = name; });
+  });
+
+  function facetValues(key, raw) {
+    var out = [];
+    clean(raw).split(CONFIG.MULTI_SPLIT).forEach(function (part) {
+      var v = clean(part);
+      if (!v) return;
+      if (/^\d+\.0+$/.test(v)) v = v.replace(/\.0+$/, ''); // "2026.0" -> "2026"
+      v = canonical[key][slug(v)] || v;
+      if (out.indexOf(v) === -1) out.push(v);
+    });
+    return out;
+  }
+
   /* ------------------------------------------------------------ normalise */
+  function cell(row, cols, field) {
+    return clean(cols[field] ? row[cols[field]] : '');
+  }
+
+  /* A single "GPS Coordinates" cell holding "-8.75 125.55" (or "-8.75, 125.55")
+     stands in for separate latitude / longitude columns. */
+  function splitGps(raw) {
+    var parts = clean(raw).split(/[\s,;]+/).filter(Boolean);
+    return parts.length === 2 ? [parseCoord(parts[0]), parseCoord(parts[1])] : [NaN, NaN];
+  }
+
+  /* Whole numbers only; "8.0" from a spreadsheet export becomes "8". */
+  function count(raw) {
+    var n = parseFloat(clean(raw).replace(/\s/g, '').replace(',', '.'));
+    return isFinite(n) ? String(Math.round(n)) : '';
+  }
+
+  /* One CSV row -> one school record, or { error } when it cannot be placed. */
+  function buildRecord(row, cols, i) {
+    var lat = parseCoord(cell(row, cols, 'lat'));
+    var lon = parseCoord(cell(row, cols, 'lon'));
+    if ((!isFinite(lat) || !isFinite(lon)) && cols.gps) {
+      var ll = splitGps(row[cols.gps]);
+      lat = ll[0]; lon = ll[1];
+    }
+    var name = cell(row, cols, 'name') || '(unnamed school)';
+    var id = count(cell(row, cols, 'id')) || cell(row, cols, 'id') || String(i + 1);
+
+    if (!isFinite(lat) || !isFinite(lon) || (lat === 0 && lon === 0) ||
+      lat < -90 || lat > 90 || lon < -180 || lon > 180) {
+      return { error: true, id: id, name: name, reason: 'missing or invalid coordinates' };
+    }
+
+    var rawLevel = cell(row, cols, 'level');
+    var group = levelGroup(rawLevel);
+    var school = {
+      id: id,
+      name: name,
+      level: rawLevel || 'Unspecified',
+      group: group.key,
+      groupLabel: group.label,
+      glyph: group.glyph,
+      lat: lat,
+      lon: lon,
+      municipality: cell(row, cols, 'municipality'),
+      post: cell(row, cols, 'post'),
+      suco: cell(row, cols, 'suco'),
+      ownership: cell(row, cols, 'ownership'),
+      students: count(cell(row, cols, 'students')),
+      teachers: count(cell(row, cols, 'teachers')),
+      devices: count(cell(row, cols, 'devices')),
+      license: cell(row, cols, 'license'),
+      notes: cell(row, cols, 'notes'),
+      estimated: false,
+      raw: row
+    };
+    CONFIG.FACETS.forEach(function (f) {
+      school[f.key] = facetValues(f.key, cols[f.key] ? row[cols[f.key]] : '');
+    });
+    return school;
+  }
+
+  function hasCoords(cols) {
+    return !!((cols.lat && cols.lon) || cols.gps);
+  }
+
   function normalise(rows, headers) {
     var cols = detectColumns(headers);
-    var missing = ['name', 'lat', 'lon'].filter(function (f) { return !cols[f]; });
+    var missing = ['name'].filter(function (f) { return !cols[f]; });
+    if (!hasCoords(cols)) missing.push('lat', 'lon');
     var schools = [];
     var dropped = [];
 
     rows.forEach(function (row, i) {
-      var lat = parseCoord(cols.lat ? row[cols.lat] : '');
-      var lon = parseCoord(cols.lon ? row[cols.lon] : '');
-      var name = clean(cols.name ? row[cols.name] : '') || '(unnamed school)';
-      var id = clean(cols.id ? row[cols.id] : '') || String(i + 1);
-
-      if (!isFinite(lat) || !isFinite(lon) || (lat === 0 && lon === 0) ||
-        lat < -90 || lat > 90 || lon < -180 || lon > 180) {
-        dropped.push({ id: id, name: name, reason: 'missing or invalid coordinates' });
-        return;
-      }
-
-      var rawLevel = clean(cols.level ? row[cols.level] : '');
-      var group = levelGroup(rawLevel);
-      schools.push({
-        id: id,
-        name: name,
-        level: rawLevel || 'Unspecified',
-        group: group.key,
-        groupLabel: group.label,
-        glyph: group.glyph,
-        lat: lat,
-        lon: lon,
-        municipality: clean(cols.municipality ? row[cols.municipality] : ''),
-        post: clean(cols.post ? row[cols.post] : ''),
-        suco: clean(cols.suco ? row[cols.suco] : ''),
-        ownership: clean(cols.ownership ? row[cols.ownership] : ''),
-        students: clean(cols.students ? row[cols.students] : ''),
-        teachers: clean(cols.teachers ? row[cols.teachers] : ''),
-        estimated: false,
-        raw: row
-      });
+      var rec = buildRecord(row, cols, i);
+      if (rec.error) dropped.push(rec);
+      else schools.push(rec);
     });
 
     return { schools: schools, columns: cols, missing: missing, dropped: dropped, headers: headers };
@@ -269,15 +327,70 @@
     return filled;
   }
 
-  function parseCsvText(text) {
+  function parseRows(text) {
     var res = Papa.parse(text, {
       header: true,
       skipEmptyLines: 'greedy',
       dynamicTyping: false,
       transformHeader: function (h) { return String(h).replace(/^﻿/, '').trim(); }
     });
-    var headers = (res.meta && res.meta.fields) || [];
-    return normalise(res.data, headers);
+    return { rows: res.data, headers: (res.meta && res.meta.fields) || [] };
+  }
+
+  function parseCsvText(text) {
+    var p = parseRows(text);
+    return normalise(p.rows, p.headers);
+  }
+
+  /* Joins a project list onto the schools, by ID first and exact name second.
+     Facet values are added to whatever schools.csv already carried; single
+     fields (devices, students, ...) only fill blanks, never overwrite. A row
+     that matches no school but has coordinates is added as a new school.
+     Returns { matched, added, unmatched: [labels] }. */
+  var FILL_FIELDS = ['municipality', 'post', 'suco', 'ownership', 'students', 'teachers', 'devices', 'license', 'notes'];
+
+  function mergeExtra(schools, text) {
+    var p = parseRows(text);
+    var cols = detectColumns(p.headers);
+    var added = 0;
+    var byId = Object.create(null), byName = Object.create(null);
+    schools.forEach(function (s) {
+      byId[s.id] = s;
+      var k = slug(s.name);
+      byName[k] = k in byName ? null : s; // ambiguous names are not joined
+    });
+    var matched = 0, unmatched = [];
+    p.rows.forEach(function (row) {
+      var id = clean(cols.id ? row[cols.id] : '');
+      var name = clean(cols.name ? row[cols.name] : '');
+      id = count(id) || id;
+      var s = (id && byId[id]) || (name && byName[slug(name)]);
+      if (!s) {
+        var rec = hasCoords(cols) ? buildRecord(row, cols, schools.length) : { error: true };
+        if (!rec.error) {
+          schools.push(rec);
+          byId[rec.id] = rec;
+          added++;
+        } else if (id || name) {
+          unmatched.push(name ? name + (id ? ' (' + id + ')' : '') : id);
+        }
+        return;
+      }
+      matched++;
+      var fresh = buildRecord(row, cols, 0);
+      FILL_FIELDS.forEach(function (k) {
+        var v = fresh.error ? cell(row, cols, k) : fresh[k];
+        if (fresh.error && /^(students|teachers|devices)$/.test(k)) v = count(v);
+        if (!s[k] && v) s[k] = v;
+      });
+      CONFIG.FACETS.forEach(function (f) {
+        if (!cols[f.key]) return;
+        facetValues(f.key, row[cols[f.key]]).forEach(function (v) {
+          if (s[f.key].indexOf(v) === -1) s[f.key].push(v);
+        });
+      });
+    });
+    return { matched: matched, added: added, unmatched: unmatched, columns: cols };
   }
 
   function fetchFirst(urls) {
@@ -309,10 +422,13 @@
 
   function toCsv(schools) {
     var fields = ['school_id', 'school_name', 'education_level', 'municipality',
-      'administrative_post', 'suco', 'latitude', 'longitude'];
+      'administrative_post', 'suco', 'latitude', 'longitude', 'ict_donor', 'internet',
+      'devices', 'project_year', 'status', 'license', 'students', 'teachers', 'observations'];
     var lines = [fields.join(',')];
     schools.forEach(function (s) {
-      lines.push([s.id, s.name, s.level, s.municipality, s.post, s.suco, s.lat, s.lon]
+      lines.push([s.id, s.name, s.level, s.municipality, s.post, s.suco, s.lat, s.lon,
+        s.donor.join('; '), s.internet.join('; '), s.devices, s.projectYear.join('; '),
+        s.projectStatus.join('; '), s.license, s.students, s.teachers, s.notes]
         .map(function (v) {
           var t = String(v == null ? '' : v);
           return /[",\n]/.test(t) ? '"' + t.replace(/"/g, '""') + '"' : t;
@@ -323,6 +439,7 @@
 
   global.SchoolData = {
     parseCsvText: parseCsvText,
+    mergeExtra: mergeExtra,
     fetchFirst: fetchFirst,
     fetchBoundaries: fetchBoundaries,
     applyBoundaries: applyBoundaries,

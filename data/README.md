@@ -35,6 +35,8 @@ Column by column:
 | `ownership` | no | Shown in the popup, e.g. `Public` / `Private` / `Catholic`. |
 | `students` | no | Shown in the popup. Whole number. |
 | `teachers` | no | Shown in the popup. Whole number. |
+| `ict_donor` | no | e.g. `UNICEF`, `LiteHaus`. Own filter. Can also come from `ict.csv`, see below. |
+| `internet` | no | e.g. `Modem Router`, `Starlink`, `Starlink-Vorakai`, `NCP`. Own filter. |
 
 Only the first three are required. Everything else degrades gracefully — a
 missing column just means the matching filter or popup line is absent.
@@ -60,6 +62,49 @@ The dataset in `schools.csv` today carries `school_name`, `education_level`,
 `GPS_Schools_Timor_Leste.xlsx`). The source file listed Ataúro island's 23
 schools under Dili; they are listed as **Ataúro**, the 14th municipality.
 Adding **`administrative_post`** would light up the second area filter.
+
+## Donor project lists (ICT donor, devices, internet)
+
+Each school can also carry which **ICT donor** supplied it (`UNICEF`,
+`LiteHaus`), how many **devices** (laptops / Chromebooks) it got, the
+**project year** and **status**, the **license**, and what **internet** it
+has (`Modem Router`, `Router SIM Card`, `Starlink`, `Starlink-Vorakai`,
+`NCP`). Donor, internet, status and year each get a filter in the sidebar,
+the devices in the shown schools are totalled at the top, everything shows in
+the popup, and **Export CSV** carries it all.
+
+Keep one file per donor. Each of these is loaded if it exists:
+
+- `data/litehaus.csv` (in place: 43 schools, 472 devices, from
+  `Lista_Eskola_LiteHaus.xlsx`)
+- `data/unicef.csv`
+- `data/ict.csv` (anything else)
+
+The header, as in `ict.template.csv`:
+
+```csv
+school_id,school_name,education_level,municipality,administrative_post,latitude,longitude,ict_donor,devices,project_year,status,license,internet,teachers,students,observations
+```
+
+How a row is used:
+
+- If its `school_id` (or, when the ID is blank, its exact name) is already in
+  `schools.csv`, the donor / internet / status / year values are **added** to
+  that school, and devices, students, etc. fill in only where `schools.csv`
+  left them blank.
+- Otherwise, if it has coordinates, it is **added to the map as a school**.
+  That is why the LiteHaus schools show even though `schools.csv` is empty.
+- Otherwise it is counted as unmatched in the header line (hover to see which).
+
+Notes:
+
+- A single `GPS Coordinates` column holding `-8.7596533 125.5511246` works in
+  place of `latitude` / `longitude`.
+- Several donors or connections for one school: separate them with `;`.
+  A hyphen is part of the name, so `Starlink-Vorakai` stays one value.
+- Spelling is matched loosely against the known names in `FACETS` in
+  `assets/config.js`; new values simply appear as new filter options.
+- `None` in the internet column is read as "no internet".
 
 ## If your file has no municipality / administrative post column
 
