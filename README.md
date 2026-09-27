@@ -14,8 +14,11 @@ affair. Google's Maps JavaScript API needs a key tied to a billing account, and
 a key shipped in a static page is public — you would have to restrict it by
 HTTP referrer and watch the quota.
 
-The basemap picker (top-right of the map) offers OpenStreetMap, Carto Light,
-Carto Dark and Esri satellite imagery — all free and key-free. Each popup also
+The basemap picker (top-right of the map) offers OpenStreetMap (the default) and
+Esri satellite imagery, all free and key-free. If a tile
+provider refuses requests (rate limit, referrer rule, or an "API key required"
+tile), the map notices and switches to the next basemap on its own, with a short
+notice in the corner. Each popup also
 links out to Google Maps for directions, which covers the common reason for
 wanting Google in the first place. If you do want Google tiles later, swap the
 `BASEMAPS` list in `assets/config.js`.
@@ -61,8 +64,8 @@ files and comma decimal separators (`-8,9912`) parse too.
 
 See [`data/README.md`](data/README.md) for the full column list, and for how to
 handle a file that has no municipality / administrative post column — either
-drop in a boundary GeoJSON for exact point-in-polygon assignment, or use the
-approximate nearest-centre estimate.
+drop in a boundary GeoJSON for exact point-in-polygon assignment, or rely on
+the built-in nearest-centre estimate, which runs automatically.
 
 ## Features
 
@@ -74,15 +77,15 @@ approximate nearest-centre estimate.
 - Multi-term search across name, ID, level, municipality, post and suco.
 - Shareable links: the filters and the search box are encoded in the URL hash.
 - **Export CSV** writes out exactly the current selection.
-- Light / dark / auto, and a keyboard-navigable sidebar.
+- A dark UI throughout, and a keyboard-navigable sidebar.
 - Popups link to Google Maps and OpenStreetMap for the exact coordinates.
 
 ## How education level is drawn
 
 Education level is a ladder, not a set of unrelated categories, so markers use
 an **ordered single-hue ramp** (pale blue → deep blue as the level rises)
-rather than a rainbow. The ramp was checked with a palette validator in both
-light and dark mode: lightness is monotone, every adjacent step is clearly
+rather than a rainbow. The ramp was checked with a palette validator against
+the dark UI: lightness is monotone, every adjacent step is clearly
 apart, and the palest step still clears contrast against its marker ring.
 
 Because a colour ramp alone is a weak signal at 18px, every marker also carries
@@ -123,6 +126,6 @@ vendor/                       Leaflet 1.9.4, MarkerCluster 1.5.3, PapaParse 5.4.
 
 ## Licence and attribution
 
-Map data © OpenStreetMap contributors (ODbL); tiles © CARTO or Esri depending
+Map data © OpenStreetMap contributors (ODbL); tiles © OpenStreetMap or Esri depending
 on the basemap chosen. Leaflet (BSD-2), Leaflet.markercluster (MIT) and
 PapaParse (MIT) are vendored under `vendor/` with their own licence files.

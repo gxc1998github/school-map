@@ -124,7 +124,8 @@ Two options, in order of accuracy:
    Large boundary files slow the first load — simplify the geometry (e.g.
    `mapshaper -simplify 5%`) before committing if the file runs to megabytes.
 
-2. **Estimate from coordinates (approximate).** A checkbox in the sidebar
-   assigns each school to the nearest municipality centre. It is a stopgap —
-   assignments near municipal borders will be wrong — so it is off by default
-   and every estimated value is labelled in the popup.
+2. **Estimate from coordinates (approximate).** Built in and automatic: if
+   neither the CSV nor a boundary file supplies a municipality, each school is
+   assigned to the nearest municipality centre. It is a stopgap — assignments
+   near municipal borders can be wrong — so a note in the sidebar says so and
+   every estimated value is labelled in the popup.

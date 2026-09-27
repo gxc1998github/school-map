@@ -23,7 +23,7 @@
     sourceUrl: '',
     hasMunicipalityData: false,
     hasPostData: false,
-    estimateOn: false,
+    estimated: false,
     boundariesUsed: false,
     hydrating: false
   };
@@ -54,42 +54,26 @@
   }
 
   /* ------------------------------------------------------------- theming */
-  function effectiveTheme() {
-    var pref = document.documentElement.getAttribute('data-theme');
-    if (pref === 'light' || pref === 'dark') return pref;
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  }
-
   function applyTheme(pref) {
     if (pref === 'auto') document.documentElement.setAttribute('data-theme', 'auto');
     else document.documentElement.setAttribute('data-theme', pref);
     el.themeLabel.textContent = pref.charAt(0).toUpperCase() + pref.slice(1);
     try { localStorage.setItem('tl-school-map-theme', pref); } catch (e) { /* private mode */ }
-    syncBasemapToTheme();
   }
 
   /* Marker colours live in CSS custom properties so a theme change repaints
      every marker without rebuilding a single one. */
   function writeRampVars() {
     var keys = state.groupsPresent;
-    var css = [];
-    ['light', 'dark'].forEach(function (mode) {
-      var ramp = CONFIG.RAMP[mode];
-      var ink = CONFIG.RAMP_INK[mode];
-      var decls = [];
-      keys.forEach(function (key, i) {
-        var step = Math.min(i, ramp.length - 1);
-        decls.push('--lv-' + key + ':' + ramp[step] + ';--lvi-' + key + ':' + ink[step] + ';');
-      });
-      decls.push('--lv-other:' + CONFIG.RAMP.other + ';--lvi-other:' + CONFIG.RAMP_INK.other + ';');
-      var body = decls.join('');
-      if (mode === 'light') {
-        css.push(':root{' + body + '}');
-      } else {
-        css.push('@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){' + body + '}}');
-        css.push(':root[data-theme="dark"]{' + body + '}');
-      }
+    var ramp = CONFIG.RAMP.steps;
+    var ink = CONFIG.RAMP_INK.steps;
+    var decls = [];
+    keys.forEach(function (key, i) {
+      var step = Math.min(i, ramp.length - 1);
+      decls.push('--lv-' + key + ':' + ramp[step] + ';--lvi-' + key + ':' + ink[step] + ';');
     });
+    decls.push('--lv-other:' + CONFIG.RAMP.other + ';--lvi-other:' + CONFIG.RAMP_INK.other + ';');
+    var css = [':root{' + decls.join('') + '}'];
     var tag = $('ramp-vars');
     if (!tag) {
       tag = document.createElement('style');
@@ -103,22 +87,37 @@
   var baseLayers = {};
   var currentBase = null;
 
-  function syncBasemapToTheme() {
-    if (!map) return;
-    // Only auto-swap between the two Carto styles; a deliberate choice of
-    // OpenStreetMap or Satellite is left alone.
-    var name = currentBase && currentBase.name;
-    if (name !== 'Carto Light' && name !== 'Carto Dark') return;
-    var want = effectiveTheme() === 'dark' ? 'Carto Dark' : 'Carto Light';
-    if (want !== name) setBasemap(want);
-  }
-
   function setBasemap(name) {
     var next = baseLayers[name];
     if (!next || (currentBase && currentBase.name === name)) return;
     if (currentBase) map.removeLayer(currentBase.layer);
     map.addLayer(next.layer);
     currentBase = next;
+  }
+
+  /* Leaflet never needs a key, but a tile provider can refuse requests
+     (rate limits, referrer rules, "API key required" images). If the active
+     basemap errors before a single tile loads, fall through to the next one
+     so the map never comes up blank or blocked. */
+  function watchBasemap(entry) {
+    entry.loaded = 0;
+    entry.errors = 0;
+    entry.layer.on('tileload', function () { entry.loaded++; });
+    entry.layer.on('tileerror', function () {
+      entry.errors++;
+      if (entry.failed || entry.loaded > 0 || entry.errors < 4) return;
+      entry.failed = true;
+      if (currentBase !== entry) return;
+      var fallback = CONFIG.BASEMAPS.filter(function (b) {
+        return !baseLayers[b.name].failed;
+      })[0];
+      if (!fallback) {
+        status('Map tiles could not be loaded. Check your connection.', 0);
+        return;
+      }
+      setBasemap(fallback.name);
+      status(entry.name + ' tiles are unavailable, switched to ' + fallback.name + '.', 5000);
+    });
   }
 
   /* ------------------------------------------------------------------ map */
@@ -135,9 +134,10 @@
     var overlays = {};
     CONFIG.BASEMAPS.forEach(function (b) {
       baseLayers[b.name] = { name: b.name, layer: L.tileLayer(b.url, b.options) };
+      watchBasemap(baseLayers[b.name]);
       overlays[b.name] = baseLayers[b.name].layer;
     });
-    setBasemap(effectiveTheme() === 'dark' ? 'Carto Dark' : 'Carto Light');
+    setBasemap('OpenStreetMap');
 
     L.control.layers(overlays, null, { position: 'topright', collapsed: true }).addTo(map);
     L.control.scale({ imperial: false, position: 'bottomleft' }).addTo(map);
@@ -421,23 +421,6 @@
   }
 
   /* -------------------------------------------------------------- results */
-  function renderLegend() {
-    var counts = Object.create(null);
-    state.filtered.forEach(function (s) { counts[s.group] = (counts[s.group] || 0) + 1; });
-    var groups = CONFIG.LEVEL_GROUPS.concat([CONFIG.LEVEL_OTHER]).filter(function (g) {
-      return state.groupsPresent.indexOf(g.key) !== -1 || g.key === CONFIG.LEVEL_OTHER.key;
-    }).filter(function (g) {
-      return state.schools.some(function (s) { return s.group === g.key; });
-    });
-
-    el.legend.innerHTML = groups.map(function (g) {
-      return '<li><span class="swatch" style="background:var(--lv-' + g.key +
-        ');color:var(--lvi-' + g.key + ')" aria-hidden="true">' + esc(g.glyph) + '</span>' +
-        '<span class="legend-name">' + esc(g.label) + '</span>' +
-        '<span class="legend-count">' + fmt(counts[g.key] || 0) + '</span></li>';
-    }).join('');
-  }
-
   function renderResults() {
     var shown = state.filtered.slice(0, RESULT_LIMIT);
     if (!shown.length) {
@@ -488,7 +471,6 @@
     state.filtered = state.schools.filter(function (s) { return passing(s, null); });
     renderFilterControls();
     renderMarkers();
-    renderLegend();
     renderResults();
     renderStats();
     if (!state.hydrating) writeHash();
@@ -532,7 +514,6 @@
       var picked = state.facets[f.key];
       if (picked) p.set(f.key, Array.from(picked).map(function (v) { return v === NONE ? '-' : v; }).join('|'));
     });
-    if (state.estimateOn) p.set('est', '1');
     var hash = p.toString();
     var url = location.pathname + location.search + (hash ? '#' + hash : '');
     history.replaceState(null, '', url);
@@ -552,8 +533,7 @@
       municipality: p.get('m') || '',
       post: p.get('p') || '',
       query: p.get('q') || '',
-      levels: p.get('l') ? new Set(p.get('l').split('|')) : null,
-      estimate: p.get('est') === '1'
+      levels: p.get('l') ? new Set(p.get('l').split('|')) : null
     };
   }
 
@@ -602,19 +582,15 @@
     if (result.missing.length) {
       msgs.push('Missing expected column(s): ' + result.missing.join(', ') + '.');
     }
-    if (!state.hasMunicipalityData && !state.hasPostData) {
-      msgs.push('This file has no municipality or administrative post column. ' +
-        'Add one, drop boundary GeoJSON files into data/boundaries/, or switch on the estimate below.');
-    } else if (state.boundariesUsed) {
+    if (state.boundariesUsed) {
       msgs.push('Areas filled in from the boundary files in data/boundaries/.');
     }
-    if (state.estimateOn) {
-      msgs.push('Municipalities are estimated by nearest centre — approximate near municipal borders.');
+    if (state.estimated) {
+      msgs.push('Municipalities are estimated from coordinates — approximate near municipal borders.');
     }
     el.geoNote.textContent = msgs.join(' ');
     el.geoNote.hidden = !msgs.length;
-    el.geoNote.className = 'note warn';
-    el.estimateRow.hidden = state.hasMunicipalityData;
+    el.geoNote.className = result.missing.length ? 'note warn' : 'note';
   }
 
   function loadInitial() {
@@ -633,6 +609,11 @@
           var filled = Data.applyBoundaries(parsed.schools, boundaries);
           state.boundariesUsed = filled > 0;
         }
+        // Built-in fallback: with no municipality column and no boundary
+        // file, assign each school to the nearest municipal centre.
+        if (!parsed.schools.some(function (s) { return s.municipality; })) {
+          state.estimated = Data.estimateMunicipalities(parsed.schools) > 0;
+        }
         adoptDataset(parsed, res.url);
         hydrateFromHash();
       })
@@ -647,10 +628,6 @@
   function hydrateFromHash() {
     var h = readHash();
     state.hydrating = true;
-    if (h.estimate && !state.hasMunicipalityData) {
-      el.estimateToggle.checked = true;
-      applyEstimate(true);
-    }
     state.municipality = h.municipality || '';
     state.post = h.post || '';
     state.query = (h.query || '').toLowerCase();
@@ -659,21 +636,6 @@
     el.search.value = h.query || '';
     state.hydrating = false;
     apply();
-  }
-
-  function applyEstimate(on) {
-    state.estimateOn = on;
-    if (on) {
-      Data.estimateMunicipalities(state.schools);
-      state.hasMunicipalityData = state.schools.some(function (s) { return s.municipality; });
-    } else {
-      state.schools.forEach(function (s) {
-        if (s.estimated) { s.municipality = ''; s.estimated = false; }
-      });
-      state.hasMunicipalityData = state.schools.some(function (s) { return s.municipality; });
-      state.municipality = '';
-    }
-    updateGeoNote({ missing: [], dropped: [], schools: state.schools });
   }
 
   /* --------------------------------------------------------------- events */
@@ -746,23 +708,10 @@
       status('Exported ' + fmt(state.filtered.length) + ' schools');
     });
 
-    el.estimateToggle.addEventListener('change', function () {
-      applyEstimate(this.checked);
-      apply();
-    });
-
-    el.themeToggle.addEventListener('click', function () {
-      var order = ['auto', 'light', 'dark'];
-      var current = localStorage.getItem('tl-school-map-theme') || 'auto';
-      applyTheme(order[(order.indexOf(current) + 1) % order.length]);
-    });
-
     el.panelToggle.addEventListener('click', function () {
       var open = el.sidebar.classList.toggle('open');
       this.setAttribute('aria-expanded', String(open));
     });
-
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', syncBasemapToTheme);
 
     window.addEventListener('hashchange', function () {
       if (state.schools.length) hydrateFromHash();
@@ -775,20 +724,15 @@
       sourceNote: $('source-note'),
       sidebar: $('sidebar'),
       panelToggle: $('panel-toggle'),
-      themeToggle: $('theme-toggle'),
-      themeLabel: $('theme-label'),
       search: $('search'),
       filterMunicipality: $('filter-municipality'),
       filterPost: $('filter-post'),
       filterLevels: $('filter-levels'),
       clearFilters: $('clear-filters'),
-      legend: $('legend'),
       results: $('results'),
       resultsMore: $('results-more'),
       exportCsv: $('export-csv'),
       geoNote: $('geo-note'),
-      estimateRow: $('estimate-row'),
-      estimateToggle: $('estimate-toggle'),
       statShown: $('stat-shown'),
       statTotal: $('stat-total'),
       statMunis: $('stat-munis'),
@@ -799,11 +743,6 @@
     CONFIG.FACETS.forEach(function (f) {
       el.facets[f.key] = { wrap: $('facet-' + f.key), list: $('filter-' + f.key) };
     });
-
-    var saved = 'auto';
-    try { saved = localStorage.getItem('tl-school-map-theme') || 'auto'; } catch (e) { /* private mode */ }
-    document.documentElement.setAttribute('data-theme', saved);
-    el.themeLabel.textContent = saved.charAt(0).toUpperCase() + saved.slice(1);
 
     initMap();
     bind();
