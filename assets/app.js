@@ -317,7 +317,9 @@
 
   /* ------------------------------------------------ ICT donor / internet */
   /* Same build-once, refresh-counts pattern as the level list. A school may
-     carry several values, so it counts once under each of them. */
+     carry several values, so it counts once under each of them. Unlike the
+     level list these start unticked: ticking a value (e.g. LiteHaus) narrows
+     the map to just the schools carrying it. */
   function facetOptions(key) {
     var known = FILTER_FACETS.filter(function (f) { return f.key === key; })[0].known;
     // Known values are always listed, even at 0, so every donor can be picked.
@@ -344,7 +346,7 @@
       var gaps = state.schools.some(function (s) { return !s[f.key].length; });
       box.list.innerHTML = values.concat(gaps ? [NONE] : []).map(function (v) {
         var label = v === NONE ? f.none : v;
-        return '<label class="check"><input type="checkbox" checked value="' + esc(v) + '">' +
+        return '<label class="check"><input type="checkbox" value="' + esc(v) + '">' +
           '<span class="check-text' + (v === NONE ? ' check-none' : '') + '">' + esc(label) + '</span>' +
           '<span class="check-count" data-value="' + esc(v) + '">0</span></label>';
       }).join('');
@@ -365,7 +367,7 @@
         span.textContent = fmt(counts[span.dataset.value] || 0);
       });
       box.list.querySelectorAll('input[type="checkbox"]').forEach(function (b) {
-        var want = !picked || picked.has(b.value);
+        var want = !!picked && picked.has(b.value);
         if (b.checked !== want) b.checked = want;
       });
     });
@@ -375,7 +377,8 @@
     var boxes = el.facets[key].list.querySelectorAll('input[type="checkbox"]');
     var picked = new Set();
     boxes.forEach(function (b) { if (b.checked) picked.add(b.value); });
-    state.facets[key] = (picked.size === 0 || picked.size === boxes.length) ? null : picked;
+    // Nothing ticked means no filter; ticking values shows only those schools.
+    state.facets[key] = picked.size === 0 ? null : picked;
   }
 
   /* The level list itself only changes when the dataset changes, so the rows
