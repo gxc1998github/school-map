@@ -85,7 +85,7 @@
   var MUNICIPALITIES = [
     { name: 'Aileu', center: [-8.73, 125.57] },
     { name: 'Ainaro', center: [-8.99, 125.51] },
-    { name: 'Atauro', center: [-8.23, 125.60] },
+    { name: 'Ataúro', center: [-8.23, 125.60] },
     { name: 'Baucau', center: [-8.55, 126.42] },
     { name: 'Bobonaro', center: [-8.95, 125.25] },
     { name: 'Covalima', center: [-9.27, 125.32] },

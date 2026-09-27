@@ -29,7 +29,7 @@ Column by column:
 | `school_name` | **yes** | Quote it if the name contains a comma. |
 | `school_id` | no | Falls back to the row number if absent. |
 | `education_level` | no | Drives the level filter, marker colour and legend. Free text — `Basic`, `Pre-School`, `Ensino Secundário` all work. |
-| `municipality` | no | Drives the municipality filter. One of the 13 municipalities or RAEOA. |
+| `municipality` | no | Drives the municipality filter. One of the 14 municipalities (including Ataúro and RAEOA). |
 | `administrative_post` | no | Drives the administrative post filter. |
 | `suco` | no | Searchable, shown in the popup. |
 | `ownership` | no | Shown in the popup, e.g. `Public` / `Private` / `Catholic`. |
@@ -53,13 +53,13 @@ accents are ignored, and Portuguese/Tetum names are recognised too
 you do not have to rename columns to match the template exactly. See
 `COLUMN_ALIASES` in `assets/config.js` to add your own.
 
-### What the current export is missing
+### What the current export carries
 
-The dataset in `schools.csv` today carries only `school_name`,
-`education_level`, `latitude` and `longitude` (1,409 schools, taken from
-`GPS_Schools_Timor_Leste.xlsx`). Adding **`municipality`** and
-**`administrative_post`** is the single highest-value change — it switches the
-two area filters from the approximate nearest-centre estimate to exact values.
+The dataset in `schools.csv` today carries `school_name`, `education_level`,
+`municipality`, `latitude` and `longitude` (1,409 schools, taken from
+`GPS_Schools_Timor_Leste.xlsx`). The source file listed Ataúro island's 23
+schools under Dili; they are listed as **Ataúro**, the 14th municipality.
+Adding **`administrative_post`** would light up the second area filter.
 
 ## If your file has no municipality / administrative post column
 
