@@ -70,6 +70,9 @@ the built-in nearest-centre estimate, which runs automatically.
 ## Features
 
 - Marker clustering, so a large point set stays responsive.
+- Donor project lists (`data/litehaus.csv`, `data/unicef.csv`, …): ICT donor,
+  internet, project status and year filters, and a total of devices in the
+  shown schools; see `data/README.md`.
 - Cascading filters — picking a municipality narrows the administrative posts,
   and every option shows its live count.
 - Multi-term search across name, ID, level, municipality, post and suco.
@@ -116,6 +119,8 @@ assets/app.js                 map, filters, search, export
 assets/app.css                theme tokens and layout
 data/schools.csv              the dataset
 data/schools.template.csv     empty file with the header the app expects
+data/litehaus.csv             LiteHaus project list (devices, status, internet)
+data/ict.template.csv         empty file with the header for a donor list
 data/boundaries/              optional municipality / post GeoJSON
 vendor/                       Leaflet 1.9.4, MarkerCluster 1.5.3, PapaParse 5.4.1
 ```

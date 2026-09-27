@@ -304,6 +304,10 @@ select:disabled {
   white-space: nowrap;
 }
 
+.check-none { color: var(--text-muted); font-style: italic; }
+
+fieldset.field[hidden] { display: none; }
+
 .check-count {
   flex: 0 0 auto;
   font-size: 12px;
@@ -341,6 +345,9 @@ select:disabled {
   border-radius: 8px;
   min-width: 0;
 }
+
+.stat-wide { grid-column: 1 / -1; }
+.stat[hidden] { display: none; }
 
 .stat-value {
   font-size: 18px;

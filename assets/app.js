@@ -5,6 +5,9 @@
   var CONFIG = window.CONFIG;
   var Data = window.SchoolData;
 
+  /* Stands in for "this school has no value" inside a facet filter. */
+  var NONE = '__none__';
+
   var state = {
     schools: [],
     filtered: [],
@@ -13,6 +16,7 @@
     municipality: '',
     post: '',
     levels: null,            // Set of raw level strings, or null = all
+    facets: {},              // facet key -> Set of values (NONE for blank), or null = all
     query: '',
     sourceUrl: '',
     hasMunicipalityData: false,
@@ -168,6 +172,13 @@
       ['Ownership', school.ownership],
       ['Students', school.students],
       ['Teachers', school.teachers],
+      ['ICT donor', school.donor.join(', ')],
+      ['Devices', school.devices],
+      ['Project year', school.projectYear.join(', ')],
+      ['Status', school.projectStatus.join(', ')],
+      ['License', school.license],
+      ['Internet', school.internet.join(', ')],
+      ['Notes', school.notes],
       ['School ID', school.id]
     ].filter(function (r) { return r[1]; });
 
@@ -224,6 +235,13 @@
     if (skip.indexOf('municipality') === -1 && state.municipality && school.municipality !== state.municipality) return false;
     if (skip.indexOf('post') === -1 && state.post && school.post !== state.post) return false;
     if (skip.indexOf('levels') === -1 && state.levels && !state.levels.has(school.level)) return false;
+    for (var i = 0; i < CONFIG.FACETS.length; i++) {
+      var key = CONFIG.FACETS[i].key;
+      var picked = state.facets[key];
+      if (!picked || skip.indexOf(key) !== -1) continue;
+      var values = school[key].length ? school[key] : [NONE];
+      if (!values.some(function (v) { return picked.has(v); })) return false;
+    }
     if (skip.indexOf('query') === -1 && state.query && !matchesQuery(school, state.query)) return false;
     return true;
   }
@@ -231,7 +249,8 @@
   function matchesQuery(school, q) {
     var terms = q.split(/\s+/).filter(Boolean);
     var hay = (school.name + ' ' + school.id + ' ' + school.level + ' ' +
-      school.municipality + ' ' + school.post + ' ' + school.suco).toLowerCase();
+      school.municipality + ' ' + school.post + ' ' + school.suco + ' ' +
+      school.donor.join(' ') + ' ' + school.internet.join(' ')).toLowerCase();
     return terms.every(function (t) { return hay.indexOf(t) !== -1; });
   }
 
@@ -290,6 +309,69 @@
       state.hasPostData);
 
     refreshLevelCounts();
+    refreshFacetCounts();
+  }
+
+  /* ------------------------------------------------ ICT donor / internet */
+  /* Same build-once, refresh-counts pattern as the level list. A school may
+     carry several values, so it counts once under each of them. */
+  function facetOptions(key) {
+    var known = CONFIG.FACETS.filter(function (f) { return f.key === key; })[0].known;
+    var seen = [];
+    state.schools.forEach(function (s) {
+      s[key].forEach(function (v) { if (seen.indexOf(v) === -1) seen.push(v); });
+    });
+    // Known values first in their configured order, then anything else A–Z.
+    return seen.sort(function (a, b) {
+      var ia = known.indexOf(a), ib = known.indexOf(b);
+      if (ia === -1) ia = 999;
+      if (ib === -1) ib = 999;
+      return ia !== ib ? ia - ib : a.localeCompare(b);
+    });
+  }
+
+  function buildFacetChecks() {
+    CONFIG.FACETS.forEach(function (f) {
+      var box = el.facets[f.key];
+      var values = facetOptions(f.key);
+      box.wrap.hidden = !values.length;
+      if (!values.length) { box.list.innerHTML = ''; return; }
+      // Offer "none recorded" only when some school actually has none.
+      var gaps = state.schools.some(function (s) { return !s[f.key].length; });
+      box.list.innerHTML = values.concat(gaps ? [NONE] : []).map(function (v) {
+        var label = v === NONE ? f.none : v;
+        return '<label class="check"><input type="checkbox" checked value="' + esc(v) + '">' +
+          '<span class="check-text' + (v === NONE ? ' check-none' : '') + '">' + esc(label) + '</span>' +
+          '<span class="check-count" data-value="' + esc(v) + '">0</span></label>';
+      }).join('');
+    });
+  }
+
+  function refreshFacetCounts() {
+    CONFIG.FACETS.forEach(function (f) {
+      var box = el.facets[f.key];
+      if (box.wrap.hidden) return;
+      var counts = Object.create(null);
+      state.schools.forEach(function (s) {
+        if (!passing(s, f.key)) return;
+        (s[f.key].length ? s[f.key] : [NONE]).forEach(function (v) { counts[v] = (counts[v] || 0) + 1; });
+      });
+      var picked = state.facets[f.key];
+      box.list.querySelectorAll('.check-count').forEach(function (span) {
+        span.textContent = fmt(counts[span.dataset.value] || 0);
+      });
+      box.list.querySelectorAll('input[type="checkbox"]').forEach(function (b) {
+        var want = !picked || picked.has(b.value);
+        if (b.checked !== want) b.checked = want;
+      });
+    });
+  }
+
+  function readFacetChecks(key) {
+    var boxes = el.facets[key].list.querySelectorAll('input[type="checkbox"]');
+    var picked = new Set();
+    boxes.forEach(function (b) { if (b.checked) picked.add(b.value); });
+    state.facets[key] = (picked.size === 0 || picked.size === boxes.length) ? null : picked;
   }
 
   /* The level list itself only changes when the dataset changes, so the rows
@@ -351,6 +433,12 @@
     el.statTotal.textContent = fmt(state.schools.length);
     el.statMunis.textContent = fmt(distinct(state.filtered.map(function (s) { return s.municipality; })).length);
     el.statPosts.textContent = fmt(distinct(state.filtered.map(function (s) { return s.post; })).length);
+    var devices = 0;
+    state.filtered.forEach(function (s) {
+      if (s.devices) devices += Number(s.devices);
+    });
+    el.statDevices.textContent = fmt(devices);
+    el.statDevicesWrap.hidden = !state.schools.some(function (s) { return s.devices; });
   }
 
   function renderMarkers() {
@@ -390,6 +478,10 @@
     if (state.post) p.set('p', state.post);
     if (state.query) p.set('q', state.query);
     if (state.levels) p.set('l', Array.from(state.levels).join('|'));
+    CONFIG.FACETS.forEach(function (f) {
+      var picked = state.facets[f.key];
+      if (picked) p.set(f.key, Array.from(picked).map(function (v) { return v === NONE ? '-' : v; }).join('|'));
+    });
     var hash = p.toString();
     var url = location.pathname + location.search + (hash ? '#' + hash : '');
     history.replaceState(null, '', url);
@@ -399,7 +491,13 @@
     var raw = location.hash.replace(/^#/, '');
     if (!raw) return {};
     var p = new URLSearchParams(raw);
+    var facets = {};
+    CONFIG.FACETS.forEach(function (f) {
+      var v = p.get(f.key);
+      facets[f.key] = v ? new Set(v.split('|').map(function (x) { return x === '-' ? NONE : x; })) : null;
+    });
     return {
+      facets: facets,
       municipality: p.get('m') || '',
       post: p.get('p') || '',
       query: p.get('q') || '',
@@ -424,6 +522,7 @@
 
     buildMarkers();
     buildLevelChecks();
+    buildFacetChecks();
     updateSourceNote(result);
     updateGeoNote(result);
   }
@@ -432,10 +531,23 @@
     var bits = [fmt(result.schools.length) + ' schools'];
     bits.push(state.sourceUrl);
     if (result.dropped.length) bits.push(fmt(result.dropped.length) + ' skipped (no coordinates)');
+    var extra = result.extra;
+    if (extra) {
+      var parts = [];
+      if (extra.added) parts.push(fmt(extra.added) + ' added');
+      if (extra.matched) parts.push(fmt(extra.matched) + ' joined');
+      if (extra.unmatched.length) parts.push(fmt(extra.unmatched.length) + ' unmatched');
+      bits.push('project list: ' + (parts.join(', ') || 'empty'));
+    }
     el.sourceNote.textContent = bits.join(' · ');
-    el.sourceNote.title = result.dropped.length
-      ? 'Skipped: ' + result.dropped.slice(0, 20).map(function (d) { return d.name; }).join(', ')
-      : '';
+    var tips = [];
+    if (result.dropped.length) {
+      tips.push('Skipped: ' + result.dropped.slice(0, 20).map(function (d) { return d.name; }).join(', '));
+    }
+    if (extra && extra.unmatched.length) {
+      tips.push('Not found in schools.csv: ' + extra.unmatched.slice(0, 20).join(', '));
+    }
+    el.sourceNote.title = tips.join('\n');
   }
 
   function updateGeoNote(result) {
@@ -456,10 +568,23 @@
 
   function loadInitial() {
     var boundaries = {};
+    var extraTexts = [];
+    // Project lists are optional; a missing file is not an error.
+    var extraReq = Promise.all(CONFIG.EXTRA_SOURCES.map(function (url) {
+      return Data.fetchFirst([url]).then(function (r) { return r.text; }, function () { return null; });
+    })).then(function (texts) { extraTexts = texts.filter(Boolean); });
     Data.fetchBoundaries()
-      .then(function (b) { boundaries = b; return Data.fetchFirst(CONFIG.DATA_SOURCES); })
+      .then(function (b) { boundaries = b; return extraReq; })
+      .then(function () { return Data.fetchFirst(CONFIG.DATA_SOURCES); })
       .then(function (res) {
         var parsed = Data.parseCsvText(res.text);
+        extraTexts.forEach(function (text) {
+          var r = Data.mergeExtra(parsed.schools, text);
+          var e = parsed.extra || (parsed.extra = { matched: 0, added: 0, unmatched: [] });
+          e.matched += r.matched;
+          e.added += r.added;
+          e.unmatched = e.unmatched.concat(r.unmatched);
+        });
         if (Object.keys(boundaries).length) {
           var filled = Data.applyBoundaries(parsed.schools, boundaries);
           state.boundariesUsed = filled > 0;
@@ -485,6 +610,7 @@
     state.post = h.post || '';
     state.query = (h.query || '').toLowerCase();
     state.levels = h.levels || null;
+    state.facets = h.facets || {};
     el.search.value = h.query || '';
     state.hydrating = false;
     apply();
@@ -514,6 +640,13 @@
       apply();
     });
 
+    CONFIG.FACETS.forEach(function (f) {
+      el.facets[f.key].list.addEventListener('change', function () {
+        readFacetChecks(f.key);
+        apply();
+      });
+    });
+
     var searchTimer;
     el.search.addEventListener('input', function () {
       var value = this.value.trim().toLowerCase();
@@ -528,6 +661,7 @@
       state.municipality = '';
       state.post = '';
       state.levels = null;
+      state.facets = {};
       state.query = '';
       el.search.value = '';
       apply();
@@ -573,8 +707,14 @@
       statTotal: $('stat-total'),
       statMunis: $('stat-munis'),
       statPosts: $('stat-posts'),
-      mapStatus: $('map-status')
+      statDevices: $('stat-devices'),
+      statDevicesWrap: $('stat-devices-wrap'),
+      mapStatus: $('map-status'),
+      facets: {}
     };
+    CONFIG.FACETS.forEach(function (f) {
+      el.facets[f.key] = { wrap: $('facet-' + f.key), list: $('filter-' + f.key) };
+    });
 
     initMap();
     bind();
