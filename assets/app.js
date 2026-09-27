@@ -119,10 +119,13 @@
     map = L.map('map', {
       center: CONFIG.TL_CENTER,
       zoom: 9,
-      minZoom: 6,
+      // Zoom 8 is as far out as the map goes: the scale bar reads 50 km there.
+      minZoom: CONFIG.MIN_ZOOM,
       maxZoom: 19,
       zoomControl: true,
-      worldCopyJump: true
+      // Keep the view locked to Timor-Leste (Oecusse to Jaco, including Ataúro).
+      maxBounds: CONFIG.TL_BOUNDS,
+      maxBoundsViscosity: 1.0
     });
 
     var overlays = {};
