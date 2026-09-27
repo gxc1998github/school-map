@@ -8,7 +8,7 @@
   var state = {
     schools: [],
     filtered: [],
-    markers: new Map(),      // school id -> Leaflet marker
+    markers: new Map(),      // school record -> Leaflet marker (IDs may repeat)
     groupsPresent: [],       // level-group keys in ladder order
     municipality: '',
     post: '',
@@ -199,7 +199,7 @@
         keyboard: true
       });
       marker.bindPopup(function () { return popupHtml(s); }, { maxWidth: 300, minWidth: 200 });
-      state.markers.set(s.id, marker);
+      state.markers.set(s, marker);
     });
   }
 
@@ -354,7 +354,7 @@
     cluster.clearLayers();
     var layers = [];
     state.filtered.forEach(function (s) {
-      var m = state.markers.get(s.id);
+      var m = state.markers.get(s);
       if (m) layers.push(m);
     });
     cluster.addLayers(layers);
