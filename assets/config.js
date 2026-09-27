@@ -38,21 +38,25 @@
      canonical names below so "starlink vorakai" and "Starlink-Vorakai" count
      as the same thing; anything unlisted is kept exactly as written. */
   var MULTI_SPLIT = /\s*[;\/|+,]\s*/;
+  /* `filter: false` keeps a field parsed (popup, search, export) without
+     giving it a checklist in the sidebar. `aliases` snap other spellings
+     onto a known name, e.g. "Government" -> "Gov". */
   var FACETS = [
     {
       key: 'donor', label: 'ICT donor', none: 'No ICT donor recorded',
-      known: ['UNICEF', 'LiteHaus']
+      known: ['LiteHaus', 'UNICEF', 'UNDP', 'Gov'],
+      aliases: { Gov: ['Government', 'Governo', 'Governu', 'GoTL', 'MoE'] }
     },
     {
-      key: 'internet', label: 'Internet', none: 'No internet recorded',
+      key: 'internet', label: 'Internet', none: 'No internet recorded', filter: false,
       known: ['Modem Router', 'Router SIM Card', 'Starlink', 'Starlink-Vorakai', 'NCP']
     },
     {
-      key: 'projectStatus', label: 'Project status', none: 'No project status',
+      key: 'projectStatus', label: 'Project status', none: 'No project status', filter: false,
       known: ['Distributed', 'Planning']
     },
     {
-      key: 'projectYear', label: 'Project year', none: 'No project year',
+      key: 'projectYear', label: 'Project year', none: 'No project year', filter: false,
       known: []
     }
   ];

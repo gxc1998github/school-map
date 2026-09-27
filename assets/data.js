@@ -200,6 +200,9 @@
   CONFIG.FACETS.forEach(function (f) {
     canonical[f.key] = {};
     f.known.forEach(function (name) { canonical[f.key][slug(name)] = name; });
+    Object.keys(f.aliases || {}).forEach(function (name) {
+      f.aliases[name].forEach(function (a) { canonical[f.key][slug(a)] = name; });
+    });
   });
 
   function facetValues(key, raw) {

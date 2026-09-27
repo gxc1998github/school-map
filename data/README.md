@@ -35,8 +35,8 @@ Column by column:
 | `ownership` | no | Shown in the popup, e.g. `Public` / `Private` / `Catholic`. |
 | `students` | no | Shown in the popup. Whole number. |
 | `teachers` | no | Shown in the popup. Whole number. |
-| `ict_donor` | no | e.g. `UNICEF`, `LiteHaus`. Own filter. Can also come from `ict.csv`, see below. |
-| `internet` | no | e.g. `Modem Router`, `Starlink`, `Starlink-Vorakai`, `NCP`. Own filter. |
+| `ict_donor` | no | `LiteHaus`, `UNICEF`, `UNDP` or `Gov` (`Government` / `Governo` also map to `Gov`). Own filter. Can also come from `ict.csv`, see below. |
+| `internet` | no | e.g. `Modem Router`, `Starlink`, `Starlink-Vorakai`, `NCP`. Shown in the popup and export. |
 
 Only the first three are required. Everything else degrades gracefully — a
 missing column just means the matching filter or popup line is absent.
@@ -64,11 +64,11 @@ two area filters from the approximate nearest-centre estimate to exact values.
 
 ## Donor project lists (ICT donor, devices, internet)
 
-Each school can also carry which **ICT donor** supplied it (`UNICEF`,
-`LiteHaus`), how many **devices** (laptops / Chromebooks) it got, the
+Each school can also carry which **ICT donor** supplied it (`LiteHaus`,
+`UNICEF`, `UNDP`, `Gov`), how many **devices** (laptops / Chromebooks) it got, the
 **project year** and **status**, the **license**, and what **internet** it
 has (`Modem Router`, `Router SIM Card`, `Starlink`, `Starlink-Vorakai`,
-`NCP`). Donor, internet, status and year each get a filter in the sidebar,
+`NCP`). The ICT donor gets a filter in the sidebar (internet, status and year do not),
 the devices in the shown schools are totalled at the top, everything shows in
 the popup, and **Export CSV** carries it all.
 

@@ -9,6 +9,9 @@
   /* Stands in for "this school has no value" inside a facet filter. */
   var NONE = '__none__';
 
+  /* Facets that get a checklist in the sidebar; the rest are display-only. */
+  var FILTER_FACETS = window.CONFIG.FACETS.filter(function (f) { return f.filter !== false; });
+
   var state = {
     schools: [],
     filtered: [],
@@ -235,8 +238,8 @@
     if (skip.indexOf('municipality') === -1 && state.municipality && school.municipality !== state.municipality) return false;
     if (skip.indexOf('post') === -1 && state.post && school.post !== state.post) return false;
     if (skip.indexOf('levels') === -1 && state.levels && !state.levels.has(school.level)) return false;
-    for (var i = 0; i < CONFIG.FACETS.length; i++) {
-      var key = CONFIG.FACETS[i].key;
+    for (var i = 0; i < FILTER_FACETS.length; i++) {
+      var key = FILTER_FACETS[i].key;
       var picked = state.facets[key];
       if (!picked || skip.indexOf(key) !== -1) continue;
       var values = school[key].length ? school[key] : [NONE];
@@ -316,8 +319,9 @@
   /* Same build-once, refresh-counts pattern as the level list. A school may
      carry several values, so it counts once under each of them. */
   function facetOptions(key) {
-    var known = CONFIG.FACETS.filter(function (f) { return f.key === key; })[0].known;
-    var seen = [];
+    var known = FILTER_FACETS.filter(function (f) { return f.key === key; })[0].known;
+    // Known values are always listed, even at 0, so every donor can be picked.
+    var seen = known.slice();
     state.schools.forEach(function (s) {
       s[key].forEach(function (v) { if (seen.indexOf(v) === -1) seen.push(v); });
     });
@@ -331,7 +335,7 @@
   }
 
   function buildFacetChecks() {
-    CONFIG.FACETS.forEach(function (f) {
+    FILTER_FACETS.forEach(function (f) {
       var box = el.facets[f.key];
       var values = facetOptions(f.key);
       box.wrap.hidden = !values.length;
@@ -348,7 +352,7 @@
   }
 
   function refreshFacetCounts() {
-    CONFIG.FACETS.forEach(function (f) {
+    FILTER_FACETS.forEach(function (f) {
       var box = el.facets[f.key];
       if (box.wrap.hidden) return;
       var counts = Object.create(null);
@@ -523,7 +527,7 @@
     if (state.post) p.set('p', state.post);
     if (state.query) p.set('q', state.query);
     if (state.levels) p.set('l', Array.from(state.levels).join('|'));
-    CONFIG.FACETS.forEach(function (f) {
+    FILTER_FACETS.forEach(function (f) {
       var picked = state.facets[f.key];
       if (picked) p.set(f.key, Array.from(picked).map(function (v) { return v === NONE ? '-' : v; }).join('|'));
     });
@@ -537,7 +541,7 @@
     if (!raw) return {};
     var p = new URLSearchParams(raw);
     var facets = {};
-    CONFIG.FACETS.forEach(function (f) {
+    FILTER_FACETS.forEach(function (f) {
       var v = p.get(f.key);
       facets[f.key] = v ? new Set(v.split('|').map(function (x) { return x === '-' ? NONE : x; })) : null;
     });
@@ -687,7 +691,7 @@
       apply();
     });
 
-    CONFIG.FACETS.forEach(function (f) {
+    FILTER_FACETS.forEach(function (f) {
       el.facets[f.key].list.addEventListener('change', function () {
         readFacetChecks(f.key);
         apply();
@@ -767,7 +771,7 @@
       mapStatus: $('map-status'),
       facets: {}
     };
-    CONFIG.FACETS.forEach(function (f) {
+    FILTER_FACETS.forEach(function (f) {
       el.facets[f.key] = { wrap: $('facet-' + f.key), list: $('filter-' + f.key) };
     });
 
