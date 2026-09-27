@@ -76,6 +76,8 @@
   /* ------------------------------------------------------------- geography */
   var TL_CENTER = [-8.83, 125.9];
   var TL_BOUNDS = [[-9.55, 123.9], [-8.05, 127.45]];
+  // Furthest zoom-out allowed. At zoom 8 over Timor-Leste the scale bar shows 50 km.
+  var MIN_ZOOM = 8;
 
   /* The 13 municipalities plus the special administrative region. Coordinates
      are rough centres used by the built-in "estimate from coordinates"
@@ -133,6 +135,7 @@
     RAMP_INK: RAMP_INK,
     TL_CENTER: TL_CENTER,
     TL_BOUNDS: TL_BOUNDS,
+    MIN_ZOOM: MIN_ZOOM,
     MUNICIPALITIES: MUNICIPALITIES,
     BASEMAPS: BASEMAPS,
     DATA_SOURCES: DATA_SOURCES,
