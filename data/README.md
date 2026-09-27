@@ -35,6 +35,8 @@ Column by column:
 | `ownership` | no | Shown in the popup, e.g. `Public` / `Private` / `Catholic`. |
 | `students` | no | Shown in the popup. Whole number. |
 | `teachers` | no | Shown in the popup. Whole number. |
+| `ict_donor` | no | e.g. `UNICEF`, `LiteHaus`. Own filter. Can also come from `ict.csv`, see below. |
+| `internet` | no | e.g. `Modem Router`, `Starlink`, `Starlink-Vorakai`, `NCP`. Own filter. |
 
 Only the first three are required. Everything else degrades gracefully — a
 missing column just means the matching filter or popup line is absent.
@@ -59,6 +61,45 @@ The dataset in `schools.csv` today carries only `school_id`, `school_name`,
 `education_level`, `latitude` and `longitude`. Adding **`municipality`** and
 **`administrative_post`** is the single highest-value change — it switches the
 two area filters from the approximate nearest-centre estimate to exact values.
+
+## ICT donor and internet list
+
+Each school can also carry which **ICT donor** supplied it (e.g. `UNICEF`,
+`LiteHaus`) and what **internet** it has (e.g. `Modem Router`, `Starlink`,
+`Starlink-Vorakai`, `NCP`). Both get their own filter in the sidebar, show in
+the popup, are searchable and go out in **Export CSV**.
+
+Two ways to supply them, and they can be mixed:
+
+1. **A separate list, `data/ict.csv`** (easiest). Use the empty template
+   `ict.template.csv` in this folder:
+
+   ```csv
+   school_id,school_name,ict_donor,internet
+   1689,EB 1.2.3 Cafe Aileu,UNICEF,Starlink
+   473,EB Catolica 1.2 No 02 Seloi Kraik,"UNICEF; LiteHaus",Modem Router
+   ```
+
+   Rows are matched to `schools.csv` by `school_id`; if the ID is blank, by
+   exact school name. The file is optional. Rows that match no school are
+   counted in the header line (hover it to see which).
+
+2. **Extra columns in `schools.csv`**: add `ict_donor` and `internet` columns
+   there instead.
+
+Notes:
+
+- A school with more than one donor or connection lists them separated by
+  `;` (or `/`, `|`, `+`, `,`, quoted). A hyphen is part of the name, so
+  `Starlink-Vorakai` stays one value.
+- Spelling is matched loosely against the known names, so `unicef`,
+  `Lite Haus` and `starlink vorakai` all land on the right option. New donors
+  or connection types just appear as new options; add them to `FACETS` in
+  `assets/config.js` to fix their spelling and order.
+- Schools with nothing recorded are grouped as *No ICT donor recorded* /
+  *No internet recorded*, so you can filter for the gaps too.
+- Other header names work too: `ICT School`, `Donor`, `Internet Type`,
+  `Connectivity`, …
 
 ## If your file has no municipality / administrative post column
 

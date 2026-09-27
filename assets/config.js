@@ -19,8 +19,34 @@
     suco: ['suco', 'suku', 'village', 'aldeia', 'adm3', 'admin3'],
     ownership: ['ownership', 'management', 'sector', 'publicprivate', 'tipoescola', 'propriedade'],
     students: ['students', 'enrolment', 'enrollment', 'totalstudents', 'numstudents', 'alunos', 'estudantes'],
-    teachers: ['teachers', 'totalteachers', 'numteachers', 'professores', 'docentes']
+    teachers: ['teachers', 'totalteachers', 'numteachers', 'professores', 'docentes'],
+    donor: ['ictdonor', 'donor', 'ictschool', 'ictprogram', 'ictprogramme', 'ictpartner', 'donors', 'funder', 'fundedby', 'doador', 'parceiro'],
+    internet: ['internet', 'internettype', 'internetconnection', 'connectivity', 'connection', 'connectiontype', 'isp', 'conexao', 'ligacaointernet']
   };
+
+  /* ----------------------------------------------------- ICT and internet */
+  /* Both columns are categorical and may hold more than one value for a
+     school, separated by ";", "/", "|", "+" or "," ("UNICEF; LiteHaus"). A
+     hyphen is NOT a separator, so "Starlink-Vorakai" stays one value.
+     Values are matched loosely (case, spaces, hyphens ignored) against the
+     canonical names below so "starlink vorakai" and "Starlink-Vorakai" count
+     as the same thing; anything unlisted is kept exactly as written. */
+  var MULTI_SPLIT = /\s*[;\/|+,]\s*/;
+  var FACETS = [
+    {
+      key: 'donor', label: 'ICT donor', none: 'No ICT donor recorded',
+      known: ['UNICEF', 'LiteHaus']
+    },
+    {
+      key: 'internet', label: 'Internet', none: 'No internet recorded',
+      known: ['Modem Router', 'Starlink', 'Starlink-Vorakai', 'NCP']
+    }
+  ];
+
+  /* Optional second list joined onto schools.csv by school ID (or, failing
+     that, by exact school name). Lets the ICT / internet list be kept as its
+     own spreadsheet instead of being merged into the main export. */
+  var EXTRA_SOURCES = ['data/ict.csv'];
 
   /* -------------------------------------------------------- education level */
   /* Education level is ORDINAL (a ladder), not categorical, so colour is an
@@ -149,6 +175,9 @@
     MUNICIPALITIES: MUNICIPALITIES,
     BASEMAPS: BASEMAPS,
     DATA_SOURCES: DATA_SOURCES,
+    EXTRA_SOURCES: EXTRA_SOURCES,
+    MULTI_SPLIT: MULTI_SPLIT,
+    FACETS: FACETS,
     BOUNDARY_SOURCES: BOUNDARY_SOURCES,
     BOUNDARY_NAME_KEYS: BOUNDARY_NAME_KEYS
   };

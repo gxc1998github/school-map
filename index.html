@@ -37,7 +37,7 @@
         <section class="block">
           <label class="field">
             <span class="field-label">Search school</span>
-            <input type="search" id="search" placeholder="Name, ID, suco…" autocomplete="off" spellcheck="false">
+            <input type="search" id="search" placeholder="Name, ID, suco, donor…" autocomplete="off" spellcheck="false">
           </label>
         </section>
 
@@ -81,6 +81,16 @@
           <fieldset class="field">
             <legend class="field-label">Education level</legend>
             <div id="filter-levels" class="checklist"></div>
+          </fieldset>
+
+          <fieldset class="field" id="facet-donor" hidden>
+            <legend class="field-label">ICT donor</legend>
+            <div id="filter-donor" class="checklist"></div>
+          </fieldset>
+
+          <fieldset class="field" id="facet-internet" hidden>
+            <legend class="field-label">Internet</legend>
+            <div id="filter-internet" class="checklist"></div>
           </fieldset>
 
           <p class="note" id="geo-note" hidden></p>

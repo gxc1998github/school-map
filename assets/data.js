@@ -195,6 +195,24 @@
     return best;
   }
 
+  /* Splits a multi-value cell and snaps each part onto its canonical name. */
+  var canonical = {};
+  CONFIG.FACETS.forEach(function (f) {
+    canonical[f.key] = {};
+    f.known.forEach(function (name) { canonical[f.key][slug(name)] = name; });
+  });
+
+  function facetValues(key, raw) {
+    var out = [];
+    clean(raw).split(CONFIG.MULTI_SPLIT).forEach(function (part) {
+      var v = clean(part);
+      if (!v) return;
+      v = canonical[key][slug(v)] || v;
+      if (out.indexOf(v) === -1) out.push(v);
+    });
+    return out;
+  }
+
   /* ------------------------------------------------------------ normalise */
   function normalise(rows, headers) {
     var cols = detectColumns(headers);
@@ -231,6 +249,8 @@
         ownership: clean(cols.ownership ? row[cols.ownership] : ''),
         students: clean(cols.students ? row[cols.students] : ''),
         teachers: clean(cols.teachers ? row[cols.teachers] : ''),
+        donor: facetValues('donor', cols.donor ? row[cols.donor] : ''),
+        internet: facetValues('internet', cols.internet ? row[cols.internet] : ''),
         estimated: false,
         raw: row
       });
@@ -269,15 +289,51 @@
     return filled;
   }
 
-  function parseCsvText(text) {
+  function parseRows(text) {
     var res = Papa.parse(text, {
       header: true,
       skipEmptyLines: 'greedy',
       dynamicTyping: false,
       transformHeader: function (h) { return String(h).replace(/^﻿/, '').trim(); }
     });
-    var headers = (res.meta && res.meta.fields) || [];
-    return normalise(res.data, headers);
+    return { rows: res.data, headers: (res.meta && res.meta.fields) || [] };
+  }
+
+  function parseCsvText(text) {
+    var p = parseRows(text);
+    return normalise(p.rows, p.headers);
+  }
+
+  /* Joins a second list (ICT donor / internet) onto the schools, by ID first
+     and exact name second. Values are added to whatever schools.csv already
+     carried, never replacing it. Returns { matched, unmatched: [labels] }. */
+  function mergeExtra(schools, text) {
+    var p = parseRows(text);
+    var cols = detectColumns(p.headers);
+    var byId = Object.create(null), byName = Object.create(null);
+    schools.forEach(function (s) {
+      byId[s.id] = s;
+      var k = slug(s.name);
+      byName[k] = k in byName ? null : s; // ambiguous names are not joined
+    });
+    var matched = 0, unmatched = [];
+    p.rows.forEach(function (row) {
+      var id = clean(cols.id ? row[cols.id] : '');
+      var name = clean(cols.name ? row[cols.name] : '');
+      var s = (id && byId[id]) || (name && byName[slug(name)]);
+      if (!s) {
+        if (id || name) unmatched.push(name ? name + (id ? ' (' + id + ')' : '') : id);
+        return;
+      }
+      matched++;
+      CONFIG.FACETS.forEach(function (f) {
+        if (!cols[f.key]) return;
+        facetValues(f.key, row[cols[f.key]]).forEach(function (v) {
+          if (s[f.key].indexOf(v) === -1) s[f.key].push(v);
+        });
+      });
+    });
+    return { matched: matched, unmatched: unmatched, columns: cols };
   }
 
   function fetchFirst(urls) {
@@ -309,10 +365,11 @@
 
   function toCsv(schools) {
     var fields = ['school_id', 'school_name', 'education_level', 'municipality',
-      'administrative_post', 'suco', 'latitude', 'longitude'];
+      'administrative_post', 'suco', 'latitude', 'longitude', 'ict_donor', 'internet'];
     var lines = [fields.join(',')];
     schools.forEach(function (s) {
-      lines.push([s.id, s.name, s.level, s.municipality, s.post, s.suco, s.lat, s.lon]
+      lines.push([s.id, s.name, s.level, s.municipality, s.post, s.suco, s.lat, s.lon,
+        s.donor.join('; '), s.internet.join('; ')]
         .map(function (v) {
           var t = String(v == null ? '' : v);
           return /[",\n]/.test(t) ? '"' + t.replace(/"/g, '""') + '"' : t;
@@ -323,6 +380,7 @@
 
   global.SchoolData = {
     parseCsvText: parseCsvText,
+    mergeExtra: mergeExtra,
     fetchFirst: fetchFirst,
     fetchBoundaries: fetchBoundaries,
     applyBoundaries: applyBoundaries,

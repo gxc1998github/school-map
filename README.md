@@ -67,6 +67,8 @@ approximate nearest-centre estimate.
 ## Features
 
 - Marker clustering, so a large point set stays responsive.
+- ICT donor and internet filters (UNICEF, LiteHaus, Starlink, NCP, …), fed
+  from `data/ict.csv` or extra columns; see `data/README.md`.
 - Cascading filters — picking a municipality narrows the administrative posts,
   and every option shows its live count.
 - Multi-term search across name, ID, level, municipality, post and suco.
@@ -113,6 +115,8 @@ assets/app.js                 map, filters, search, results
 assets/app.css                theme tokens and layout
 data/schools.csv              the dataset
 data/schools.template.csv     empty file with the header the app expects
+data/ict.csv                  optional ICT donor / internet list, joined by ID
+data/ict.template.csv         empty file with the header for that list
 data/boundaries/              optional municipality / post GeoJSON
 vendor/                       Leaflet 1.9.4, MarkerCluster 1.5.3, PapaParse 5.4.1
 ```
