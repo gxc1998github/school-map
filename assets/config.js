@@ -66,7 +66,7 @@
      spreadsheet instead of being merged into the main export. Rows that match
      no school but carry coordinates are added to the map as schools. */
   /* Every file listed here that exists is loaded, in this order. */
-  var EXTRA_SOURCES = ['data/litehaus.csv', 'data/unicef.csv', 'data/ict.csv'];
+  var EXTRA_SOURCES = ['data/litehaus.csv', 'data/unicef.csv', 'data/undp.csv', 'data/ict.csv'];
 
   /* -------------------------------------------------------- education level */
   /* Education level is ORDINAL (a ladder), not categorical, so colour is an

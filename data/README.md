@@ -78,6 +78,7 @@ Keep one file per donor. Each of these is loaded if it exists:
 - `data/litehaus.csv` (in place: 43 schools, 472 devices, from
   `Lista_Eskola_LiteHaus.xlsx`)
 - `data/unicef.csv`
+- `data/undp.csv`
 - `data/ict.csv` (anything else)
 
 The header, as in `ict.template.csv`:
